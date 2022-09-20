@@ -47,4 +47,9 @@ public class Playlist {
     public int hashCode() {
         return Objects.hash(getPlayListName(), getSongDetails());
     }
+
+    @Override
+    public String toString() {
+        return "Playlist{" + "playListName='" + playListName + '\'' + ", songDetails=" + songDetails + '}';
+    }
 }
