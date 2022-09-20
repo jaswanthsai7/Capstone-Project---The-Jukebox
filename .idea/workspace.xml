@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="created songs,sql folder in resources and database_queries.sql">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/model/PlayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/model/PlayList.java" afterDir="false" />
+    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="created getter and setter methods in Playlist.java">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/model/Playlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/model/Playlist.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +186,28 @@
       <option name="project" value="LOCAL" />
       <updated>1663677526775</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="created fields in Playlist.java class">
+      <created>1663679057036</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1663679057036</updated>
+    </task>
+    <task id="LOCAL-00019" summary="created no-args and parameterised constructor in Playlist.java">
+      <created>1663679146415</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1663679146415</updated>
+    </task>
+    <task id="LOCAL-00020" summary="created getter and setter methods in Playlist.java">
+      <created>1663679192760</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1663679192760</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -219,7 +239,10 @@
     <MESSAGE value="created DatabaseService.java class" />
     <MESSAGE value="created JukeboxService.java class" />
     <MESSAGE value="created songs,sql folder in resources and database_queries.sql" />
-    <option name="LAST_COMMIT_MESSAGE" value="created songs,sql folder in resources and database_queries.sql" />
+    <MESSAGE value="created fields in Playlist.java class" />
+    <MESSAGE value="created no-args and parameterised constructor in Playlist.java" />
+    <MESSAGE value="created getter and setter methods in Playlist.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="created getter and setter methods in Playlist.java" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

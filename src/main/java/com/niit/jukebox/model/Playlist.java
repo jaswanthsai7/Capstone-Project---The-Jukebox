@@ -5,6 +5,8 @@
  */
 package com.niit.jukebox.model;
 
+import java.util.Objects;
+
 public class Playlist {
     private String playListName;
     private Song songDetails;
@@ -31,5 +33,18 @@ public class Playlist {
 
     public void setSongDetails(Song songDetails) {
         this.songDetails = songDetails;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Playlist)) return false;
+        Playlist playlist = (Playlist) o;
+        return Objects.equals(getPlayListName(), playlist.getPlayListName()) && Objects.equals(getSongDetails(), playlist.getSongDetails());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getPlayListName(), getSongDetails());
     }
 }
