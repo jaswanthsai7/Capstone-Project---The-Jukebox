@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="created SongRepository.java class" />
+    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="created JukeboxService.java class">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/sql/database_queries.sql" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -156,7 +158,28 @@
       <option name="project" value="LOCAL" />
       <updated>1663677168707</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="created PlayListRepository.java class">
+      <created>1663677230693</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1663677230693</updated>
+    </task>
+    <task id="LOCAL-00015" summary="created DatabaseService.java class">
+      <created>1663677347362</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1663677347362</updated>
+    </task>
+    <task id="LOCAL-00016" summary="created JukeboxService.java class">
+      <created>1663677413589</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1663677413589</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -184,7 +207,10 @@
     <MESSAGE value="overridden toString() method in Song.java" />
     <MESSAGE value="created repository and service package" />
     <MESSAGE value="created SongRepository.java class" />
-    <option name="LAST_COMMIT_MESSAGE" value="created SongRepository.java class" />
+    <MESSAGE value="created PlayListRepository.java class" />
+    <MESSAGE value="created DatabaseService.java class" />
+    <MESSAGE value="created JukeboxService.java class" />
+    <option name="LAST_COMMIT_MESSAGE" value="created JukeboxService.java class" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
