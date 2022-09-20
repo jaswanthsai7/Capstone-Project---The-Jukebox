@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="overridden toString() method in Song.java" />
+    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="created SongRepository.java class" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -142,7 +142,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663676664196</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="created repository and service package">
+      <created>1663676837178</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1663676837178</updated>
+    </task>
+    <task id="LOCAL-00013" summary="created SongRepository.java class">
+      <created>1663677168707</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1663677168707</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -168,7 +182,9 @@
     <MESSAGE value="created getter and setter methods in Song.java" />
     <MESSAGE value="overridden equals and hashCode methods in Song.java" />
     <MESSAGE value="overridden toString() method in Song.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="overridden toString() method in Song.java" />
+    <MESSAGE value="created repository and service package" />
+    <MESSAGE value="created SongRepository.java class" />
+    <option name="LAST_COMMIT_MESSAGE" value="created SongRepository.java class" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
