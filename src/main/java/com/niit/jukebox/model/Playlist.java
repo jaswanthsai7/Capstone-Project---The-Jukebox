@@ -16,4 +16,20 @@ public class Playlist {
         this.playListName = playListName;
         this.songDetails = songDetails;
     }
+
+    public String getPlayListName() {
+        return playListName;
+    }
+
+    public void setPlayListName(String playListName) {
+        this.playListName = playListName;
+    }
+
+    public Song getSongDetails() {
+        return songDetails;
+    }
+
+    public void setSongDetails(Song songDetails) {
+        this.songDetails = songDetails;
+    }
 }
