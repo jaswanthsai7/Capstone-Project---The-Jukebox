@@ -5,5 +5,8 @@
  */
 package com.niit.jukebox.model;
 
-public class PlayList {
+public class Playlist {
+    private String playListName;
+    private Song songDetails;
+
 }

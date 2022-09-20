@@ -5,5 +5,5 @@
  */
 package com.niit.jukebox.repository;
 
-public class PlayListRepository {
+public class PlaylistRepository {
 }

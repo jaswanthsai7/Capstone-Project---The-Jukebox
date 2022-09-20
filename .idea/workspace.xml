@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="created JukeboxService.java class">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sql/database_queries.sql" afterDir="false" />
+    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="created songs,sql folder in resources and database_queries.sql">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/model/PlayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/model/PlayList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663677413589</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="created songs,sql folder in resources and database_queries.sql">
+      <created>1663677526775</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1663677526775</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -210,7 +218,8 @@
     <MESSAGE value="created PlayListRepository.java class" />
     <MESSAGE value="created DatabaseService.java class" />
     <MESSAGE value="created JukeboxService.java class" />
-    <option name="LAST_COMMIT_MESSAGE" value="created JukeboxService.java class" />
+    <MESSAGE value="created songs,sql folder in resources and database_queries.sql" />
+    <option name="LAST_COMMIT_MESSAGE" value="created songs,sql folder in resources and database_queries.sql" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
