@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="created no-args and parameterised constructor in Song.java">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/model/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/model/Song.java" afterDir="false" />
-    </list>
+    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="overridden toString() method in Song.java" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,7 +106,28 @@
       <option name="project" value="LOCAL" />
       <updated>1663676484367</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="created getter and setter methods in Song.java">
+      <created>1663676539242</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1663676539242</updated>
+    </task>
+    <task id="LOCAL-00010" summary="overridden equals and hashCode methods in Song.java">
+      <created>1663676620861</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1663676620861</updated>
+    </task>
+    <task id="LOCAL-00011" summary="overridden toString() method in Song.java">
+      <created>1663676664196</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1663676664196</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -131,7 +150,10 @@
     <MESSAGE value="added junit test dependency in pom.xml" />
     <MESSAGE value="added fields in Song.java class" />
     <MESSAGE value="created no-args and parameterised constructor in Song.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="created no-args and parameterised constructor in Song.java" />
+    <MESSAGE value="created getter and setter methods in Song.java" />
+    <MESSAGE value="overridden equals and hashCode methods in Song.java" />
+    <MESSAGE value="overridden toString() method in Song.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="overridden toString() method in Song.java" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
