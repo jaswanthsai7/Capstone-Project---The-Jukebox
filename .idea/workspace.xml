@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="added constructor in DatabaseService.java">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/DatabaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/DatabaseService.java" afterDir="false" />
+    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="created list object in SongRepository.java">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/SongRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/SongRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663680119567</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="created list object in SongRepository.java">
+      <created>1663683541363</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1663683541363</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -242,7 +249,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="initial commit" />
     <MESSAGE value="changed the source and target JDK version from 18 to 11" />
     <MESSAGE value="created model package and added Song.java class" />
     <MESSAGE value="created PlayList.java class in model package" />
@@ -267,7 +273,8 @@
     <MESSAGE value="added URL,USERNAME,PASSWORD fields in DatabaseService.java" />
     <MESSAGE value="added field for the connection in DatabaseService.java" />
     <MESSAGE value="added constructor in DatabaseService.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="added constructor in DatabaseService.java" />
+    <MESSAGE value="created list object in SongRepository.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="created list object in SongRepository.java" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

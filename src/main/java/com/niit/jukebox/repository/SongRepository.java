@@ -16,4 +16,9 @@ public class SongRepository {
     public SongRepository() {
         songsList = new ArrayList<>();
     }
+
+    public void displayAllSongs() {
+        // write the query
+        String displayQuery = "";
+    }
 }
