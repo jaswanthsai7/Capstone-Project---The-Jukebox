@@ -5,6 +5,8 @@
  */
 package com.niit.jukebox.service;
 
+import java.sql.Connection;
+
 public class DatabaseService {
 
     // url for the database
@@ -12,4 +14,7 @@ public class DatabaseService {
     // credentials of the user
     private static final String USERNAME = "root";
     private static final String PASSWORD = "root";
+
+    // create a field for the connection object
+    private Connection connection;
 }
