@@ -8,6 +8,8 @@ package com.niit.jukebox.model;
 import java.util.Objects;
 
 public class Song {
+
+    // create fields
     private int songId;
     private String songName;
     private String genre;
@@ -15,6 +17,7 @@ public class Song {
     private String album;
     private String duration;
 
+    // create constructor methods
     public Song() {
     }
 
@@ -27,6 +30,7 @@ public class Song {
         this.duration = duration;
     }
 
+    // create getter and setter methods
     public int getSongId() {
         return songId;
     }
@@ -75,6 +79,7 @@ public class Song {
         this.duration = duration;
     }
 
+    // create equals() and hashCode() method
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -88,6 +93,7 @@ public class Song {
         return Objects.hash(getSongId(), getSongName(), getGenre(), getArtist(), getAlbum(), getDuration());
     }
 
+    // create toString() method
     @Override
     public String toString() {
         return "Song{" + "songId=" + songId + ", songName='" + songName + '\'' + ", genre='" + genre + '\'' + ", artist='" + artist + '\'' + ", album='" + album + '\'' + ", duration='" + duration + '\'' + '}';

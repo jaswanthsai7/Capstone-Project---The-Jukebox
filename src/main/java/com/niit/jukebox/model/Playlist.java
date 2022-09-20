@@ -8,9 +8,12 @@ package com.niit.jukebox.model;
 import java.util.Objects;
 
 public class Playlist {
+
+    // create fields
     private String playListName;
     private Song songDetails;
 
+    // create constructor methods
     public Playlist() {
     }
 
@@ -19,6 +22,7 @@ public class Playlist {
         this.songDetails = songDetails;
     }
 
+    // create getter and setter methods
     public String getPlayListName() {
         return playListName;
     }
@@ -35,6 +39,7 @@ public class Playlist {
         this.songDetails = songDetails;
     }
 
+    // create equals() and hashCode() method
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -48,6 +53,7 @@ public class Playlist {
         return Objects.hash(getPlayListName(), getSongDetails());
     }
 
+    // create toString() method
     @Override
     public String toString() {
         return "Playlist{" + "playListName='" + playListName + '\'' + ", songDetails=" + songDetails + '}';

@@ -6,4 +6,10 @@
 package com.niit.jukebox.service;
 
 public class DatabaseService {
+
+    // url for the database
+    private static final String URL = "jdbc:mysql://localhost:3306/jukebox";
+    // credentials of the user
+    private static final String USERNAME = "root";
+    private static final String PASSWORD = "root";
 }
