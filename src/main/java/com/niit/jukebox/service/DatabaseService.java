@@ -17,4 +17,9 @@ public class DatabaseService {
 
     // create a field for the connection object
     private Connection connection;
+
+    // create a constructor to initialize connection
+    public DatabaseService() {
+        this.connection = null;
+    }
 }
