@@ -22,4 +22,11 @@ public class DatabaseService {
     public DatabaseService() {
         this.connection = null;
     }
+
+    // create getter method for connection
+    public Connection getConnection() {
+        return connection;
+    }
+
+
 }
