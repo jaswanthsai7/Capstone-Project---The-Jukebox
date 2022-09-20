@@ -5,6 +5,8 @@
  */
 package com.niit.jukebox.model;
 
+import java.util.Objects;
+
 public class Song {
     private int songId;
     private String songName;
@@ -71,5 +73,18 @@ public class Song {
 
     public void setDuration(String duration) {
         this.duration = duration;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Song)) return false;
+        Song song = (Song) o;
+        return getSongId() == song.getSongId() && Objects.equals(getSongName(), song.getSongName()) && Objects.equals(getGenre(), song.getGenre()) && Objects.equals(getArtist(), song.getArtist()) && Objects.equals(getAlbum(), song.getAlbum()) && Objects.equals(getDuration(), song.getDuration());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getSongId(), getSongName(), getGenre(), getArtist(), getAlbum(), getDuration());
     }
 }
