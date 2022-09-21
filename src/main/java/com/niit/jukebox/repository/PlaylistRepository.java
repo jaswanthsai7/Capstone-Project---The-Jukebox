@@ -42,4 +42,8 @@ public class PlaylistRepository {
 
     public void removePlaylist() {
     }
+
+    public void displayPlaylist() {
+
+    }
 }
