@@ -5,6 +5,7 @@
  */
 package com.niit.jukebox.repository;
 
+import com.niit.jukebox.comparator.ArtistComparator;
 import com.niit.jukebox.comparator.GenreComparator;
 import com.niit.jukebox.model.Song;
 import com.niit.jukebox.service.DatabaseService;
@@ -62,7 +63,12 @@ public class SongRepository {
         return songsList;
     }
 
-    public List<Song> sortByArtist() {
+    public List<Song> sortByArtist(List<Song> songsList) {
+        // use the Artist comparator
+        ArtistComparator artistComparator = (o1, o2) -> String.CASE_INSENSITIVE_ORDER.compare(o1.getArtist(), o2.getArtist());
+        // sort the songs according to artist name
+        songsList.sort(artistComparator);
+        // return the list
         return songsList;
     }
 }
