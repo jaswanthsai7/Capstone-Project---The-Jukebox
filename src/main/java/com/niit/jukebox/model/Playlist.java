@@ -10,25 +10,25 @@ import java.util.Objects;
 public class Playlist {
 
     // create fields
-    private String playListName;
+    private int playlistId;
     private Song songDetails;
 
     // create constructor methods
     public Playlist() {
     }
 
-    public Playlist(String playListName, Song songDetails) {
-        this.playListName = playListName;
+    public Playlist(int playlistId, Song songDetails) {
+        this.playlistId = playlistId;
         this.songDetails = songDetails;
     }
 
     // create getter and setter methods
-    public String getPlayListName() {
-        return playListName;
+    public int getPlaylistId() {
+        return playlistId;
     }
 
-    public void setPlayListName(String playListName) {
-        this.playListName = playListName;
+    public void setPlaylistId(int playlistId) {
+        this.playlistId = playlistId;
     }
 
     public Song getSongDetails() {
@@ -45,17 +45,18 @@ public class Playlist {
         if (this == o) return true;
         if (!(o instanceof Playlist)) return false;
         Playlist playlist = (Playlist) o;
-        return Objects.equals(getPlayListName(), playlist.getPlayListName()) && Objects.equals(getSongDetails(), playlist.getSongDetails());
+        return getPlaylistId() == playlist.getPlaylistId() && Objects.equals(getSongDetails(), playlist.getSongDetails());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getPlayListName(), getSongDetails());
+        return Objects.hash(getPlaylistId(), getSongDetails());
     }
+
 
     // create toString() method
     @Override
     public String toString() {
-        return "Playlist{" + "playListName='" + playListName + '\'' + ", songDetails=" + songDetails + '}';
+        return "Playlist{" + "playlistId=" + playlistId + ", songDetails=" + songDetails + '}';
     }
 }
