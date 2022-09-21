@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="completed removePlaylist() method in PlaylistRepository">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/PlaylistRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/PlaylistRepository.java" afterDir="false" />
-    </list>
+    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="completed displayPlaylist() method in PlaylistRepository" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,13 +50,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663675502247</updated>
-    </task>
-    <task id="LOCAL-00001" summary="initial commit">
-      <created>1663675572871</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1663675572871</updated>
     </task>
     <task id="LOCAL-00002" summary="changed the source and target JDK version from 18 to 11">
       <created>1663675637773</created>
@@ -397,7 +387,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663737356280</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="completed displayPlaylist() method in PlaylistRepository">
+      <created>1663738404026</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1663738404027</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -412,7 +409,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added field for the connection in DatabaseService.java" />
     <MESSAGE value="added constructor in DatabaseService.java" />
     <MESSAGE value="created list object in SongRepository.java" />
     <MESSAGE value="added displayAllSongs() method in SongRepository.java" />
@@ -437,7 +433,8 @@
     <MESSAGE value="completed addSongToPlaylist() method in PlaylistRepository" />
     <MESSAGE value="added create table in database_queries.sql" />
     <MESSAGE value="completed removePlaylist() method in PlaylistRepository" />
-    <option name="LAST_COMMIT_MESSAGE" value="completed removePlaylist() method in PlaylistRepository" />
+    <MESSAGE value="completed displayPlaylist() method in PlaylistRepository" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed displayPlaylist() method in PlaylistRepository" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
