@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="created GenreComparator.java in Comparator package">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/comparator/GenreComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/comparator/GenreComparator.java" afterDir="false" />
+    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="made a functional interface GenreComparator extends Comparator and override compare() method">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/comparator/ArtistComparator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +16,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -277,7 +277,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663726636345</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="made a functional interface GenreComparator extends Comparator and override compare() method">
+      <created>1663727551938</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1663727551938</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -292,7 +299,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="created no-args and parameterised constructor in Song.java" />
     <MESSAGE value="created getter and setter methods in Song.java" />
     <MESSAGE value="overridden equals and hashCode methods in Song.java" />
     <MESSAGE value="overridden toString() method in Song.java" />
@@ -317,7 +323,8 @@
     <MESSAGE value="added create table in database_queries.sql" />
     <MESSAGE value="completed the displayAllSongs() method in SongRepository" />
     <MESSAGE value="created GenreComparator.java in Comparator package" />
-    <option name="LAST_COMMIT_MESSAGE" value="created GenreComparator.java in Comparator package" />
+    <MESSAGE value="made a functional interface GenreComparator extends Comparator and override compare() method" />
+    <option name="LAST_COMMIT_MESSAGE" value="made a functional interface GenreComparator extends Comparator and override compare() method" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
