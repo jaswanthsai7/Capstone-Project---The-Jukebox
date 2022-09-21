@@ -51,4 +51,8 @@ public class SongRepository {
         }
         return songsList;
     }
+
+    public List<Song> sortByGenre() {
+        return songsList;
+    }
 }
