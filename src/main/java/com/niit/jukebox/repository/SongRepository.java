@@ -52,17 +52,21 @@ public class SongRepository {
         return songsList;
     }
 
-    public void sortByGenre(List<Song> songsList) {
+    public List<Song> searchByGenre(List<Song> songsList, String genreName) {
+        List<Song> allGenreSongs = new ArrayList<>();
         // use the genre comparator
         GenreComparator genreComparator = (o1, o2) -> String.CASE_INSENSITIVE_ORDER.compare(o1.getGenre(), o2.getGenre());
         // sort the songs list according to genre
         songsList.sort(genreComparator);
-        for (Song sortByGenre : songsList) {
-            System.out.println(sortByGenre);
+        for (Song songsGenre : songsList) {
+            if (songsGenre.equals(genreName)) {
+                allGenreSongs.add(songsGenre);
+            }
         }
+        return allGenreSongs;
     }
 
-    public void sortByArtist(List<Song> songsList) {
+    public List<Song> sortByArtist(List<Song> songsList) {
         // use the Artist comparator
         ArtistComparator artistComparator = (o1, o2) -> String.CASE_INSENSITIVE_ORDER.compare(o1.getArtist(), o2.getArtist());
         // sort the songs according to artist name
@@ -70,6 +74,7 @@ public class SongRepository {
         for (Song sortByArtist : songsList) {
             System.out.println(sortByArtist);
         }
+        return songsList;
     }
 
     public Song getSongById(int songId) {
