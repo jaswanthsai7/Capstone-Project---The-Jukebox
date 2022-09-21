@@ -80,13 +80,15 @@ public class SongRepository {
         try (PreparedStatement preparedStatement = connection.prepareStatement(getQuery)) {
             preparedStatement.setInt(1, songId);
             ResultSet resultSet = preparedStatement.executeQuery();
-            song.setSongId(resultSet.getInt("song_id"));
-            song.setSongName(resultSet.getString("song_name"));
-            song.setGenre(resultSet.getString("genre"));
-            song.setArtist(resultSet.getString("artist"));
-            song.setAlbum(resultSet.getString("album"));
-            song.setDuration(resultSet.getString("duration"));
-            song.setSongPath(resultSet.getString("song_path"));
+            while (resultSet.next()) {
+                song.setSongId(resultSet.getInt("song_id"));
+                song.setSongName(resultSet.getString("song_name"));
+                song.setGenre(resultSet.getString("genre"));
+                song.setArtist(resultSet.getString("artist"));
+                song.setAlbum(resultSet.getString("album"));
+                song.setDuration(resultSet.getString("duration"));
+                song.setSongPath(resultSet.getString("song_path"));
+            }
         } catch (SQLException exception) {
             exception.printStackTrace();
         }

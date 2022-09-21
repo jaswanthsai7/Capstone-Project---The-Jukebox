@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="created setup() and tearDown() methods in DatabaseServiceTest">
+    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="added setup() and tearDown() in SongRepositoryTest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/DatabaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/DatabaseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/niit/jukebox/DatabaseServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/niit/jukebox/DatabaseServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/PlaylistRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/PlaylistRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/SongRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/SongRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/niit/jukebox/SongRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/niit/jukebox/SongRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +59,7 @@
       <recent name="C:\Users\jasva\IdeaProjects\capstone-project-jukebox\src\main\resources\songs" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DatabaseServiceTest.checkIfConnectionActiveSuccess">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.niit.jukebox.Main" />
       <module name="capstone-project-jukebox" />
@@ -89,8 +91,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DatabaseServiceTest.checkIfConnectionActiveSuccess" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.DatabaseServiceTest.checkIfConnectionActiveSuccess" />
       </list>
     </recent_temporary>
   </component>
@@ -102,20 +104,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663675502247</updated>
-    </task>
-    <task id="LOCAL-00016" summary="created JukeboxService.java class">
-      <created>1663677413589</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1663677413589</updated>
-    </task>
-    <task id="LOCAL-00017" summary="created songs,sql folder in resources and database_queries.sql">
-      <created>1663677526775</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1663677526775</updated>
     </task>
     <task id="LOCAL-00018" summary="created fields in Playlist.java class">
       <created>1663679057036</created>
@@ -446,7 +434,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663769545393</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="created SongRepositoryTest.java">
+      <created>1663770311063</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1663770311063</updated>
+    </task>
+    <task id="LOCAL-00066" summary="added setup() and tearDown() in SongRepositoryTest">
+      <created>1663770409097</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1663770409097</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -461,8 +463,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added play() method in JukeboxService" />
-    <MESSAGE value="added displayPlaylist() method in PlaylistRepository" />
     <MESSAGE value="added stop() method in JukeboxService" />
     <MESSAGE value="added shuffle() method in JukeboxService" />
     <MESSAGE value="completed the sortByGenre() in SongRepository" />
@@ -486,7 +486,9 @@
     <MESSAGE value="added details to display all songs" />
     <MESSAGE value="created DatabaseTest.java in test folder" />
     <MESSAGE value="created setup() and tearDown() methods in DatabaseServiceTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="created setup() and tearDown() methods in DatabaseServiceTest" />
+    <MESSAGE value="created SongRepositoryTest.java" />
+    <MESSAGE value="added setup() and tearDown() in SongRepositoryTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="added setup() and tearDown() in SongRepositoryTest" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

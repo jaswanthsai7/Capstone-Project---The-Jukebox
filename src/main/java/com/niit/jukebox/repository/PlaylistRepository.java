@@ -107,7 +107,7 @@ public class PlaylistRepository {
         // create an object of prepared statement
         try (PreparedStatement preparedStatement = connection.prepareStatement(displayQuery)) {
             preparedStatement.setString(1, playlistName);
-            ResultSet resultSet = preparedStatement.executeQuery(displayQuery);
+            ResultSet resultSet = preparedStatement.executeQuery();
             // create a song object
             Song song;
             // use the while loop to iterate over result set
@@ -115,11 +115,12 @@ public class PlaylistRepository {
             while (resultSet.next()) {
                 playlist.setPlaylistId(resultSet.getInt("playlist_id"));
                 playlist.setPlaylistName(resultSet.getString("playlist_Name"));
-                String songId = resultSet.getString("song_id");
-                String[] split = songId.split(",");
-                for (int i = 0; i < split.length - 1; i++) {
-                    song = songRepository.getSongById(Integer.parseInt(split[i]));
-                    songsList.add(song);
+                String songIds = resultSet.getString("song_id");
+                String songs = songIds.trim().replace("\\[\\]", "");
+                for (int i = 0; i < songs.length(); i++) {
+                    String[] split = songs.split(",");
+                    Song songById = songRepository.getSongById(Integer.parseInt(split[i]));
+                    songsList.add(songById);
                     playlist.setSongDetails(songsList);
                 }
                 songsInPlaylist.add(playlist);
