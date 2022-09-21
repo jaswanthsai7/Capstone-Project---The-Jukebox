@@ -71,12 +71,26 @@ public class PlaylistRepository {
         }
     }
 
-    public void removePlaylist(Playlist playlistName) {
+    public void removePlaylist(String playlistName) {
         // get the database connection
         databaseService.connect();
         Connection connection = databaseService.getConnection();
         // write the query
-        String removeQuery = "";
+        String removeQuery = "DROP TABLE IF EXISTS `jukebox`. ?;";
+        // create an object of prepared statement
+        try (PreparedStatement preparedStatement = connection.prepareStatement(removeQuery)) {
+            preparedStatement.setString(1, playlistName);
+            // execute the query
+            boolean executeRemove = preparedStatement.execute();
+            if (executeRemove) {
+                System.out.println("Successfully deleted the playlist");
+            } else {
+                System.out.println(" unable to delete the playlist, please check the playlist name");
+            }
+
+        } catch (SQLException exception) {
+            exception.printStackTrace();
+        }
     }
 
     public void displayPlaylist(Playlist playlistName) {
