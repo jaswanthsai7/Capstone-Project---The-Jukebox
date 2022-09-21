@@ -51,7 +51,7 @@ public class PlaylistRepository {
         databaseService.connect();
         connection = databaseService.getConnection();
         // write the query
-        String addQuery = "INSERT INTO `jukebox`.? (?,`song_id`, `song_name`, `genre`, `artist`, `album`, `duration`) VALUES (?,?,?,?,?,?);";
+        String addQuery = "INSERT INTO `jukebox`.? (?,`song_id`, `song_name`, `genre`, `artist`, `album`, `duration`,`songPath`) VALUES (?,?,?,?,?,?,?);";
         // create an object of prepared statement
         try (PreparedStatement preparedStatement = connection.prepareStatement(addQuery)) {
             preparedStatement.setString(1, playlistName);
@@ -62,6 +62,7 @@ public class PlaylistRepository {
             preparedStatement.setString(6, song.getArtist());
             preparedStatement.setString(7, song.getAlbum());
             preparedStatement.setString(8, song.getDuration());
+            preparedStatement.setString(9, song.getSongPath());
             // execute the query
             int executeUpdate = preparedStatement.executeUpdate();
             if (executeUpdate > 0) {

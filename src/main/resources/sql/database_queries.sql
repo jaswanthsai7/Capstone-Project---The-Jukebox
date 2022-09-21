@@ -11,8 +11,9 @@
        `genre` VARCHAR(45),
        `artist` VARCHAR(45),
        `album` VARCHAR(45),
-       `duration` VARCHAR(20)
+       `duration` VARCHAR(20),
+       `song_path` VARCHAR(50)
    );
 
 -- create a table playlist
- INSERT INTO `jukebox`.`playlist` (`playlist_Name`, `song_id`, `song_name`, `genre`, `artist`, `album`, `duration`) VALUES ('mylisti', '1', 'aktsuki', 'hip-hop', 'yakamuno', 'akatsuki', '02:02');
+ INSERT INTO `jukebox`.`playlist` (`playlist_Name`, `song_id`, `song_name`, `genre`, `artist`, `album`, `duration`,`song_path`) VALUES ('mylisti', '1', 'aktsuki', 'hip-hop', 'yakamuno', 'akatsuki', '02:02','src/main/resources/songs/akatsuki.wav'`);

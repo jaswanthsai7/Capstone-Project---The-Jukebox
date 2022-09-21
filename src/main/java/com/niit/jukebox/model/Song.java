@@ -16,18 +16,20 @@ public class Song {
     private String artist;
     private String album;
     private String duration;
+    private String songPath;
 
     // create constructor methods
     public Song() {
     }
 
-    public Song(int songId, String songName, String genre, String artist, String album, String duration) {
+    public Song(int songId, String songName, String genre, String artist, String album, String duration, String songPath) {
         this.songId = songId;
         this.songName = songName;
         this.genre = genre;
         this.artist = artist;
         this.album = album;
         this.duration = duration;
+        this.songPath = songPath;
     }
 
     // create getter and setter methods
@@ -79,23 +81,31 @@ public class Song {
         this.duration = duration;
     }
 
+    public String getSongPath() {
+        return songPath;
+    }
+
+    public void setSongPath(String songPath) {
+        this.songPath = songPath;
+    }
+
     // create equals() and hashCode() method
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Song)) return false;
         Song song = (Song) o;
-        return getSongId() == song.getSongId() && Objects.equals(getSongName(), song.getSongName()) && Objects.equals(getGenre(), song.getGenre()) && Objects.equals(getArtist(), song.getArtist()) && Objects.equals(getAlbum(), song.getAlbum()) && Objects.equals(getDuration(), song.getDuration());
+        return getSongId() == song.getSongId() && Objects.equals(getSongName(), song.getSongName()) && Objects.equals(getGenre(), song.getGenre()) && Objects.equals(getArtist(), song.getArtist()) && Objects.equals(getAlbum(), song.getAlbum()) && Objects.equals(getDuration(), song.getDuration()) && Objects.equals(getSongPath(), song.getSongPath());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getSongId(), getSongName(), getGenre(), getArtist(), getAlbum(), getDuration());
+        return Objects.hash(getSongId(), getSongName(), getGenre(), getArtist(), getAlbum(), getDuration(), getSongPath());
     }
 
     // create toString() method
     @Override
     public String toString() {
-        return "Song{" + "songId=" + songId + ", songName='" + songName + '\'' + ", genre='" + genre + '\'' + ", artist='" + artist + '\'' + ", album='" + album + '\'' + ", duration='" + duration + '\'' + '}';
+        return "Song{" + "songId=" + songId + ", songName='" + songName + '\'' + ", genre='" + genre + '\'' + ", artist='" + artist + '\'' + ", album='" + album + '\'' + ", duration='" + duration + '\'' + ", songPath='" + songPath + '\'' + '}';
     }
 }

@@ -46,6 +46,7 @@ public class SongRepository {
                 song.setArtist(resultSet.getString("artist"));
                 song.setAlbum(resultSet.getString("album"));
                 song.setDuration(resultSet.getString("duration"));
+                song.setSongPath(resultSet.getString("song_path"));
                 songsList.add(song);
             }
         } catch (SQLException exception) {
