@@ -1,7 +1,10 @@
 package com.niit.jukebox;
 
+import com.niit.jukebox.repository.PlaylistRepository;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        PlaylistRepository playlistRepository = new PlaylistRepository();
+        playlistRepository.displayPlaylist("playlist");
     }
 }

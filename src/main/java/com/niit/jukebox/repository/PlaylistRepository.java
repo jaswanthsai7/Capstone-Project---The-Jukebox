@@ -9,10 +9,7 @@ import com.niit.jukebox.model.Playlist;
 import com.niit.jukebox.model.Song;
 import com.niit.jukebox.service.DatabaseService;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -108,11 +105,10 @@ public class PlaylistRepository {
         databaseService.connect();
         connection = databaseService.getConnection();
         // write the query
-        String displayQuery = "SELECT * FROM `jukebox`.?;";
+        String displayQuery = "SELECT * FROM `jukebox`." + playlistName + ";";
         // create an object of prepared statement
-        try (PreparedStatement preparedStatement = connection.prepareStatement(displayQuery)) {
-            preparedStatement.setString(1, playlistName);
-            ResultSet resultSet = preparedStatement.executeQuery(displayQuery);
+        try (Statement statement = connection.createStatement()) {
+            ResultSet resultSet = statement.executeQuery(displayQuery);
             // create a song object
             Song song = new Song();
             // use the while loop to iterate over result set
