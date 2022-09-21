@@ -21,6 +21,7 @@ public class PlaylistRepository {
     }
 
     public void createPlaylist(String playlistName) {
+        // get the database connection
         databaseService.connect();
         Connection connection = databaseService.getConnection();
         // write the query
@@ -43,6 +44,7 @@ public class PlaylistRepository {
     }
 
     public void addSongToPlaylist(String playlistName, Song song) {
+        // get the database connection
         databaseService.connect();
         Connection connection = databaseService.getConnection();
         // write the query
@@ -70,7 +72,11 @@ public class PlaylistRepository {
     }
 
     public void removePlaylist(Playlist playlistName) {
-        // to remove the songs from playlist
+        // get the database connection
+        databaseService.connect();
+        Connection connection = databaseService.getConnection();
+        // write the query
+        String removeQuery = "";
     }
 
     public void displayPlaylist(Playlist playlistName) {

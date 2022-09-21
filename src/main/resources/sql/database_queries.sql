@@ -15,3 +15,12 @@
    );
 
 -- create a table playlist
+   CREATE TABLE IF NOT EXISTS `jukebox`.`playlist` (
+       `playlist_id` INT PRIMARY KEY AUTO_INCREMENT,
+       `song_id` INT,
+       `song_name` VARCHAR(50),
+       `genre` VARCHAR(45),
+       `artist` VARCHAR(45),
+       `album` VARCHAR(45),
+       `duration` VARCHAR(20)
+   );
