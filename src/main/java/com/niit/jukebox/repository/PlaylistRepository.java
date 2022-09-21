@@ -108,8 +108,6 @@ public class PlaylistRepository {
         try (PreparedStatement preparedStatement = connection.prepareStatement(displayQuery)) {
             preparedStatement.setString(1, playlistName);
             ResultSet resultSet = preparedStatement.executeQuery();
-            // create a song object
-            Song song;
             // use the while loop to iterate over result set
             Playlist playlist = new Playlist();
             while (resultSet.next()) {

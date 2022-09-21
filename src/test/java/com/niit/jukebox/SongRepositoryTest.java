@@ -5,19 +5,20 @@
  */
 package com.niit.jukebox;
 
+import com.niit.jukebox.repository.SongRepository;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 
 public class SongRepositoryTest {
-    SongRepositoryTest songRepositoryTest;
+    SongRepository songRepository;
 
     @BeforeEach
     void setUp() {
-        songRepositoryTest = new SongRepositoryTest();
+        songRepository = new SongRepository();
     }
 
     @AfterEach
     void tearDown() {
-        songRepositoryTest = null;
+        songRepository = null;
     }
 }

@@ -4,8 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="removed sortByGenre() and added SearchByGenre() method in SongRepository">
+    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="removed sortByArtist() and added SearchByArtist() method in SongRepository">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/Repository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/implementation/JukeboxImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/implementation/JukeboxImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/PlaylistRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/PlaylistRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/SongRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/SongRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/songs/itachi.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/songs/happier.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/songs/pain.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/songs/Alone.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/songs/sasori.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/songs/faded.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/niit/jukebox/SongRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/niit/jukebox/SongRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -55,6 +63,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\jasva\IdeaProjects\capstone-project-jukebox\src\main\resources\songs" />
     </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.niit.jukebox.repository" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -86,9 +97,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SongRepositoryTest.checkSongByIdSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="capstone-project-jukebox" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.niit.jukebox.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.niit.jukebox" />
+      <option name="MAIN_CLASS_NAME" value="com.niit.jukebox.SongRepositoryTest" />
+      <option name="METHOD_NAME" value="checkSongByIdSuccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.SongRepositoryTest.checkSongByIdSuccess" />
         <item itemvalue="JUnit.DatabaseServiceTest.checkIfConnectionActiveSuccess" />
       </list>
     </recent_temporary>
@@ -101,13 +129,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663675502247</updated>
-    </task>
-    <task id="LOCAL-00020" summary="created getter and setter methods in Playlist.java">
-      <created>1663679192760</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1663679192760</updated>
     </task>
     <task id="LOCAL-00021" summary="created equals() and hashCode() methods in Playlist.java">
       <created>1663679228412</created>
@@ -445,7 +466,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663775151557</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="removed sortByArtist() and added SearchByArtist() method in SongRepository">
+      <created>1663775360576</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1663775360576</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -460,7 +488,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="completed the sortByGenre() in SongRepository" />
     <MESSAGE value="added comments to the methods in PlaylistRepository" />
     <MESSAGE value="created connectionStatus() method in DatabaseService.java" />
     <MESSAGE value="completed addSongToPlaylist() method in PlaylistRepository" />
@@ -485,7 +512,8 @@
     <MESSAGE value="added setup() and tearDown() in SongRepositoryTest" />
     <MESSAGE value="completed displayPlaylist() in PlaylistRepository" />
     <MESSAGE value="removed sortByGenre() and added SearchByGenre() method in SongRepository" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed sortByGenre() and added SearchByGenre() method in SongRepository" />
+    <MESSAGE value="removed sortByArtist() and added SearchByArtist() method in SongRepository" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed sortByArtist() and added SearchByArtist() method in SongRepository" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

@@ -14,7 +14,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SongRepository {
+public class SongRepository implements Repository {
     List<Song> songsList;
     DatabaseService databaseService;
 
@@ -23,7 +23,9 @@ public class SongRepository {
         databaseService = new DatabaseService();
     }
 
+    @Override
     public List<Song> displayAllSongs() {
+        List<Song> allSongs = new ArrayList<>();
         // get the connection
         databaseService.connect();
         Connection connection = databaseService.getConnection();
@@ -33,9 +35,9 @@ public class SongRepository {
         try (Statement statement = connection.createStatement()) {
             ResultSet resultSet = statement.executeQuery(displayQuery);
             // create a song object
-            Song song = new Song();
             // use the while loop to iterate over result set
             while (resultSet.next()) {
+                Song song = new Song();
                 // get all the values of the result set and set to song
                 song.setSongId(resultSet.getInt("song_id"));
                 song.setSongName(resultSet.getString("song_name"));
@@ -44,14 +46,16 @@ public class SongRepository {
                 song.setAlbum(resultSet.getString("album"));
                 song.setDuration(resultSet.getString("duration"));
                 song.setSongPath(resultSet.getString("song_path"));
-                songsList.add(song);
+                allSongs.add(song);
+
             }
         } catch (SQLException exception) {
             exception.printStackTrace();
         }
-        return songsList;
+        return allSongs;
     }
 
+    @Override
     public List<Song> searchByGenre(List<Song> songsList, String genreName) {
         List<Song> allGenreSongs = new ArrayList<>();
         // use the genre comparator
@@ -66,20 +70,22 @@ public class SongRepository {
         return allGenreSongs;
     }
 
+    @Override
     public List<Song> searchByArtist(List<Song> songsList, String artist) {
         List<Song> allArtistSongs = new ArrayList<>();
         // use the Artist comparator
         ArtistComparator artistComparator = (o1, o2) -> String.CASE_INSENSITIVE_ORDER.compare(o1.getArtist(), o2.getArtist());
         // sort the songs according to artist name
         songsList.sort(artistComparator);
-        for (Song artistSong : songsList) {
-            if (artistSong.getArtist().equals(artist)) {
-                allArtistSongs.add(artistSong);
+        for (Song artistSongs : songsList) {
+            if (artistSongs.getArtist().equals(artist)) {
+                allArtistSongs.add(artistSongs);
             }
         }
         return allArtistSongs;
     }
 
+    @Override
     public Song getSongById(int songId) {
         databaseService.connect();
         Connection connection = databaseService.getConnection();

@@ -3,7 +3,7 @@
  * Date : 9/21/2022
  * Created With: INTELLIJ IDEA COMMUNITY EDITION
  */
-package com.niit.jukebox.implementation;
+/*package com.niit.jukebox.implementation;
 
 import com.niit.jukebox.model.Song;
 import com.niit.jukebox.repository.SongRepository;
@@ -35,7 +35,7 @@ public class JukeboxImpl {
             int sortChoice = input.nextInt();
             if (sortChoice == 1) {
                 List<Song> songs = songRepository.displayAllSongs();
-                songRepository.sortByArtist(songs);
+                songRepository.searchByArtist(songs,);
                 System.out.println("Enter the Song number to play the song :");
                 int playChoice = input.nextInt();
                 for (Song sortedSongs : songs) {
@@ -64,4 +64,4 @@ public class JukeboxImpl {
         } else if (choice == 6) {
         }
     }
-}
+}*/
