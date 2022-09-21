@@ -39,4 +39,8 @@ public class PlaylistRepository {
 
     public void addSongToPlaylist() {
     }
+
+    public void removePlaylist() {
+
+    }
 }
