@@ -59,22 +59,25 @@ public class SongRepository {
         // sort the songs list according to genre
         songsList.sort(genreComparator);
         for (Song songsGenre : songsList) {
-            if (songsGenre.equals(genreName)) {
+            if (songsGenre.getGenre().equals(genreName)) {
                 allGenreSongs.add(songsGenre);
             }
         }
         return allGenreSongs;
     }
 
-    public List<Song> sortByArtist(List<Song> songsList) {
+    public List<Song> searchByArtist(List<Song> songsList, String artist) {
+        List<Song> allArtistSongs = new ArrayList<>();
         // use the Artist comparator
         ArtistComparator artistComparator = (o1, o2) -> String.CASE_INSENSITIVE_ORDER.compare(o1.getArtist(), o2.getArtist());
         // sort the songs according to artist name
         songsList.sort(artistComparator);
-        for (Song sortByArtist : songsList) {
-            System.out.println(sortByArtist);
+        for (Song artistSong : songsList) {
+            if (artistSong.getArtist().equals(artist)) {
+                allArtistSongs.add(artistSong);
+            }
         }
-        return songsList;
+        return allArtistSongs;
     }
 
     public Song getSongById(int songId) {
