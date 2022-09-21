@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="created DatabaseTest.java in test folder">
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/niit/jukebox/DatabaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/niit/jukebox/DatabaseServiceTest.java" afterDir="false" />
+    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="created setup() and tearDown() methods in DatabaseServiceTest">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/DatabaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/DatabaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/niit/jukebox/DatabaseServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/niit/jukebox/DatabaseServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +57,7 @@
       <recent name="C:\Users\jasva\IdeaProjects\capstone-project-jukebox\src\main\resources\songs" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.DatabaseServiceTest.checkIfConnectionActiveSuccess">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.niit.jukebox.Main" />
       <module name="capstone-project-jukebox" />
@@ -69,8 +71,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DatabaseServiceTest.checkIfConnectionActiveSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="capstone-project-jukebox" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.niit.jukebox.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.niit.jukebox" />
+      <option name="MAIN_CLASS_NAME" value="com.niit.jukebox.DatabaseServiceTest" />
+      <option name="METHOD_NAME" value="checkIfConnectionActiveSuccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DatabaseServiceTest.checkIfConnectionActiveSuccess" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -83,13 +102,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663675502247</updated>
-    </task>
-    <task id="LOCAL-00015" summary="created DatabaseService.java class">
-      <created>1663677347362</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1663677347362</updated>
     </task>
     <task id="LOCAL-00016" summary="created JukeboxService.java class">
       <created>1663677413589</created>
@@ -427,7 +439,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663769355787</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="created setup() and tearDown() methods in DatabaseServiceTest">
+      <created>1663769545393</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1663769545393</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -442,7 +461,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added removePlaylist() method in PlaylistRepository" />
     <MESSAGE value="added play() method in JukeboxService" />
     <MESSAGE value="added displayPlaylist() method in PlaylistRepository" />
     <MESSAGE value="added stop() method in JukeboxService" />
@@ -467,7 +485,8 @@
     <MESSAGE value="created jukeboxImpl() method in JukeboxImpl.java" />
     <MESSAGE value="added details to display all songs" />
     <MESSAGE value="created DatabaseTest.java in test folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="created DatabaseTest.java in test folder" />
+    <MESSAGE value="created setup() and tearDown() methods in DatabaseServiceTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="created setup() and tearDown() methods in DatabaseServiceTest" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
