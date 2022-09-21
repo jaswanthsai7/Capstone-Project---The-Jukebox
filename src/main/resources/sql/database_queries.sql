@@ -13,3 +13,5 @@
        `album` VARCHAR(45),
        `duration` VARCHAR(20)
    );
+
+-- create a table playlist
