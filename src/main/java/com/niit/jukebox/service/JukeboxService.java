@@ -6,4 +6,6 @@
 package com.niit.jukebox.service;
 
 public class JukeboxService {
+    public void play(String songPath) {
+    }
 }

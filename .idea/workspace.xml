@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="added createPlaylist() method in PlaylistRepository">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/0/b0b19772b683f4a99038876b01be269fb8c52103" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/model/Playlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/model/Playlist.java" afterDir="false" />
+    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="added removePlaylist() method in PlaylistRepository">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/PlaylistRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/PlaylistRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/JukeboxService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/JukeboxService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -316,7 +313,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663730163185</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="added addSongToPlaylist() method in PlaylistRepository">
+      <created>1663732489779</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1663732489779</updated>
+    </task>
+    <task id="LOCAL-00039" summary="added removePlaylist() method in PlaylistRepository">
+      <created>1663732530315</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1663732530315</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -331,8 +342,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="created SongRepository.java class" />
-    <MESSAGE value="created PlayListRepository.java class" />
     <MESSAGE value="created DatabaseService.java class" />
     <MESSAGE value="created JukeboxService.java class" />
     <MESSAGE value="created songs,sql folder in resources and database_queries.sql" />
@@ -356,7 +365,9 @@
     <MESSAGE value="created  sortByGenre() method in SongRepository" />
     <MESSAGE value="created  sortByArtist() method in SongRepository" />
     <MESSAGE value="added createPlaylist() method in PlaylistRepository" />
-    <option name="LAST_COMMIT_MESSAGE" value="added createPlaylist() method in PlaylistRepository" />
+    <MESSAGE value="added addSongToPlaylist() method in PlaylistRepository" />
+    <MESSAGE value="added removePlaylist() method in PlaylistRepository" />
+    <option name="LAST_COMMIT_MESSAGE" value="added removePlaylist() method in PlaylistRepository" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
