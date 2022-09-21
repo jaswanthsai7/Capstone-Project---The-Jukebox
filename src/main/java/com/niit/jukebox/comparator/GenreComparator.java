@@ -5,5 +5,13 @@
  */
 package com.niit.jukebox.comparator;
 
-public class GenreComparator {
+import com.niit.jukebox.model.Song;
+
+import java.util.Comparator;
+
+@FunctionalInterface
+public interface GenreComparator extends Comparator<Song> {
+
+    @Override
+    int compare(Song o1, Song o2);
 }
