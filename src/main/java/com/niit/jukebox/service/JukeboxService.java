@@ -11,4 +11,8 @@ public class JukeboxService {
 
     public void stop() {
     }
+
+    public void shuffle() {
+
+    }
 }
