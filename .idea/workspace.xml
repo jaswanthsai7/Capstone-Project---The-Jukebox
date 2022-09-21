@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="made a functional interface ArtistComparator extends Comparator and override compare() method">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/comparator/SongNameComparator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/comparator/ArtistComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/comparator/ArtistComparator.java" afterDir="false" />
+    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="created  sortByArtist() method in SongRepository">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/PlaylistRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/PlaylistRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -293,7 +291,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663727764596</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="created  sortByGenre() method in SongRepository">
+      <created>1663729892225</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1663729892225</updated>
+    </task>
+    <task id="LOCAL-00036" summary="created  sortByArtist() method in SongRepository">
+      <created>1663729961678</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1663729961678</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -308,8 +320,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="overridden equals and hashCode methods in Song.java" />
-    <MESSAGE value="overridden toString() method in Song.java" />
     <MESSAGE value="created repository and service package" />
     <MESSAGE value="created SongRepository.java class" />
     <MESSAGE value="created PlayListRepository.java class" />
@@ -333,7 +343,9 @@
     <MESSAGE value="created GenreComparator.java in Comparator package" />
     <MESSAGE value="made a functional interface GenreComparator extends Comparator and override compare() method" />
     <MESSAGE value="made a functional interface ArtistComparator extends Comparator and override compare() method" />
-    <option name="LAST_COMMIT_MESSAGE" value="made a functional interface ArtistComparator extends Comparator and override compare() method" />
+    <MESSAGE value="created  sortByGenre() method in SongRepository" />
+    <MESSAGE value="created  sortByArtist() method in SongRepository" />
+    <option name="LAST_COMMIT_MESSAGE" value="created  sortByArtist() method in SongRepository" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

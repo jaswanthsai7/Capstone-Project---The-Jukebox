@@ -6,4 +6,7 @@
 package com.niit.jukebox.repository;
 
 public class PlaylistRepository {
+    public boolean createPlaylist() {
+        return false;
+    }
 }
