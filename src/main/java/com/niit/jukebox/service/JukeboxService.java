@@ -15,4 +15,8 @@ public class JukeboxService {
     public void shuffle() {
 
     }
+
+    public void forward() {
+
+    }
 }
