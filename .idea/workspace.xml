@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="added songs in resource folder">
+    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="changed the fields in Playlist.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/model/Playlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/model/Playlist.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/PlaylistRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/PlaylistRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,13 +64,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663675502247</updated>
-    </task>
-    <task id="LOCAL-00006" summary="added junit test dependency in pom.xml">
-      <created>1663676023714</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1663676023714</updated>
     </task>
     <task id="LOCAL-00007" summary="added fields in Song.java class">
       <created>1663676267046</created>
@@ -409,7 +401,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663741470706</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="changed the fields in Playlist.java">
+      <created>1663744487600</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1663744487600</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -424,7 +423,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added use database in database_queries.sql" />
     <MESSAGE value="completed the displayAllSongs() method in SongRepository" />
     <MESSAGE value="created GenreComparator.java in Comparator package" />
     <MESSAGE value="made a functional interface GenreComparator extends Comparator and override compare() method" />
@@ -449,7 +447,8 @@
     <MESSAGE value="completed sortByArtist() in SongRepository" />
     <MESSAGE value="added forward() method in JukeboxService" />
     <MESSAGE value="added songs in resource folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="added songs in resource folder" />
+    <MESSAGE value="changed the fields in Playlist.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed the fields in Playlist.java" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

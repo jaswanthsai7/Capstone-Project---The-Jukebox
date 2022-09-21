@@ -5,6 +5,7 @@
  */
 package com.niit.jukebox.repository;
 
+import com.niit.jukebox.model.Playlist;
 import com.niit.jukebox.model.Song;
 import com.niit.jukebox.service.DatabaseService;
 
@@ -29,10 +30,11 @@ public class PlaylistRepository {
         databaseService.connect();
         connection = databaseService.getConnection();
         // write the query
-        String createQuery = "CREATE TABLE IF NOT EXISTS `jukebox`. ? (`playlist_id` INT PRIMARY KEY AUTO_INCREMENT,`song_id` INT ,`song_name` VARCHAR(50),`genre` VARCHAR(45),`artist` VARCHAR(45),`album` VARCHAR(45),`duration` VARCHAR(20));";
+        String createQuery = "CREATE TABLE IF NOT EXISTS `jukebox`. ? (? INT PRIMARY KEY ,`song_id` INT ,`song_name` VARCHAR(50),`genre` VARCHAR(45),`artist` VARCHAR(45),`album` VARCHAR(45),`duration` VARCHAR(20));";
         // create an object of prepared statement
         try (PreparedStatement preparedStatement = connection.prepareStatement(createQuery)) {
             preparedStatement.setString(1, playlistName);
+            preparedStatement.setString(2, playlistName);
             // execute the query
             boolean execute = preparedStatement.execute();
             // check if the query is successful or not
@@ -52,16 +54,17 @@ public class PlaylistRepository {
         databaseService.connect();
         connection = databaseService.getConnection();
         // write the query
-        String addQuery = "INSERT INTO `jukebox`.? (`song_id`, `song_name`, `genre`, `artist`, `album`, `duration`) VALUES (?,?,?,?,?,?);";
+        String addQuery = "INSERT INTO `jukebox`.? (?,`song_id`, `song_name`, `genre`, `artist`, `album`, `duration`) VALUES (?,?,?,?,?,?);";
         // create an object of prepared statement
         try (PreparedStatement preparedStatement = connection.prepareStatement(addQuery)) {
             preparedStatement.setString(1, playlistName);
-            preparedStatement.setInt(2, song.getSongId());
-            preparedStatement.setString(3, song.getSongName());
-            preparedStatement.setString(4, song.getGenre());
-            preparedStatement.setString(5, song.getArtist());
-            preparedStatement.setString(6, song.getAlbum());
-            preparedStatement.setString(7, song.getDuration());
+            preparedStatement.setString(2, playlistName);
+            preparedStatement.setInt(3, song.getSongId());
+            preparedStatement.setString(4, song.getSongName());
+            preparedStatement.setString(5, song.getGenre());
+            preparedStatement.setString(6, song.getArtist());
+            preparedStatement.setString(7, song.getAlbum());
+            preparedStatement.setString(8, song.getDuration());
             // execute the query
             int executeUpdate = preparedStatement.executeUpdate();
             if (executeUpdate > 0) {
@@ -99,7 +102,8 @@ public class PlaylistRepository {
 
     public void displayPlaylist(String playlistName) {
         // create a list object
-        List<Song> playlistSongs = new ArrayList<>();
+        List<Song> songsList = new ArrayList<>();
+        List<Playlist> songsInPlaylist = new ArrayList<>();
         // get the database connection
         databaseService.connect();
         connection = databaseService.getConnection();
@@ -112,6 +116,7 @@ public class PlaylistRepository {
             // create a song object
             Song song = new Song();
             // use the while loop to iterate over result set
+            Playlist playlist = new Playlist();
             while (resultSet.next()) {
                 // get all the values of the result set and set to song
                 song.setSongId(resultSet.getInt("song_id"));
@@ -120,13 +125,16 @@ public class PlaylistRepository {
                 song.setArtist(resultSet.getString("artist"));
                 song.setAlbum(resultSet.getString("album"));
                 song.setDuration(resultSet.getString("duration"));
-                playlistSongs.add(song);
+                songsList.add(song);
+                // set all to the playlist
+                playlist.setPlaylistName(resultSet.getString("playlist_Name"));
+                playlist.setSongDetails(songsList);
+                songsInPlaylist.add(playlist);
             }
             // loop to print all the songs
-            for (Song playlistSong : playlistSongs) {
-                System.out.println(playlistSong);
+            for (Playlist playlistSongs : songsInPlaylist) {
+                System.out.println(playlistSongs);
             }
-
         } catch (SQLException exception) {
             System.out.println("unable to get the playlist");
             exception.printStackTrace();
