@@ -46,12 +46,12 @@ public class Playlist {
         if (this == o) return true;
         if (!(o instanceof Playlist)) return false;
         Playlist playlist = (Playlist) o;
-        return Objects.equals(playlistName, playlist.playlistName) && Objects.equals(getSongDetails(), playlist.getSongDetails());
+        return Objects.equals(getPlaylistName(), playlist.getPlaylistName()) && Objects.equals(getSongDetails(), playlist.getSongDetails());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(playlistName, getSongDetails());
+        return Objects.hash(getPlaylistName(), getSongDetails());
     }
 
     // create toString() method

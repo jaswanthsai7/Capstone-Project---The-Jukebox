@@ -122,6 +122,7 @@ public class PlaylistRepository {
                 song.setArtist(resultSet.getString("artist"));
                 song.setAlbum(resultSet.getString("album"));
                 song.setDuration(resultSet.getString("duration"));
+                song.setSongPath(resultSet.getString("song_path"));
                 songsList.add(song);
                 // set all to the playlist
                 playlist.setPlaylistName(resultSet.getString("playlist_Name"));
