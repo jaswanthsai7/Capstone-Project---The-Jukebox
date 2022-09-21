@@ -1,3 +1,5 @@
 
 b
 2src/main/java/com/niit/jukebox/model/Playlist.java,b\0\b0b19772b683f4a99038876b01be269fb8c52103
+w
+G.idea/sonarlint/issuestore/b/0/b0b19772b683f4a99038876b01be269fb8c52103,6\b\6becf869d6aff355ec4a9348abf2bec3f3f35553
