@@ -18,12 +18,10 @@ import java.util.List;
 public class PlaylistRepository {
     DatabaseService databaseService;
     Connection connection;
-    List<Song> songsList;
 
     public PlaylistRepository() {
         databaseService = new DatabaseService();
         connection = databaseService.getConnection();
-        songsList = new ArrayList<>();
     }
 
     public void createPlaylist(String playlistName) {
@@ -124,8 +122,13 @@ public class PlaylistRepository {
                 song.setDuration(resultSet.getString("duration"));
                 playlistSongs.add(song);
             }
+            // loop to print all the songs
+            for (Song playlistSong : playlistSongs) {
+                System.out.println(playlistSong);
+            }
 
         } catch (SQLException exception) {
+            System.out.println("unable to get the playlist");
             exception.printStackTrace();
         }
     }

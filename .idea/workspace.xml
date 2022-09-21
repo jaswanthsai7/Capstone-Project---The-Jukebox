@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="added forward() method in JukeboxService">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/songs/pain theme.wav" afterDir="false" />
+    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="added songs in resource folder">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/model/Playlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/model/Playlist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/PlaylistRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/PlaylistRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +45,11 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "JAVA"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -59,13 +65,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663675502247</updated>
-    </task>
-    <task id="LOCAL-00005" summary="added mysql-connector-java dependency in pom.xml">
-      <created>1663675935414</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1663675935414</updated>
     </task>
     <task id="LOCAL-00006" summary="added junit test dependency in pom.xml">
       <created>1663676023714</created>
@@ -403,7 +402,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663740473725</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="added songs in resource folder">
+      <created>1663741470706</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1663741470706</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -418,7 +424,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added create database in database_queries.sql" />
     <MESSAGE value="added use database in database_queries.sql" />
     <MESSAGE value="completed the displayAllSongs() method in SongRepository" />
     <MESSAGE value="created GenreComparator.java in Comparator package" />
@@ -443,7 +448,8 @@
     <MESSAGE value="added test directory and test resource folder" />
     <MESSAGE value="completed sortByArtist() in SongRepository" />
     <MESSAGE value="added forward() method in JukeboxService" />
-    <option name="LAST_COMMIT_MESSAGE" value="added forward() method in JukeboxService" />
+    <MESSAGE value="added songs in resource folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="added songs in resource folder" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
