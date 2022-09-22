@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="added allSort method in JukeboxImpl">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/PlaylistRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/PlaylistRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/SongRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/SongRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/DatabaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/DatabaseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/JukeboxService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/JukeboxService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/SortingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/SortingService.java" afterDir="false" />
+    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="added Javadoc for the methods">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/2/422aec29dfdbdaeaa68f2868ea73610763402530" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/9/f9f8ba9379917029b00c2747fad11af96116d64e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/implementation/JukeboxImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/implementation/JukeboxImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +26,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -141,9 +142,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.DatabaseServiceTest" />
         <item itemvalue="JUnit.PlaylistRepositoryTest" />
         <item itemvalue="JUnit.JukeboxServiceTest" />
-        <item itemvalue="JUnit.DatabaseServiceTest" />
         <item itemvalue="JUnit.DatabaseServiceTest.checkConnectionStatusFailure" />
       </list>
     </recent_temporary>
@@ -156,13 +157,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663675502247</updated>
-    </task>
-    <task id="LOCAL-00046" summary="created connectionStatus() method in DatabaseService.java">
-      <created>1663735277150</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1663735277150</updated>
     </task>
     <task id="LOCAL-00047" summary="completed addSongToPlaylist() method in PlaylistRepository">
       <created>1663736447784</created>
@@ -500,7 +494,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663854023941</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="added Javadoc for the methods">
+      <created>1663854471532</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1663854471532</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -515,7 +516,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="completed all the methods in SongRepository" />
     <MESSAGE value="completed displayPlaylist() and addSongsToPlaylist() methods in PlaylistRepository" />
     <MESSAGE value="added searchByName() in SongRepository" />
     <MESSAGE value="replaced the collection sort with list sort in searchByName()" />
@@ -540,7 +540,8 @@
     <MESSAGE value="replaced the logic of methods with stream() in SongRepository" />
     <MESSAGE value="created SortingService and made it extends service" />
     <MESSAGE value="added allSort method in JukeboxImpl" />
-    <option name="LAST_COMMIT_MESSAGE" value="added allSort method in JukeboxImpl" />
+    <MESSAGE value="added Javadoc for the methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Javadoc for the methods" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

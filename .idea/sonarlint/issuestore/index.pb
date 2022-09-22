@@ -19,9 +19,5 @@ f
 6src/test/java/com/niit/jukebox/SongRepositoryTest.java,8\5\85209b1d0abb6ac834eb64acee3ab1b7bb39f46b
 f
 6src/test/java/com/niit/jukebox/JukeboxServiceTest.java,0\7\07be2203d541ae12671839c871d3e574cd249914
-k
-;src/main/java/com/niit/jukebox/service/DatabaseService.java,f\9\f9f8ba9379917029b00c2747fad11af96116d64e
-g
-7src/test/java/com/niit/jukebox/DatabaseServiceTest.java,4\2\422aec29dfdbdaeaa68f2868ea73610763402530
 j
 :src/test/java/com/niit/jukebox/PlaylistRepositoryTest.java,3\8\385d7177fcd691e063c5b07beee850d252f331d9

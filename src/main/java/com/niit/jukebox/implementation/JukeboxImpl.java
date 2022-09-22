@@ -58,7 +58,8 @@ public class JukeboxImpl {
                             System.out.println("Enter Artist Name : \n");
                             input.nextLine();
                             String artistName = input.nextLine();
-                            songRepository.searchByArtist(songs, artistName);
+                            List<Song> songList = songRepository.searchByArtist(songs, artistName);
+                            System.out.println(songList.toString().replaceAll("[\\[\\]]", ""));
                             System.out.println("Enter the Song number to play the song :");
                             int playArtistChoice = input.nextInt();
                             playSong(playArtistChoice);
@@ -162,6 +163,7 @@ public class JukeboxImpl {
             }
             num = input.nextInt();
         } while (num != 0);
+
     }
 
     private void getAllSongs() {
@@ -170,7 +172,7 @@ public class JukeboxImpl {
 
     }
 
-    private void playSong(int playChoice) {
+    public void playSong(int playChoice) {
         List<Song> songs = songRepository.displayAllSongs();
         songs.stream().filter(sortedSongs -> sortedSongs.getSongId() == playChoice).forEachOrdered(sortedSongs -> {
             String songPath = sortedSongs.getSongPath();
