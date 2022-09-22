@@ -5,9 +5,13 @@
  */
 package com.niit.jukebox.service;
 
+import com.niit.jukebox.model.Song;
+
 import javax.sound.sampled.*;
 import java.io.File;
 import java.io.IOException;
+import java.util.Collections;
+import java.util.List;
 
 public class JukeboxService {
     public void Play(String songPath) {
@@ -32,12 +36,12 @@ public class JukeboxService {
         }
     }
 
-    public void stop() {
-        // stop the song
-    }
-
-    public void shuffle() {
+    public void shuffle(List<Song> songsList) {
         // to shuffle the songs
+        Collections.shuffle(songsList);
+        for (Song shuffledSongs : songsList) {
+            System.out.println(shuffledSongs);
+        }
     }
 }
 

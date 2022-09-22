@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="used invalidSongNumberException in addSongToPlaylist() method">
+    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="added PlaylistRepositoryTest">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/b/2b67d7cb4a047d029ed7aff2020ff29c762d98f7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/5/559daba5d38c41e4a196fcccc90b34945ca6276a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/PlaylistRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/PlaylistRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/niit/jukebox/PlaylistRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/niit/jukebox/PlaylistRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/implementation/JukeboxImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/implementation/JukeboxImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/JukeboxService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/JukeboxService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,13 +160,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663675502247</updated>
-    </task>
-    <task id="LOCAL-00031" summary="completed the displayAllSongs() method in SongRepository">
-      <created>1663725473201</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1663725473201</updated>
     </task>
     <task id="LOCAL-00032" summary="created GenreComparator.java in Comparator package">
       <created>1663726636345</created>
@@ -501,7 +497,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663814089927</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="added PlaylistRepositoryTest">
+      <created>1663816688729</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1663816688729</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -516,7 +519,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="changed the fields in Playlist.java" />
     <MESSAGE value="created playlist_queries.sql file" />
     <MESSAGE value="added insert into playlist in playlist_queries.sql" />
     <MESSAGE value="created a song_path.csv file" />
@@ -541,7 +543,8 @@
     <MESSAGE value="added checkSongByIdSuccess() in SongRepositoryTest" />
     <MESSAGE value="created InvalidSongNumberException.java" />
     <MESSAGE value="used invalidSongNumberException in addSongToPlaylist() method" />
-    <option name="LAST_COMMIT_MESSAGE" value="used invalidSongNumberException in addSongToPlaylist() method" />
+    <MESSAGE value="added PlaylistRepositoryTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="added PlaylistRepositoryTest" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
