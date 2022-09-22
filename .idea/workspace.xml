@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="completed JukeboxServiceTest">
+    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="completed DatabaseServiceTest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/SongRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/SongRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/DatabaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/DatabaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/JukeboxService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/JukeboxService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/niit/jukebox/DatabaseServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/niit/jukebox/DatabaseServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/niit/jukebox/JukeboxServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/niit/jukebox/JukeboxServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,22 +39,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/jasva/IdeaProjects/capstone-project-jukebox/src/main/resources/songs&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "last_opened_file_path": "C:/Users/jasva/IdeaProjects/capstone-project-jukebox/src/main/resources/songs",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;JAVA&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "JAVA"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\jasva\IdeaProjects\capstone-project-jukebox\src\main\resources\songs" />
@@ -60,7 +64,7 @@
       <recent name="com.niit.jukebox.repository" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DatabaseServiceTest">
+  <component name="RunManager" selected="JUnit.JukeboxServiceTest">
     <configuration name="DatabaseServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="capstone-project-jukebox" />
       <extension name="coverage">
@@ -141,10 +145,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JukeboxServiceTest" />
         <item itemvalue="JUnit.DatabaseServiceTest" />
         <item itemvalue="JUnit.DatabaseServiceTest.checkConnectionStatusFailure" />
         <item itemvalue="JUnit.DatabaseServiceTest.checkIfConnectionFailure" />
-        <item itemvalue="JUnit.JukeboxServiceTest" />
         <item itemvalue="JUnit.JukeboxServiceTest.checkShuffleSuccess" />
       </list>
     </recent_temporary>
@@ -157,13 +161,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663675502247</updated>
-    </task>
-    <task id="LOCAL-00040" summary="added play() method in JukeboxService">
-      <created>1663732750335</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1663732750335</updated>
     </task>
     <task id="LOCAL-00041" summary="added displayPlaylist() method in PlaylistRepository">
       <created>1663733170886</created>
@@ -501,7 +498,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663841648517</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="completed DatabaseServiceTest">
+      <created>1663843289957</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1663843289957</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -516,7 +520,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="created setup() and tearDown() methods in DatabaseServiceTest" />
     <MESSAGE value="created SongRepositoryTest.java" />
     <MESSAGE value="added setup() and tearDown() in SongRepositoryTest" />
     <MESSAGE value="completed displayPlaylist() in PlaylistRepository" />
@@ -541,7 +544,8 @@
     <MESSAGE value="completed the test cases in SongRepositoryTest" />
     <MESSAGE value="completed PlaylistRepositoryTest" />
     <MESSAGE value="completed JukeboxServiceTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="completed JukeboxServiceTest" />
+    <MESSAGE value="completed DatabaseServiceTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed DatabaseServiceTest" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

@@ -50,7 +50,7 @@ public class DatabaseService {
     }
 
     public String connectionStatus(Connection connection) {
-        if (this.connection != null) {
+        if (connection != null) {
             return "Connection : Active";
         } else {
             return "Connection : InActive";

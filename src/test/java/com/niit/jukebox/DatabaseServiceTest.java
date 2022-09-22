@@ -30,14 +30,14 @@ class DatabaseServiceTest {
     void checkIfConnectionActiveSuccess() {
         boolean connect = databaseService.connect();
         boolean expected = true;
-        Assertions.assertEquals(expected, connect);
+        Assertions.assertEquals(expected, connect, "Please check the connection");
     }
 
     @Test
     void checkConnectionStatusSuccess() {
         String connectionStatus = databaseService.connectionStatus(null);
         String expectedResult = "Connection : InActive";
-        Assertions.assertEquals(expectedResult, connectionStatus);
+        Assertions.assertEquals(expectedResult, connectionStatus, "Please check the connection");
     }
 
     @Test
@@ -46,7 +46,13 @@ class DatabaseServiceTest {
         Connection connection = databaseService.getConnection();
         String actualResult = databaseService.connectionStatus(connection);
         String expectedResult = "Connection : Active";
-        Assertions.assertEquals(expectedResult, actualResult);
+        Assertions.assertEquals(expectedResult, actualResult, "Please check the connection");
+    }
 
+    @Test
+    void checkIfConnectionActiveFailure() {
+        boolean connect = databaseService.connect();
+        boolean expected = true;
+        Assertions.assertEquals(expected, connect, "Please check the connection");
     }
 }

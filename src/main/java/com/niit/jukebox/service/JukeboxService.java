@@ -38,7 +38,7 @@ public class JukeboxService {
 
     public List<Song> shuffle(List<Song> songsList) {
         if (songsList == null) {
-            return null;
+            return Collections.emptyList();
         } else {
             // to shuffle the songs
             Collections.shuffle(songsList);

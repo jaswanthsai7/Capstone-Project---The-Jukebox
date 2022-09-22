@@ -13,6 +13,7 @@ import com.niit.jukebox.service.DatabaseService;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class SongRepository implements Repository {
     List<Song> songsList;
@@ -87,14 +88,8 @@ public class SongRepository implements Repository {
 
     @Override
     public List<Song> searchByName(List<Song> songsList, String songName) {
-        List<Song> allSongsByName = new ArrayList<>();
         songsList.sort((o1, o2) -> String.CASE_INSENSITIVE_ORDER.compare(o1.getSongName(), o2.getSongName()));
-        for (Song songByName : songsList) {
-            if (songByName.getSongName().equals(songName)) {
-                allSongsByName.add(songByName);
-            }
-        }
-        return allSongsByName;
+        return songsList.stream().filter(songByName -> songByName.getSongName().equals(songName)).collect(Collectors.toList());
     }
 
     @Override
