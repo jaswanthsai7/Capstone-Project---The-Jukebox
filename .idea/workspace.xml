@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="added all choice in JukeboxImpl">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/3/43a63d42e58e248c998e828d27b025de5d47b7df" beforeDir="false" />
+    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="replaced the logic of methods with stream() in SongRepository">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/SortingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/5/559daba5d38c41e4a196fcccc90b34945ca6276a" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/implementation/JukeboxImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/implementation/JukeboxImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/SongRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/SongRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/comparator/ArtistComparator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/comparator/GenreComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/comparator/SongComparator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,13 +158,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663675502247</updated>
-    </task>
-    <task id="LOCAL-00043" summary="added shuffle() method in JukeboxService">
-      <created>1663733622176</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1663733622176</updated>
     </task>
     <task id="LOCAL-00044" summary="completed the sortByGenre() in SongRepository">
       <created>1663734505640</created>
@@ -501,7 +495,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663850166941</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="replaced the logic of methods with stream() in SongRepository">
+      <created>1663851599688</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1663851599689</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -516,7 +517,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="completed displayPlaylist() in PlaylistRepository" />
     <MESSAGE value="removed sortByGenre() and added SearchByGenre() method in SongRepository" />
     <MESSAGE value="removed sortByArtist() and added SearchByArtist() method in SongRepository" />
     <MESSAGE value="completed all the methods in SongRepository" />
@@ -541,7 +541,8 @@
     <MESSAGE value="completed DatabaseServiceTest" />
     <MESSAGE value="removed the for loop in searchByName() and added Stream() method" />
     <MESSAGE value="added all choice in JukeboxImpl" />
-    <option name="LAST_COMMIT_MESSAGE" value="added all choice in JukeboxImpl" />
+    <MESSAGE value="replaced the logic of methods with stream() in SongRepository" />
+    <option name="LAST_COMMIT_MESSAGE" value="replaced the logic of methods with stream() in SongRepository" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

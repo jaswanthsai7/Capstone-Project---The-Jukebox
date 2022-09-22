@@ -3,8 +3,6 @@ n
 >src/main/java/com/niit/jukebox/comparator/GenreComparator.java,8\e\8e44788929c279769c1cc975b8a58bc95d053628
 w
 G.idea/sonarlint/issuestore/8/e/8e44788929c279769c1cc975b8a58bc95d053628,4\a\4a7dc6c336e4150ac582d76f7cab237c6612a4bf
-o
-?src/main/java/com/niit/jukebox/comparator/ArtistComparator.java,5\5\559daba5d38c41e4a196fcccc90b34945ca6276a
 b
 2src/main/java/com/niit/jukebox/model/Playlist.java,b\0\b0b19772b683f4a99038876b01be269fb8c52103
 ^
