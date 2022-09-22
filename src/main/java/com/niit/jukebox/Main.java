@@ -1,7 +1,6 @@
 package com.niit.jukebox;
 
 import com.niit.jukebox.model.Song;
-import com.niit.jukebox.repository.PlaylistRepository;
 import com.niit.jukebox.repository.SongRepository;
 
 import java.util.List;
@@ -13,7 +12,6 @@ public class Main {
         Song songById = songRepository.getSongById(2);
         List<Song> alan_walker = songRepository.searchByArtist(songs, "alan walker");
         List<Song> dance = songRepository.searchByGenre(songs, "dance");
-        PlaylistRepository playlistRepository = new PlaylistRepository();
-        playlistRepository.displayPlaylist("Jaswanth");
+        System.out.println(dance);
     }
 }

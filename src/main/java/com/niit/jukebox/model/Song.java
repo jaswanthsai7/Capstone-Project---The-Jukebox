@@ -106,6 +106,6 @@ public class Song {
     // create toString() method
     @Override
     public String toString() {
-        return "Song{" + "songId=" + songId + ", songName='" + songName + '\'' + ", genre='" + genre + '\'' + ", artist='" + artist + '\'' + ", album='" + album + '\'' + ", duration='" + duration + '\'' + ", songPath='" + songPath + '\'' + '}';
+        return String.format("%s\t%s\t%s\t%s\t%s\t%s\t%s", songId, songName, genre, artist, album, duration, songPath + "\n");
     }
 }

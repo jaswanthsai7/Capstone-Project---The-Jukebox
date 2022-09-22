@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="completed displayPlaylist() and addSongsToPlaylist() methods in PlaylistRepository">
-      <change beforePath="$PROJECT_DIR$/.idea/csv-plugin.xml" beforeDir="false" />
+    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="replaced the collection sort with list sort in searchByName()">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/3/e397c9679926b9efbe0c77c6701f7254fbd939be" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/Repository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/SongRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/SongRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/song_path.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/model/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/model/Song.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,20 +122,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663675502247</updated>
-    </task>
-    <task id="LOCAL-00023" summary="added URL,USERNAME,PASSWORD fields in DatabaseService.java">
-      <created>1663679961164</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1663679961164</updated>
-    </task>
-    <task id="LOCAL-00024" summary="added field for the connection in DatabaseService.java">
-      <created>1663680041432</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1663680041432</updated>
     </task>
     <task id="LOCAL-00025" summary="added constructor in DatabaseService.java">
       <created>1663680119567</created>
@@ -469,7 +452,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663782494100</updated>
     </task>
-    <option name="localTasksCounter" value="72" />
+    <task id="LOCAL-00072" summary="added searchByName() in SongRepository">
+      <created>1663809230013</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1663809230013</updated>
+    </task>
+    <task id="LOCAL-00073" summary="replaced the collection sort with list sort in searchByName()">
+      <created>1663809326599</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1663809326599</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -484,8 +481,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="completed addSongToPlaylist() method in PlaylistRepository" />
-    <MESSAGE value="added create table in database_queries.sql" />
     <MESSAGE value="completed removePlaylist() method in PlaylistRepository" />
     <MESSAGE value="completed displayPlaylist() method in PlaylistRepository" />
     <MESSAGE value="added test directory and test resource folder" />
@@ -509,7 +504,9 @@
     <MESSAGE value="removed sortByArtist() and added SearchByArtist() method in SongRepository" />
     <MESSAGE value="completed all the methods in SongRepository" />
     <MESSAGE value="completed displayPlaylist() and addSongsToPlaylist() methods in PlaylistRepository" />
-    <option name="LAST_COMMIT_MESSAGE" value="completed displayPlaylist() and addSongsToPlaylist() methods in PlaylistRepository" />
+    <MESSAGE value="added searchByName() in SongRepository" />
+    <MESSAGE value="replaced the collection sort with list sort in searchByName()" />
+    <option name="LAST_COMMIT_MESSAGE" value="replaced the collection sort with list sort in searchByName()" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
