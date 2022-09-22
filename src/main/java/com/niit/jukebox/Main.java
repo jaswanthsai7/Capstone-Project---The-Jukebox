@@ -14,6 +14,6 @@ public class Main {
         List<Song> alan_walker = songRepository.searchByArtist(songs, "alan walker");
         List<Song> dance = songRepository.searchByGenre(songs, "dance");
         PlaylistRepository playlistRepository = new PlaylistRepository();
-        playlistRepository.removePlaylist("Jaswanth");
+        System.out.println(songById);
     }
 }
