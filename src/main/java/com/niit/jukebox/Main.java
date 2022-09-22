@@ -2,7 +2,6 @@ package com.niit.jukebox;
 
 import com.niit.jukebox.exception.InvalidSongNumberException;
 import com.niit.jukebox.exception.PlaylistNotCreatedException;
-import com.niit.jukebox.model.Playlist;
 import com.niit.jukebox.model.Song;
 import com.niit.jukebox.repository.PlaylistRepository;
 import com.niit.jukebox.repository.SongRepository;
@@ -26,11 +25,10 @@ public class Main {
             switch (choice) {
                 case 1:
                     jukeboxService.getAllSongs();
-                    System.out.println("Enter 2 to exit");
+                    System.out.println("Enter 21 to exit");
                     int enteredNumber = input.nextInt();
-                    if (enteredNumber == 2) {
-                        break;
-                    }
+                    jukeboxService.playSong(enteredNumber);
+                    break;
                 case 2:
                     System.out.println("Search songs based on \n1.Artist \n2.Genre \n3.Song Name");
                     System.out.println("Enter search Type : ");
@@ -71,7 +69,7 @@ public class Main {
                             System.out.println("Enter the Song number to play the song :");
                             int playGenreChoice = input.nextInt();
                             jukeboxService.playSong(playGenreChoice);
-
+                            break;
                         }
                         default:
                             return;
@@ -94,16 +92,7 @@ public class Main {
                     }
                     System.out.println("1.Display Playlist  \n2.exit");
                     int playlistChoice = input.nextInt();
-                    if (playlistChoice == 1) {
-                        System.out.println("Enter Playlist Name :");
-                        input.nextLine();
-                        String name = input.nextLine();
-                        List<Playlist> playlists = playlistRepository.displayPlaylist(name);
-                        System.out.println(playlists.toString().replaceAll("[\\[\\]]", ""));
-                        System.out.println("1.Enter song Number to play the song from playlist \n2.exit");
-                        int playlistPlayChoice = input.nextInt();
-                        jukeboxService.playSong(playlistPlayChoice);
-                    }
+                    jukeboxService.displayPlaylistByName(playlistChoice);
                     break;
                 }
                 case 4:
@@ -151,7 +140,7 @@ public class Main {
                 case 9:
                     System.out.println("-------------Thanks for using Jukebox-------");
                     System.out.println("---------------See you again soon-------------");
-                    break;
+                    return;
                 default:
                     return;
             }

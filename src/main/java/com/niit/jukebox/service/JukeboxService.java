@@ -53,7 +53,7 @@ public class JukeboxService {
             clip.start();
             System.out.println("Enter 1 to stop and 2 to exit");
             int enteredNumber = input.nextInt();
-            if (enteredNumber == 1) {
+            if (enteredNumber == 0) {
                 clip.stop();
             } else {
                 System.out.println("Song Stopped");
@@ -108,10 +108,10 @@ public class JukeboxService {
             playlistRepository.displayAllPlaylists();
         } else if (displayChoice == 2) {
             System.out.println("Enter name of the Playlist : ");
-            input.nextLine();
             String playlistName = input.nextLine();
             List<Playlist> playlists = playlistRepository.displayPlaylist(playlistName);
             System.out.println(playlists.toString().replaceAll("[\\[\\]]", ""));
+            System.out.println("Enter 2 to exit");
         }
     }
 
@@ -133,6 +133,17 @@ public class JukeboxService {
 
     public void displayDetails() {
         System.out.println("1.Display All Songs \n2.Search songs \n3.Create a playlist \n4.Delete Playlist \n5.Add songs to Playlist \n6.Display Playlist \n7.shuffle the songs \n8.Sort songs \n9.exit");
+    }
+
+    public void displayPlaylistByName(int playlistChoice) {
+        if (playlistChoice == 1) {
+            System.out.println("Enter Playlist Name :");
+            input.nextLine();
+            String name = input.nextLine();
+            List<Playlist> playlists = playlistRepository.displayPlaylist(name);
+            System.out.println(playlists.toString().replaceAll("[\\[\\]]", ""));
+            System.out.println("Enter any number to exit");
+        }
     }
 }
 

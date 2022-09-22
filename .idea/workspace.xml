@@ -4,28 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="changed the JukeboxImpl">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/songs/finesse.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/songs/godsplan.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/songs/shakeitup.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/songs/titanium.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/songs/unstoppable.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/songs/wakemeup.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/songs/wedonttalkanymore.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/3/e397c9679926b9efbe0c77c6701f7254fbd939be" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="added all implementation in main method">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/0/101855eb3c04da5d4fb33cf6ea4a3d1968d1ad03" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/5/15561a97565abc3be37a5453b7f5d18b44d903cb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hs_err_pid14260.log" beforeDir="false" afterPath="$PROJECT_DIR$/hs_err_pid14260.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hs_err_pid22276.log" beforeDir="false" afterPath="$PROJECT_DIR$/hs_err_pid22276.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/implementation/JukeboxImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/implementation/JukeboxImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/model/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/model/Song.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/DatabaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/DatabaseService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/JukeboxService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/JukeboxService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/niit/jukebox/DatabaseServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/niit/jukebox/service/DatabaseServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/niit/jukebox/JukeboxServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/niit/jukebox/service/JukeboxServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/niit/jukebox/PlaylistRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/niit/jukebox/repository/PlaylistRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/niit/jukebox/SongRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/niit/jukebox/repository/SongRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,13 +153,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663675502247</updated>
-    </task>
-    <task id="LOCAL-00048" summary="added create table in database_queries.sql">
-      <created>1663736920058</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1663736920058</updated>
     </task>
     <task id="LOCAL-00049" summary="completed removePlaylist() method in PlaylistRepository">
       <created>1663737356280</created>
@@ -512,7 +490,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663856477751</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="added all implementation in main method">
+      <created>1663863205101</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1663863205101</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -527,7 +512,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added searchByName() in SongRepository" />
     <MESSAGE value="replaced the collection sort with list sort in searchByName()" />
     <MESSAGE value="changed the toString() method in Song.java" />
     <MESSAGE value="completed all the methods in PlaylistRepository" />
@@ -552,7 +536,8 @@
     <MESSAGE value="added allSort method in JukeboxImpl" />
     <MESSAGE value="added Javadoc for the methods" />
     <MESSAGE value="changed the JukeboxImpl" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed the JukeboxImpl" />
+    <MESSAGE value="added all implementation in main method" />
+    <option name="LAST_COMMIT_MESSAGE" value="added all implementation in main method" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
