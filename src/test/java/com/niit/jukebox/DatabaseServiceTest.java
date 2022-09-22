@@ -11,7 +11,9 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class DatabaseServiceTest {
+import java.sql.Connection;
+
+class DatabaseServiceTest {
     DatabaseService databaseService;
 
     @BeforeEach
@@ -25,14 +27,26 @@ public class DatabaseServiceTest {
     }
 
     @Test
-    public void checkIfConnectionActiveSuccess() {
+    void checkIfConnectionActiveSuccess() {
         boolean connect = databaseService.connect();
         boolean expected = true;
         Assertions.assertEquals(expected, connect);
     }
 
     @Test
-    public void checkIfConnectionFailure() {
-        databaseService.connectionStatus();
+    void checkConnectionStatusSuccess() {
+        String connectionStatus = databaseService.connectionStatus(null);
+        String expectedResult = "Connection : InActive";
+        Assertions.assertEquals(expectedResult, connectionStatus);
+    }
+
+    @Test
+    void checkConnectionStatusFailure() {
+        databaseService.connect();
+        Connection connection = databaseService.getConnection();
+        String actualResult = databaseService.connectionStatus(connection);
+        String expectedResult = "Connection : Active";
+        Assertions.assertEquals(expectedResult, actualResult);
+
     }
 }

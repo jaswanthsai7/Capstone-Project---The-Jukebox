@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="completed PlaylistRepositoryTest">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/implementation/JukeboxImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/implementation/JukeboxImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/JukeboxService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/JukeboxService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/niit/jukebox/JukeboxServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/niit/jukebox/JukeboxServiceTest.java" afterDir="false" />
+    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="completed JukeboxServiceTest">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/DatabaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/DatabaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/niit/jukebox/DatabaseServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/niit/jukebox/DatabaseServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,9 +60,8 @@
       <recent name="com.niit.jukebox.repository" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.JukeboxServiceTest">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.niit.jukebox.Main" />
+  <component name="RunManager" selected="JUnit.DatabaseServiceTest">
+    <configuration name="DatabaseServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="capstone-project-jukebox" />
       <extension name="coverage">
         <pattern>
@@ -70,6 +69,41 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.niit.jukebox" />
+      <option name="MAIN_CLASS_NAME" value="com.niit.jukebox.DatabaseServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DatabaseServiceTest.checkConnectionStatusFailure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="capstone-project-jukebox" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.niit.jukebox.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.niit.jukebox" />
+      <option name="MAIN_CLASS_NAME" value="com.niit.jukebox.DatabaseServiceTest" />
+      <option name="METHOD_NAME" value="checkConnectionStatusFailure" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DatabaseServiceTest.checkIfConnectionFailure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="capstone-project-jukebox" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.niit.jukebox.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.niit.jukebox" />
+      <option name="MAIN_CLASS_NAME" value="com.niit.jukebox.DatabaseServiceTest" />
+      <option name="METHOD_NAME" value="checkIfConnectionFailure" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -105,44 +139,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlaylistRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="capstone-project-jukebox" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.niit.jukebox.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.niit.jukebox" />
-      <option name="MAIN_CLASS_NAME" value="com.niit.jukebox.PlaylistRepositoryTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PlaylistRepositoryTest.checkDisplayPlaylistByName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="capstone-project-jukebox" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.niit.jukebox.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.niit.jukebox" />
-      <option name="MAIN_CLASS_NAME" value="com.niit.jukebox.PlaylistRepositoryTest" />
-      <option name="METHOD_NAME" value="checkDisplayPlaylistByName" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DatabaseServiceTest" />
+        <item itemvalue="JUnit.DatabaseServiceTest.checkConnectionStatusFailure" />
+        <item itemvalue="JUnit.DatabaseServiceTest.checkIfConnectionFailure" />
         <item itemvalue="JUnit.JukeboxServiceTest" />
         <item itemvalue="JUnit.JukeboxServiceTest.checkShuffleSuccess" />
-        <item itemvalue="JUnit.PlaylistRepositoryTest" />
-        <item itemvalue="JUnit.PlaylistRepositoryTest.checkDisplayPlaylistByName" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -154,13 +157,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663675502247</updated>
-    </task>
-    <task id="LOCAL-00039" summary="added removePlaylist() method in PlaylistRepository">
-      <created>1663732530315</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1663732530315</updated>
     </task>
     <task id="LOCAL-00040" summary="added play() method in JukeboxService">
       <created>1663732750335</created>
@@ -498,7 +494,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663840998385</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="completed JukeboxServiceTest">
+      <created>1663841648517</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1663841648517</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -513,7 +516,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="created DatabaseTest.java in test folder" />
     <MESSAGE value="created setup() and tearDown() methods in DatabaseServiceTest" />
     <MESSAGE value="created SongRepositoryTest.java" />
     <MESSAGE value="added setup() and tearDown() in SongRepositoryTest" />
@@ -538,7 +540,8 @@
     <MESSAGE value="added setup() and teatDown() in JukeboxServiceTest" />
     <MESSAGE value="completed the test cases in SongRepositoryTest" />
     <MESSAGE value="completed PlaylistRepositoryTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="completed PlaylistRepositoryTest" />
+    <MESSAGE value="completed JukeboxServiceTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed JukeboxServiceTest" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
