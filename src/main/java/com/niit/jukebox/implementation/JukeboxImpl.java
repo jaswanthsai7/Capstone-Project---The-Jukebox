@@ -44,7 +44,7 @@ public class JukeboxImpl {
                 if (sortedSongs.getSongId() == playChoice) {
                     String songPath = sortedSongs.getSongPath();
                     System.out.println("Current Playing song " + sortedSongs.getSongName() + " Song Duration :" + sortedSongs.getDuration());
-                    jukeboxService.Play(songPath);
+                    jukeboxService.play(songPath);
 
                 }
             }
@@ -65,7 +65,7 @@ public class JukeboxImpl {
                     if (sortedSongs.getSongId() == playChoice) {
                         String songPath = sortedSongs.getSongPath();
                         System.out.println("Current Playing song " + sortedSongs.getSongName() + " Song Duration :" + sortedSongs.getDuration());
-                        jukeboxService.Play(songPath);
+                        jukeboxService.play(songPath);
 
                     }
                 }
@@ -83,7 +83,7 @@ public class JukeboxImpl {
                     if (sortedSongs.getSongId() == playChoice) {
                         String songPath = sortedSongs.getSongPath();
                         System.out.println("Current Playing song " + sortedSongs.getSongName() + " Song Duration :" + sortedSongs.getDuration());
-                        jukeboxService.Play(songPath);
+                        jukeboxService.play(songPath);
 
                     }
                 }
@@ -119,7 +119,7 @@ public class JukeboxImpl {
                         if (sortedSongs.getSongId() == playlistPlayChoice) {
                             String songPath = sortedSongs.getSongPath();
                             System.out.println("Current Playing song " + sortedSongs.getSongName() + " Song Duration :" + sortedSongs.getDuration());
-                            jukeboxService.Play(songPath);
+                            jukeboxService.play(songPath);
 
                         }
                     }
@@ -168,7 +168,7 @@ public class JukeboxImpl {
                 if (sortedSongs.getSongId() == playlistPlayChoice) {
                     String songPath = sortedSongs.getSongPath();
                     System.out.println("Current Playing song " + sortedSongs.getSongName() + " Song Duration :" + sortedSongs.getDuration());
-                    jukeboxService.Play(songPath);
+                    jukeboxService.play(songPath);
 
                 }
             }

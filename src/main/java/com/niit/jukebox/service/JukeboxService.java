@@ -14,7 +14,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class JukeboxService {
-    public void Play(String songPath) {
+    public void play(String songPath) {
         // create an object of FIle class
         File songFile = new File(songPath);
         // an object of the AudioInputStream class
