@@ -5,7 +5,6 @@
  */
 package com.niit.jukebox;
 
-import com.niit.jukebox.exception.InvalidSongNumberException;
 import com.niit.jukebox.model.Playlist;
 import com.niit.jukebox.model.Song;
 import com.niit.jukebox.repository.PlaylistRepository;
@@ -14,10 +13,9 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
 import java.util.List;
 
-public class PlaylistRepositoryTest {
+class PlaylistRepositoryTest {
     PlaylistRepository playlistRepository;
 
     @BeforeEach
@@ -31,13 +29,16 @@ public class PlaylistRepositoryTest {
     }
 
     @Test
-    public void CheckAddSongsToPlaylistSuccess() throws InvalidSongNumberException {
-        List<Song> songs = new ArrayList<>();
-        songs.add(new Song(2, "faded", "dance", "alan walker", "different world", "03:31", "src/main/resources/songs/faded.wav"));
-        Playlist expectedResult = new Playlist(2, "test", songs);
-        List<Playlist> playlists = null;
-        playlists = playlistRepository.displayPlaylist("test");
-        Assertions.assertEquals(expectedResult, playlists);
+    void checkDisplayPlaylistByNameSuccess() {
+        List<Playlist> playlists = playlistRepository.displayPlaylist("tony");
+        List<Song> songList = List.of(new Song(2, "faded", "dance", "alan walker", "different world", "03:31", "src/main/resources/songs/faded.wav"));
+        Playlist actualResult = new Playlist(2, "tony", songList);
+        Assertions.assertEquals(playlists.toString().replaceAll("[\\[\\]]", ""), actualResult.toString().replaceAll("[\\[\\]]", ""));
+    }
 
+    @Test
+    void checkDisplayPlaylistByNameFailure() {
+        List<Playlist> playlists = playlistRepository.displayPlaylist(null);
+        Assertions.assertNull(playlists);
     }
 }

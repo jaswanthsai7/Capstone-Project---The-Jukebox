@@ -110,37 +110,41 @@ public class PlaylistRepository {
     }
 
     public List<Playlist> displayPlaylist(String playlistName) {
-        // create a list object
-        List<Song> songsList = new ArrayList<>();
-        List<Playlist> songsInPlaylist = new ArrayList<>();
-        // get the database connection
-        databaseService.connect();
-        connection = databaseService.getConnection();
-        // write the query
-        String displayQuery = "SELECT * FROM `jukebox`.`playlist` WHERE `playlist_name`=?";
-        // create an object of prepared statement
-        try (PreparedStatement preparedStatement = connection.prepareStatement(displayQuery)) {
-            preparedStatement.setString(1, playlistName);
-            ResultSet resultSet = preparedStatement.executeQuery();
-            // use the while loop to iterate over result set
-            Playlist playlist = new Playlist();
-            while (resultSet.next()) {
-                playlist.setPlaylistId(resultSet.getInt("playlist_id"));
-                playlist.setPlaylistName(resultSet.getString("playlist_Name"));
-                String songIds = resultSet.getString("song_id");
-                songIds = songIds.replaceAll("[\\[\\]]", "");
-                String[] songs = songIds.split(",");
-                for (String songName : songs) {
-                    Song songById = songRepository.getSongById(Integer.parseInt(songName.trim()));
-                    songsList.add(songById);
-                    playlist.setSongDetails(songsList);
+        if (playlistName == null) {
+            return null;
+        } else {
+            // create a list object
+            List<Song> songsList = new ArrayList<>();
+            List<Playlist> songsInPlaylist = new ArrayList<>();
+            // get the database connection
+            databaseService.connect();
+            connection = databaseService.getConnection();
+            // write the query
+            String displayQuery = "SELECT * FROM `jukebox`.`playlist` WHERE `playlist_name`=?";
+            // create an object of prepared statement
+            try (PreparedStatement preparedStatement = connection.prepareStatement(displayQuery)) {
+                preparedStatement.setString(1, playlistName);
+                ResultSet resultSet = preparedStatement.executeQuery();
+                // use the while loop to iterate over result set
+                Playlist playlist = new Playlist();
+                while (resultSet.next()) {
+                    playlist.setPlaylistId(resultSet.getInt("playlist_id"));
+                    playlist.setPlaylistName(resultSet.getString("playlist_Name"));
+                    String songIds = resultSet.getString("song_id");
+                    songIds = songIds.replaceAll("[\\[\\]]", "");
+                    String[] songs = songIds.split(",");
+                    for (String songName : songs) {
+                        Song songById = songRepository.getSongById(Integer.parseInt(songName.trim()));
+                        songsList.add(songById);
+                        playlist.setSongDetails(songsList);
+                    }
+                    songsInPlaylist.add(playlist);
                 }
-                songsInPlaylist.add(playlist);
+            } catch (SQLException exception) {
+                exception.printStackTrace();
             }
-        } catch (SQLException exception) {
-            exception.printStackTrace();
+            return songsInPlaylist;
         }
-        return songsInPlaylist;
     }
 
     public List<Playlist> displayAllPlaylists() {
