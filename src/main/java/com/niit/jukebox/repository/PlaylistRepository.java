@@ -13,6 +13,7 @@ import com.niit.jukebox.service.DatabaseService;
 
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class PlaylistRepository {
@@ -111,7 +112,7 @@ public class PlaylistRepository {
 
     public List<Playlist> displayPlaylist(String playlistName) {
         if (playlistName == null) {
-            return null;
+            return Collections.emptyList();
         } else {
             // create a list object
             List<Song> songsList = new ArrayList<>();
@@ -147,7 +148,7 @@ public class PlaylistRepository {
         }
     }
 
-    public List<Playlist> displayAllPlaylists() {
+    public void displayAllPlaylists() {
         // create a list object
         List<Playlist> songsInPlaylist = new ArrayList<>();
         // get the database connection
@@ -175,6 +176,6 @@ public class PlaylistRepository {
             System.out.println("unable to get the playlist");
             exception.printStackTrace();
         }
-        return songsInPlaylist;
+        System.out.println(songsInPlaylist.toString().replaceAll("[\\[\\]]", ""));
     }
 }

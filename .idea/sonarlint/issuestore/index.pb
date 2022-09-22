@@ -5,8 +5,6 @@ w
 G.idea/sonarlint/issuestore/f/0/f0456eae6e19c4162d1e61a24c360e695269049e,4\3\43a63d42e58e248c998e828d27b025de5d47b7df
 w
 G.idea/sonarlint/issuestore/8/e/8e44788929c279769c1cc975b8a58bc95d053628,4\a\4a7dc6c336e4150ac582d76f7cab237c6612a4bf
-i
-9src/main/java/com/niit/jukebox/repository/Repository.java,c\6\c67a1a7b900c7a39f72ca71a77ea2c57d297237c
 o
 ?src/main/java/com/niit/jukebox/comparator/ArtistComparator.java,5\5\559daba5d38c41e4a196fcccc90b34945ca6276a
 b

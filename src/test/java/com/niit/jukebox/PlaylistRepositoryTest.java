@@ -13,6 +13,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.Collections;
 import java.util.List;
 
 class PlaylistRepositoryTest {
@@ -39,6 +40,6 @@ class PlaylistRepositoryTest {
     @Test
     void checkDisplayPlaylistByNameFailure() {
         List<Playlist> playlists = playlistRepository.displayPlaylist(null);
-        Assertions.assertNull(playlists);
+        Assertions.assertEquals(Collections.emptyList(), playlists);
     }
 }
