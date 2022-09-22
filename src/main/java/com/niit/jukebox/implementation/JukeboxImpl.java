@@ -29,7 +29,7 @@ public class JukeboxImpl {
         System.out.println("===================================================");
         System.out.println("                  Welcome to Jukebox               ");
         System.out.println("===================================================\n");
-        System.out.println("1.Display All Songs \n2.Search songs \n3.Create a playlist \n4.Delete Playlist \n5.Add songs to Playlist \n6.Display Playlist \n7.exit");
+        System.out.println("1.Display All Songs \n2.Search songs \n3.Create a playlist \n4.Delete Playlist \n5.Add songs to Playlist \n6.Display Playlist \n7.shuffle the songs \n8.exit");
         Scanner input = new Scanner(System.in);
         System.out.println("Enter your choice : ");
         int choice = input.nextInt();
@@ -121,7 +121,13 @@ public class JukeboxImpl {
                 case 2:
                     break;
             }
-        } else if (choice == 6) {
+        } else if (choice == 4) {
+            System.out.println("Enter the Name of the Playlist to delete");
+            playlistRepository.displayAllPlaylists();
+
+        } else if (choice == 8) {
+            System.out.println("-------------Thanks for using Jukebox-------");
+            System.out.println("---------------See you again soon-------------");
         }
     }
 }

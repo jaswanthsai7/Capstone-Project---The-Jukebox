@@ -126,24 +126,56 @@ public class PlaylistRepository {
                 playlist.setPlaylistId(resultSet.getInt("playlist_id"));
                 playlist.setPlaylistName(resultSet.getString("playlist_Name"));
                 String songIds = resultSet.getString("song_id");
-                //String songs = songIds.trim().replace("\\[\\]", "");
+                songIds = songIds.trim().replace("\\[\\]", "");
                 String[] songs = songIds.split(",");
-                for (int i = 0; i < songs.length; i++) {
+                for (String songName : songs) {
                     //String[] split = songs.split(",");
-                    Song songById = songRepository.getSongById(Integer.parseInt(songs[i].trim()));
+                    Song songById = songRepository.getSongById(Integer.parseInt(songName.trim()));
                     songsList.add(songById);
                     playlist.setSongDetails(songsList);
                 }
                 songsInPlaylist.add(playlist);
             }
-//            // loop to print all the songs
-//            for (Playlist playlistSongs : songsInPlaylist) {
-//                System.out.println(playlistSongs);
-//            }
         } catch (SQLException exception) {
             System.out.println("unable to get the playlist");
             exception.printStackTrace();
         }
         return songsInPlaylist;
+    }
+
+    public List<Playlist> displayAllPlaylists() {
+        // create a list object
+        List<Song> songsList = new ArrayList<>();
+        List<Playlist> songsInPlaylist = new ArrayList<>();
+        // get the database connection
+        databaseService.connect();
+        connection = databaseService.getConnection();
+        // write the query
+        String displayQuery = "SELECT * FROM `jukebox`.`playlist`";
+        // create an object of prepared statement
+        try (Statement statement = connection.createStatement()) {
+            ResultSet resultSet = statement.executeQuery(displayQuery);
+            // use the while loop to iterate over result set
+            Playlist playlist = new Playlist();
+            while (resultSet.next()) {
+                playlist.setPlaylistId(resultSet.getInt("playlist_id"));
+                playlist.setPlaylistName(resultSet.getString("playlist_Name"));
+                String songIds = resultSet.getString("song_id");
+                songIds = songIds.trim().replace("\\[\\]", "");
+                String[] songs = songIds.split(",");
+                for (String songName : songs) {
+                    //String[] split = songs.split(",");
+                    Song songById = songRepository.getSongById(Integer.parseInt(songName.trim()));
+                    songsList.add(songById);
+                    playlist.setSongDetails(songsList);
+                }
+                songsInPlaylist.add(playlist);
+            }
+        } catch (SQLException exception) {
+            System.out.println("unable to get the playlist");
+            exception.printStackTrace();
+        }
+        return songsInPlaylist;
+
     }
 }
