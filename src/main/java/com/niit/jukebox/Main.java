@@ -12,7 +12,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int num;
+        int choice;
         do {
 
             SongRepository songRepository = new SongRepository();
@@ -21,7 +21,7 @@ public class Main {
             jukeboxService.displayDetails();
             System.out.println("Enter your choice : ");
             Scanner input = new Scanner(System.in);
-            int choice = input.nextInt();
+            choice = input.nextInt();
             switch (choice) {
                 case 1:
                     jukeboxService.getAllSongs();
@@ -56,7 +56,6 @@ public class Main {
                             System.out.println("Enter the Song number to play the song :");
                             int playGenreChoice = input.nextInt();
                             jukeboxService.playSong(playGenreChoice);
-
                             break;
                         }
                         case 3: {
@@ -90,9 +89,9 @@ public class Main {
                         System.out.println("unable to create playlist");
                         exception.printStackTrace();
                     }
-                    System.out.println("1.Display Playlist  \n2.exit");
+                    System.out.println("1.Display all Playlist  2.Display your playlist 0.exit");
                     int playlistChoice = input.nextInt();
-                    jukeboxService.displayPlaylistByName(playlistChoice);
+                    jukeboxService.displayPlaylist(playlistChoice);
                     break;
                 }
                 case 4:
@@ -135,6 +134,9 @@ public class Main {
                     System.out.println("1.SongName  2.Artist  3.Genre ");
                     int sortingChoice = input.nextInt();
                     jukeboxService.allSort(sortingChoice);
+                    System.out.println("Enter song Number to play the song from playlist");
+                    int playlistPlayChoice = input.nextInt();
+                    jukeboxService.playSong(playlistPlayChoice);
                     break;
                 }
                 case 9:
@@ -144,8 +146,7 @@ public class Main {
                 default:
                     return;
             }
-            num = input.nextInt();
-        } while (num != 0);
+        } while (true);
 
     }
 }

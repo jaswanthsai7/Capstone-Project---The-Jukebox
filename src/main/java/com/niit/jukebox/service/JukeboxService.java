@@ -111,7 +111,6 @@ public class JukeboxService {
             String playlistName = input.nextLine();
             List<Playlist> playlists = playlistRepository.displayPlaylist(playlistName);
             System.out.println(playlists.toString().replaceAll("[\\[\\]]", ""));
-            System.out.println("Enter 2 to exit");
         }
     }
 
