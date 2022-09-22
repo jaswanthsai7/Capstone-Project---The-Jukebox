@@ -44,9 +44,6 @@ public class JukeboxImpl {
             switch (choice) {
                 case 1:
                     getAllSongs();
-                    System.out.println("Enter the Song number to play the song :");
-                    int playChoice = input.nextInt();
-                    playSong(playChoice);
                     break;
                 case 2:
                     System.out.println("Search songs based on \n1.Artist \n2.Genre \n3.Song Name");
@@ -63,7 +60,6 @@ public class JukeboxImpl {
                             System.out.println("Enter the Song number to play the song :");
                             int playArtistChoice = input.nextInt();
                             playSong(playArtistChoice);
-
                             break;
                         }
                         case 2: {
@@ -166,7 +162,7 @@ public class JukeboxImpl {
 
     }
 
-    private void getAllSongs() {
+    public void getAllSongs() {
         List<Song> songs = songRepository.displayAllSongs();
         System.out.println(songs.toString().replaceAll("[\\[\\]]", ""));
 
@@ -181,7 +177,7 @@ public class JukeboxImpl {
         });
     }
 
-    private void displayPlaylist(int displayChoice) {
+    public void displayPlaylist(int displayChoice) {
         if (displayChoice == 1) {
             playlistRepository.displayAllPlaylists();
         } else if (displayChoice == 2) {
@@ -193,7 +189,7 @@ public class JukeboxImpl {
         }
     }
 
-    private void allSort(int sortingChoice) {
+    public void allSort(int sortingChoice) {
         switch (sortingChoice) {
             case 1:
                 sortingService.sortByName();

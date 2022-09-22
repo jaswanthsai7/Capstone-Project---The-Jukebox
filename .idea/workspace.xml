@@ -4,12 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="added Javadoc for the methods">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/2/422aec29dfdbdaeaa68f2868ea73610763402530" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/9/f9f8ba9379917029b00c2747fad11af96116d64e" beforeDir="false" />
+    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="changed the JukeboxImpl">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/songs/finesse.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/songs/godsplan.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/songs/shakeitup.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/songs/titanium.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/songs/unstoppable.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/songs/wakemeup.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/songs/wedonttalkanymore.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/3/e397c9679926b9efbe0c77c6701f7254fbd939be" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hs_err_pid14260.log" beforeDir="false" afterPath="$PROJECT_DIR$/hs_err_pid14260.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hs_err_pid22276.log" beforeDir="false" afterPath="$PROJECT_DIR$/hs_err_pid22276.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/implementation/JukeboxImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/implementation/JukeboxImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/model/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/model/Song.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/DatabaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/DatabaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/JukeboxService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/JukeboxService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/niit/jukebox/DatabaseServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/niit/jukebox/service/DatabaseServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/niit/jukebox/JukeboxServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/niit/jukebox/service/JukeboxServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/niit/jukebox/PlaylistRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/niit/jukebox/repository/PlaylistRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/niit/jukebox/SongRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/niit/jukebox/repository/SongRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,29 +55,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/jasva/IdeaProjects/Sprint5_Wat_A_Pizza&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "last_opened_file_path": "C:/Users/jasva/IdeaProjects/capstone-project-jukebox/src/main/resources/songs",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;JAVA&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "JAVA"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\jasva\IdeaProjects\capstone-project-jukebox\src\main\resources\songs" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="com.niit.jukebox.repository" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.niit.jukebox.repository" />
+      <recent name="com.niit.jukebox.service" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
@@ -70,7 +90,7 @@
       <module name="capstone-project-jukebox" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.niit.jukebox.*" />
+          <option name="PATTERN" value="com.niit.jukebox.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -78,48 +98,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DatabaseServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in capstone-project-jukebox" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="capstone-project-jukebox" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.niit.jukebox.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.niit.jukebox" />
-      <option name="MAIN_CLASS_NAME" value="com.niit.jukebox.DatabaseServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DatabaseServiceTest.checkConnectionStatusFailure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="capstone-project-jukebox" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.niit.jukebox.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.niit.jukebox" />
-      <option name="MAIN_CLASS_NAME" value="com.niit.jukebox.DatabaseServiceTest" />
-      <option name="METHOD_NAME" value="checkConnectionStatusFailure" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JukeboxServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="capstone-project-jukebox" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.niit.jukebox.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.niit.jukebox" />
-      <option name="MAIN_CLASS_NAME" value="com.niit.jukebox.JukeboxServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -128,13 +110,42 @@
       <module name="capstone-project-jukebox" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.niit.jukebox.*" />
+          <option name="PATTERN" value="com.niit.jukebox.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.niit.jukebox" />
-      <option name="MAIN_CLASS_NAME" value="com.niit.jukebox.PlaylistRepositoryTest" />
+      <option name="PACKAGE_NAME" value="com.niit.jukebox.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.niit.jukebox.repository.PlaylistRepositoryTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SongRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="capstone-project-jukebox" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.niit.jukebox.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.niit.jukebox.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.niit.jukebox.repository.SongRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.niit.jukebox.service in capstone-project-jukebox" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="capstone-project-jukebox" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.niit.jukebox.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.niit.jukebox.service" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -142,10 +153,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.DatabaseServiceTest" />
+        <item itemvalue="JUnit.com.niit.jukebox.service in capstone-project-jukebox" />
+        <item itemvalue="JUnit.All in capstone-project-jukebox" />
+        <item itemvalue="JUnit.SongRepositoryTest" />
         <item itemvalue="JUnit.PlaylistRepositoryTest" />
-        <item itemvalue="JUnit.JukeboxServiceTest" />
-        <item itemvalue="JUnit.DatabaseServiceTest.checkConnectionStatusFailure" />
       </list>
     </recent_temporary>
   </component>
@@ -157,13 +168,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663675502247</updated>
-    </task>
-    <task id="LOCAL-00047" summary="completed addSongToPlaylist() method in PlaylistRepository">
-      <created>1663736447784</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1663736447784</updated>
     </task>
     <task id="LOCAL-00048" summary="added create table in database_queries.sql">
       <created>1663736920058</created>
@@ -501,7 +505,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663854471532</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="changed the JukeboxImpl">
+      <created>1663856477751</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1663856477751</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -516,7 +527,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="completed displayPlaylist() and addSongsToPlaylist() methods in PlaylistRepository" />
     <MESSAGE value="added searchByName() in SongRepository" />
     <MESSAGE value="replaced the collection sort with list sort in searchByName()" />
     <MESSAGE value="changed the toString() method in Song.java" />
@@ -541,7 +551,8 @@
     <MESSAGE value="created SortingService and made it extends service" />
     <MESSAGE value="added allSort method in JukeboxImpl" />
     <MESSAGE value="added Javadoc for the methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="added Javadoc for the methods" />
+    <MESSAGE value="changed the JukeboxImpl" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed the JukeboxImpl" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

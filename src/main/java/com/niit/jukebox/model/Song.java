@@ -106,6 +106,6 @@ public class Song {
     // create toString() method
     @Override
     public String toString() {
-        return String.format("%s\t%s\t%s\t%s\t%s\t%s\t%s", songId, songName, genre, artist, album, duration, songPath + "\n");
+        return String.format("|%1$-4s| %2$-5s|%3$-5s|%4$-5s|%5$-5s|%6$-5s", songId, songName, genre, artist, album, duration + "\n");
     }
 }

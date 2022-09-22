@@ -5,16 +5,10 @@ w
 G.idea/sonarlint/issuestore/8/e/8e44788929c279769c1cc975b8a58bc95d053628,4\a\4a7dc6c336e4150ac582d76f7cab237c6612a4bf
 b
 2src/main/java/com/niit/jukebox/model/Playlist.java,b\0\b0b19772b683f4a99038876b01be269fb8c52103
-^
-.src/main/java/com/niit/jukebox/model/Song.java,e\3\e397c9679926b9efbe0c77c6701f7254fbd939be
 y
 Isrc/main/java/com/niit/jukebox/exception/PlaylistNotCreatedException.java,7\e\7e6d80dd68ab815d4b0a06280df784c444bae4e8
 x
 Hsrc/main/java/com/niit/jukebox/exception/InvalidSongNumberException.java,a\8\a829b95ba70f2f2aab947d508997b0545649bbc6
-C
-hs_err_pid14260.log,1\5\15561a97565abc3be37a5453b7f5d18b44d903cb
-C
-hs_err_pid22276.log,1\0\101855eb3c04da5d4fb33cf6ea4a3d1968d1ad03
 f
 6src/test/java/com/niit/jukebox/SongRepositoryTest.java,8\5\85209b1d0abb6ac834eb64acee3ab1b7bb39f46b
 f

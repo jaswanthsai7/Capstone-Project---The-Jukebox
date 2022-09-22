@@ -27,7 +27,7 @@
 
 ---------------  S U M M A R Y ------------
 
-Command Line: -ea -Didea.test.cyclic.buffer.size=1048576 -javaagent:C:\Users\jasva\AppData\Local\JetBrains\Toolbox\apps\IDEA-C\ch-0\222.4167.29\lib\idea_rt.jar=64129:C:\Users\jasva\AppData\Local\JetBrains\Toolbox\apps\IDEA-C\ch-0\222.4167.29\bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 com.intellij.rt.junit.JUnitStarter -ideVersion5 -junit5 com.niit.jukebox.PlaylistRepositoryTest,CheckAddSongsToPlaylistSuccess
+Command Line: -ea -Didea.test.cyclic.buffer.size=1048576 -javaagent:C:\Users\jasva\AppData\Local\JetBrains\Toolbox\apps\IDEA-C\ch-0\222.4167.29\lib\idea_rt.jar=64129:C:\Users\jasva\AppData\Local\JetBrains\Toolbox\apps\IDEA-C\ch-0\222.4167.29\bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 com.intellij.rt.junit.JUnitStarter -ideVersion5 -junit5 com.niit.jukebox.repository.PlaylistRepositoryTest,CheckAddSongsToPlaylistSuccess
 
 Host: Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz, 8 cores, 7G,  Windows 11 , 64 bit Build 22000 (10.0.22000.708)
 Time: Thu Sep 22 15:01:18 2022 India Standard Time elapsed time: 0.041292 seconds (0d 0h 0m 0s)
@@ -163,7 +163,7 @@ symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Us
 
 VM Arguments:
 jvm_args: -ea -Didea.test.cyclic.buffer.size=1048576 -javaagent:C:\Users\jasva\AppData\Local\JetBrains\Toolbox\apps\IDEA-C\ch-0\222.4167.29\lib\idea_rt.jar=64129:C:\Users\jasva\AppData\Local\JetBrains\Toolbox\apps\IDEA-C\ch-0\222.4167.29\bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 
-java_command: com.intellij.rt.junit.JUnitStarter -ideVersion5 -junit5 com.niit.jukebox.PlaylistRepositoryTest,CheckAddSongsToPlaylistSuccess
+java_command: com.intellij.rt.junit.JUnitStarter -ideVersion5 -junit5 com.niit.jukebox.repository.PlaylistRepositoryTest,CheckAddSongsToPlaylistSuccess
 java_class_path (initial): C:\Users\jasva\.m2\repository\org\junit\platform\junit-platform-launcher\1.9.0\junit-platform-launcher-1.9.0.jar;C:\Users\jasva\AppData\Local\JetBrains\Toolbox\apps\IDEA-C\ch-0\222.4167.29\lib\idea_rt.jar;C:\Users\jasva\AppData\Local\JetBrains\Toolbox\apps\IDEA-C\ch-0\222.4167.29\plugins\junit\lib\junit5-rt.jar;C:\Users\jasva\AppData\Local\JetBrains\Toolbox\apps\IDEA-C\ch-0\222.4167.29\plugins\junit\lib\junit-rt.jar;C:\Users\jasva\IdeaProjects\capstone-project-jukebox\target\test-classes;C:\Users\jasva\IdeaProjects\capstone-project-jukebox\target\classes;C:\Users\jasva\.m2\repository\mysql\mysql-connector-java\8.0.30\mysql-connector-java-8.0.30.jar;C:\Users\jasva\.m2\repository\com\google\protobuf\protobuf-java\3.19.4\protobuf-java-3.19.4.jar;C:\Users\jasva\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.0\junit-jupiter-5.9.0.jar;C:\Users\jasva\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.0\junit-jupiter-api-5.9.0.jar;C:\Users\jasva\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\jasva\.m2\repository\org\junit\platform\junit-platform-commons\1.9.0\junit-platform-commons-1.9.0.jar;C:\Users\jasva\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\jasva\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.0\junit-jupiter-params-5.9.0.jar;C:\Users\jasva\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.0\junit-jupiter-engine-5.9.0.jar;C:\Users\jasva\.m2\repository\org\junit\platform\junit-platform-engine\1.9.0\junit-platform-engine-1.9.0.jar
 Launcher Type: SUN_STANDARD
 

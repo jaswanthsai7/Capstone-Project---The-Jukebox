@@ -44,12 +44,8 @@ public class DatabaseService {
             Class.forName("com.mysql.cj.jdbc.Driver");
             // create an object for DriverManager
             this.connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
-            String connectionStatus = connectionStatus(connection);
-            System.out.println(connectionStatus);
             return true;
         } catch (ClassNotFoundException | SQLException exception) {
-            String connectionStatus = connectionStatus(connection);
-            System.out.println(connectionStatus);
             exception.printStackTrace();
             return false;
         }
