@@ -161,7 +161,10 @@ public class JukeboxImpl {
 
         } else if (choice == 7) {
             List<Song> songs = songRepository.displayAllSongs();
-            jukeboxService.shuffle(songs);
+            List<Song> shuffleList = jukeboxService.shuffle(songs);
+            for (Song shuffledSongs : shuffleList) {
+                System.out.println(shuffledSongs);
+            }
             System.out.println("Enter song Number to play the song from playlist");
             int playlistPlayChoice = input.nextInt();
             for (Song sortedSongs : songs) {

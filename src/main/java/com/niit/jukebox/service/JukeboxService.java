@@ -36,11 +36,13 @@ public class JukeboxService {
         }
     }
 
-    public void shuffle(List<Song> songsList) {
-        // to shuffle the songs
-        Collections.shuffle(songsList);
-        for (Song shuffledSongs : songsList) {
-            System.out.println(shuffledSongs);
+    public List<Song> shuffle(List<Song> songsList) {
+        if (songsList == null) {
+            return null;
+        } else {
+            // to shuffle the songs
+            Collections.shuffle(songsList);
+            return songsList;
         }
     }
 }
