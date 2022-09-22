@@ -5,16 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="added setup() and teatDown() in JukeboxServiceTest">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/songs/baby.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/songs/despacito.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/songs/intensions.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/songs/shapeofyou.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hs_err_pid14260.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hs_err_pid22276.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/8/385d7177fcd691e063c5b07beee850d252f331d9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/2/422aec29dfdbdaeaa68f2868ea73610763402530" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/b/6becf869d6aff355ec4a9348abf2bec3f3f35553" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/5/85209b1d0abb6ac834eb64acee3ab1b7bb39f46b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/0/f0456eae6e19c4162d1e61a24c360e695269049e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/9/f9f8ba9379917029b00c2747fad11af96116d64e" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/implementation/JukeboxImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/implementation/JukeboxImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/JukeboxService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/JukeboxService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/SongRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/SongRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/sql/song_queries.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/song_queries.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/niit/jukebox/JukeboxServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/niit/jukebox/JukeboxServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/niit/jukebox/SongRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/niit/jukebox/SongRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +71,7 @@
       <recent name="com.niit.jukebox.repository" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.SongRepositoryTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.niit.jukebox.Main" />
       <module name="capstone-project-jukebox" />
@@ -81,39 +85,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DatabaseServiceTest.checkIfConnectionActiveSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="capstone-project-jukebox" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.niit.jukebox.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.niit.jukebox" />
-      <option name="MAIN_CLASS_NAME" value="com.niit.jukebox.DatabaseServiceTest" />
-      <option name="METHOD_NAME" value="checkIfConnectionActiveSuccess" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PlaylistRepositoryTest.CheckAddSongsToPlaylistSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="capstone-project-jukebox" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.niit.jukebox.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.niit.jukebox" />
-      <option name="MAIN_CLASS_NAME" value="com.niit.jukebox.PlaylistRepositoryTest" />
-      <option name="METHOD_NAME" value="CheckAddSongsToPlaylistSuccess" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SongRepositoryTest.checkSongById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SongRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="capstone-project-jukebox" />
       <extension name="coverage">
         <pattern>
@@ -123,7 +95,38 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.niit.jukebox" />
       <option name="MAIN_CLASS_NAME" value="com.niit.jukebox.SongRepositoryTest" />
-      <option name="METHOD_NAME" value="checkSongById" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SongRepositoryTest.checkSongBYIdSuccess2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="capstone-project-jukebox" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.niit.jukebox.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.niit.jukebox" />
+      <option name="MAIN_CLASS_NAME" value="com.niit.jukebox.SongRepositoryTest" />
+      <option name="METHOD_NAME" value="checkSongBYIdSuccess2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SongRepositoryTest.checkSongByIdFailure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="capstone-project-jukebox" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.niit.jukebox.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.niit.jukebox" />
+      <option name="MAIN_CLASS_NAME" value="com.niit.jukebox.SongRepositoryTest" />
+      <option name="METHOD_NAME" value="checkSongByIdFailure" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -147,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.PlaylistRepositoryTest.CheckAddSongsToPlaylistSuccess" />
-        <item itemvalue="JUnit.SongRepositoryTest.checkSongById" />
+        <item itemvalue="JUnit.SongRepositoryTest" />
+        <item itemvalue="JUnit.SongRepositoryTest.checkSongBYIdSuccess2" />
+        <item itemvalue="JUnit.SongRepositoryTest.checkSongByIdFailure" />
         <item itemvalue="JUnit.SongRepositoryTest.checkSongByIdSuccess" />
-        <item itemvalue="JUnit.DatabaseServiceTest.checkIfConnectionActiveSuccess" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
