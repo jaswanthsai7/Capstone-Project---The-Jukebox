@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="created InvalidSongNumberException.java">
+    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="used invalidSongNumberException in addSongToPlaylist() method">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/PlaylistRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/PlaylistRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/niit/jukebox/PlaylistRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/niit/jukebox/PlaylistRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +91,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PlaylistRepositoryTest.CheckAddSongsToPlaylistSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="capstone-project-jukebox" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.niit.jukebox.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.niit.jukebox" />
+      <option name="MAIN_CLASS_NAME" value="com.niit.jukebox.PlaylistRepositoryTest" />
+      <option name="METHOD_NAME" value="CheckAddSongsToPlaylistSuccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SongRepositoryTest.checkSongById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="capstone-project-jukebox" />
       <extension name="coverage">
@@ -124,6 +142,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.PlaylistRepositoryTest.CheckAddSongsToPlaylistSuccess" />
         <item itemvalue="JUnit.SongRepositoryTest.checkSongById" />
         <item itemvalue="JUnit.SongRepositoryTest.checkSongByIdSuccess" />
         <item itemvalue="JUnit.DatabaseServiceTest.checkIfConnectionActiveSuccess" />
@@ -138,13 +157,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663675502247</updated>
-    </task>
-    <task id="LOCAL-00030" summary="added create table in database_queries.sql">
-      <created>1663724244558</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1663724244558</updated>
     </task>
     <task id="LOCAL-00031" summary="completed the displayAllSongs() method in SongRepository">
       <created>1663725473201</created>
@@ -482,7 +494,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663813312467</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="used invalidSongNumberException in addSongToPlaylist() method">
+      <created>1663814089927</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1663814089927</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -497,7 +516,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added songs in resource folder" />
     <MESSAGE value="changed the fields in Playlist.java" />
     <MESSAGE value="created playlist_queries.sql file" />
     <MESSAGE value="added insert into playlist in playlist_queries.sql" />
@@ -522,7 +540,8 @@
     <MESSAGE value="created PlaylistRepositoryTest" />
     <MESSAGE value="added checkSongByIdSuccess() in SongRepositoryTest" />
     <MESSAGE value="created InvalidSongNumberException.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="created InvalidSongNumberException.java" />
+    <MESSAGE value="used invalidSongNumberException in addSongToPlaylist() method" />
+    <option name="LAST_COMMIT_MESSAGE" value="used invalidSongNumberException in addSongToPlaylist() method" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

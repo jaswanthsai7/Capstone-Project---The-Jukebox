@@ -107,7 +107,7 @@ public class PlaylistRepository {
         }
     }
 
-    public void displayPlaylist(String playlistName) {
+    public List<Playlist> displayPlaylist(String playlistName) {
         // create a list object
         List<Song> songsList = new ArrayList<>();
         List<Playlist> songsInPlaylist = new ArrayList<>();
@@ -128,7 +128,7 @@ public class PlaylistRepository {
                 String songIds = resultSet.getString("song_id");
                 //String songs = songIds.trim().replace("\\[\\]", "");
                 String[] songs = songIds.split(",");
-                for (int i = 0; i < songs.length - 1; i++) {
+                for (int i = 0; i < songs.length; i++) {
                     //String[] split = songs.split(",");
                     Song songById = songRepository.getSongById(Integer.parseInt(songs[i].trim()));
                     songsList.add(songById);
@@ -136,13 +136,14 @@ public class PlaylistRepository {
                 }
                 songsInPlaylist.add(playlist);
             }
-            // loop to print all the songs
-            for (Playlist playlistSongs : songsInPlaylist) {
-                System.out.println(playlistSongs);
-            }
+//            // loop to print all the songs
+//            for (Playlist playlistSongs : songsInPlaylist) {
+//                System.out.println(playlistSongs);
+//            }
         } catch (SQLException exception) {
             System.out.println("unable to get the playlist");
             exception.printStackTrace();
         }
+        return songsInPlaylist;
     }
 }
