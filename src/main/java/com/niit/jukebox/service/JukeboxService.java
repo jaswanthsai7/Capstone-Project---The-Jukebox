@@ -86,12 +86,20 @@ public class JukeboxService {
         }
     }
 
+    /**
+     * This function will get all the songs from the database and print them out
+     */
     public void getAllSongs() {
         List<Song> songs = songRepository.displayAllSongs();
         System.out.println(songs.toString().replaceAll("[\\[\\]]", ""));
 
     }
 
+    /**
+     * This function takes the song id as input and plays the song
+     *
+     * @param playChoice The song id of the song to be played.
+     */
     public void playSong(int playChoice) {
         List<Song> songs = songRepository.displayAllSongs();
         for (Song songAll : songs) {
@@ -103,6 +111,11 @@ public class JukeboxService {
         }
     }
 
+    /**
+     * It displays all the playlists or a specific playlist based on the user's choice
+     *
+     * @param displayChoice 1 for displaying all playlists, 2 for displaying a specific playlist
+     */
     public void displayPlaylist(int displayChoice) {
         if (displayChoice == 1) {
             playlistRepository.displayAllPlaylists();
@@ -114,6 +127,16 @@ public class JukeboxService {
         }
     }
 
+    /**
+     * "If the user wants to sort by name, sort by name. If the user wants to sort by artist, sort by artist. If the user
+     * wants to sort by genre, sort by genre."
+     * <p>
+     * This is a very simple example, but it's easy to see how this can get out of hand. Imagine if you had to add a new
+     * sorting option. You'd have to add a new case to the switch statement, and then add a new function call to the
+     * sorting service
+     *
+     * @param sortingChoice 1 = sort by name, 2 = sort by artist, 3 = sort by genre
+     */
     public void allSort(int sortingChoice) {
         switch (sortingChoice) {
             case 1:
@@ -130,20 +153,16 @@ public class JukeboxService {
         }
     }
 
+    /**
+     * This function displays the menu of the application
+     */
     public void displayDetails() {
+        System.out.println("===================================================");
+        System.out.println("                  Welcome to Jukebox               ");
+        System.out.println("===================================================\n");
         System.out.println("1.Display All Songs \n2.Search songs \n3.Create a playlist \n4.Delete Playlist \n5.Add songs to Playlist \n6.Display Playlist \n7.shuffle the songs \n8.Sort songs \n9.exit");
     }
 
-    public void displayPlaylistByName(int playlistChoice) {
-        if (playlistChoice == 1) {
-            System.out.println("Enter Playlist Name :");
-            input.nextLine();
-            String name = input.nextLine();
-            List<Playlist> playlists = playlistRepository.displayPlaylist(name);
-            System.out.println(playlists.toString().replaceAll("[\\[\\]]", ""));
-            System.out.println("Enter any number to exit");
-        }
-    }
 }
 
 

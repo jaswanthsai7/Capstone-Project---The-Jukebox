@@ -25,7 +25,7 @@ public class Main {
             switch (choice) {
                 case 1:
                     jukeboxService.getAllSongs();
-                    System.out.println("Enter 21 to exit");
+                    System.out.println("1.Enter songId to play 2.Enter 21 to exit");
                     int enteredNumber = input.nextInt();
                     jukeboxService.playSong(enteredNumber);
                     break;
