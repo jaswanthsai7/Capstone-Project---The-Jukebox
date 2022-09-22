@@ -67,6 +67,6 @@ public class Playlist {
     // create toString() method
     @Override
     public String toString() {
-        return "Playlist{" + "playlistId=" + playlistId + ", playlistName='" + playlistName + '\'' + ", songDetails=" + songDetails + '}';
+        return String.format("%s\t,%s\t,%s\t", playlistId, playlistName, "\n" + songDetails);
     }
 }

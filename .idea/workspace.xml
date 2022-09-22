@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="replaced the collection sort with list sort in searchByName()">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/3/e397c9679926b9efbe0c77c6701f7254fbd939be" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/model/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/model/Song.java" afterDir="false" />
+    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="changed the toString() method in Song.java">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/model/Playlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/model/Playlist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/PlaylistRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/PlaylistRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,13 +123,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663675502247</updated>
-    </task>
-    <task id="LOCAL-00025" summary="added constructor in DatabaseService.java">
-      <created>1663680119567</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1663680119567</updated>
     </task>
     <task id="LOCAL-00026" summary="created list object in SongRepository.java">
       <created>1663683541363</created>
@@ -466,7 +460,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663809326599</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="changed the toString() method in Song.java">
+      <created>1663809840277</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1663809840277</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -481,7 +482,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="completed removePlaylist() method in PlaylistRepository" />
     <MESSAGE value="completed displayPlaylist() method in PlaylistRepository" />
     <MESSAGE value="added test directory and test resource folder" />
     <MESSAGE value="completed sortByArtist() in SongRepository" />
@@ -506,7 +506,8 @@
     <MESSAGE value="completed displayPlaylist() and addSongsToPlaylist() methods in PlaylistRepository" />
     <MESSAGE value="added searchByName() in SongRepository" />
     <MESSAGE value="replaced the collection sort with list sort in searchByName()" />
-    <option name="LAST_COMMIT_MESSAGE" value="replaced the collection sort with list sort in searchByName()" />
+    <MESSAGE value="changed the toString() method in Song.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed the toString() method in Song.java" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

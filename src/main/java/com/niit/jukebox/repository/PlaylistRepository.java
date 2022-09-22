@@ -28,7 +28,7 @@ public class PlaylistRepository {
         databaseService.connect();
         connection = databaseService.getConnection();
         // write the query
-        String createQuery = "INSERT INTO `jukebox`.`playlist` (`playlist_name`, `song_id`) VALUES (?,?);";
+        String createQuery = "INSERT INTO `jukebox`.`playlist` (`playlist_id`,`playlist_name`, `song_id`) VALUES (0,?,?);";
         // create an object of prepared statement
         try (PreparedStatement preparedStatement = connection.prepareStatement(createQuery)) {
             preparedStatement.setString(1, playlistName);
@@ -37,9 +37,9 @@ public class PlaylistRepository {
             boolean execute = preparedStatement.execute();
             // check if the query is successful or not
             if (execute) {
-                System.out.println("Playlist created");
-            } else {
                 System.out.println("Playlist not created");
+            } else {
+                System.out.println("Playlist created");
             }
         } catch (SQLException exception) {
             exception.printStackTrace();
@@ -58,7 +58,7 @@ public class PlaylistRepository {
         try (Statement statement = connection.createStatement(); PreparedStatement preparedStatement1 = connection.prepareStatement(addQuery)) {
             ResultSet resultSet = statement.executeQuery(getQuery);
             while (resultSet.next()) {
-                playlistSongs += resultSet.getString("song_id");
+                playlistSongs += "," + resultSet.getString("song_id");
             }
             preparedStatement1.setInt(2, playlistId);
             preparedStatement1.setString(1, playlistSongs);
@@ -85,8 +85,8 @@ public class PlaylistRepository {
         try (PreparedStatement preparedStatement = connection.prepareStatement(removeQuery)) {
             preparedStatement.setString(1, playlistName);
             // execute the query
-            boolean executeRemove = preparedStatement.execute();
-            if (executeRemove) {
+            int executeRemove = preparedStatement.executeUpdate();
+            if (executeRemove > 0) {
                 System.out.println("Successfully deleted the playlist");
             } else {
                 System.out.println(" unable to delete the playlist, please check the playlist name");
@@ -116,10 +116,11 @@ public class PlaylistRepository {
                 playlist.setPlaylistId(resultSet.getInt("playlist_id"));
                 playlist.setPlaylistName(resultSet.getString("playlist_Name"));
                 String songIds = resultSet.getString("song_id");
-                String songs = songIds.trim().replace("\\[\\]", "");
-                for (int i = 0; i < songs.length() - 1; i++) {
-                    String[] split = songs.split(",");
-                    Song songById = songRepository.getSongById(Integer.parseInt(split[i]));
+                //String songs = songIds.trim().replace("\\[\\]", "");
+                String[] songs = songIds.split(",");
+                for (int i = 0; i < songs.length - 1; i++) {
+                    //String[] split = songs.split(",");
+                    Song songById = songRepository.getSongById(Integer.parseInt(songs[i].trim()));
                     songsList.add(songById);
                     playlist.setSongDetails(songsList);
                 }
