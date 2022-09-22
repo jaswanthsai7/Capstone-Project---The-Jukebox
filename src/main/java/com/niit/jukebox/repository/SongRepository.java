@@ -12,6 +12,7 @@ import com.niit.jukebox.service.DatabaseService;
 
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class SongRepository implements Repository {
@@ -86,6 +87,18 @@ public class SongRepository implements Repository {
     }
 
     @Override
+    public List<Song> searchByName(List<Song> songsList, String songName) {
+        List<Song> allSongsByName = new ArrayList<>();
+        Collections.sort(songsList, (o1, o2) -> String.CASE_INSENSITIVE_ORDER.compare(o1.getSongName(), o2.getSongName()));
+        for (Song songByName : songsList) {
+            if (songByName.getSongName().equals(songName)) {
+                allSongsByName.add(songByName);
+            }
+        }
+        return allSongsByName;
+    }
+
+    @Override
     public Song getSongById(int songId) {
         databaseService.connect();
         Connection connection = databaseService.getConnection();
@@ -108,4 +121,5 @@ public class SongRepository implements Repository {
         }
         return song;
     }
+
 }

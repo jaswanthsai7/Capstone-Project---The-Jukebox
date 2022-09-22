@@ -11,5 +11,7 @@ public interface Repository {
 
     List<Song> searchByArtist(List<Song> songsList, String artist);
 
+    List<Song> searchByName(List<Song> songList, String songName);
+
     Song getSongById(int songId);
 }
