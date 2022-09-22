@@ -26,6 +26,12 @@ public class PlaylistRepository {
         connection = databaseService.getConnection();
     }
 
+    /**
+     * It creates a playlist in the database
+     *
+     * @param playlistName  The name of the playlist
+     * @param playlistSongs This is the song id of the song that you want to add to the playlist.
+     */
     public void createPlaylist(String playlistName, String playlistSongs) throws PlaylistNotCreatedException {
         // get the database connection
         databaseService.connect();
@@ -51,6 +57,12 @@ public class PlaylistRepository {
 
     }
 
+    /**
+     * It adds a song to a playlist
+     *
+     * @param playlistId    The id of the playlist to which the song is to be added.
+     * @param playlistSongs The song numbers that you want to add to the playlist.
+     */
     public void addSongToPlaylist(int playlistId, String playlistSongs) throws InvalidSongNumberException {
         String[] checkNumber = playlistSongs.split(",");
         for (String s : checkNumber) {
@@ -88,6 +100,11 @@ public class PlaylistRepository {
         }
     }
 
+    /**
+     * This function removes a playlist from the database
+     *
+     * @param playlistName The name of the playlist to be deleted.
+     */
     public void removePlaylist(String playlistName) {
         // get the database connection
         databaseService.connect();
@@ -110,6 +127,12 @@ public class PlaylistRepository {
         }
     }
 
+    /**
+     * It takes a playlist name as an argument and returns a list of songs in that playlist
+     *
+     * @param playlistName The name of the playlist to be displayed.
+     * @return A list of songs in a playlist.
+     */
     public List<Playlist> displayPlaylist(String playlistName) {
         if (playlistName == null) {
             return Collections.emptyList();
@@ -148,6 +171,9 @@ public class PlaylistRepository {
         }
     }
 
+    /**
+     * It gets the connection from the database, executes the query and returns the result set
+     */
     public void displayAllPlaylists() {
         // create a list object
         List<Playlist> songsInPlaylist = new ArrayList<>();

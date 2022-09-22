@@ -23,6 +23,7 @@ public class SongRepository implements Repository {
     }
 
     @Override
+    // This method is used to display all the songs in the database.
     public List<Song> displayAllSongs() {
         List<Song> allSongs = new ArrayList<>();
         // get the connection
@@ -54,21 +55,25 @@ public class SongRepository implements Repository {
     }
 
     @Override
+    // This method is used to search the songs by genre.
     public List<Song> searchByGenre(List<Song> songsList, String genreName) {
         return songsList.stream().filter(songsGenre -> songsGenre.getGenre().equals(genreName)).collect(Collectors.toList());
     }
 
     @Override
+    // This method is used to search the songs by artist.
     public List<Song> searchByArtist(List<Song> songsList, String artist) {
         return songsList.stream().filter(artistSongs -> artistSongs.getArtist().equals(artist)).collect(Collectors.toList());
     }
 
     @Override
+    // This method is used to search the songs by name.
     public List<Song> searchByName(List<Song> songsList, String songName) {
         return songsList.stream().filter(songByName -> songByName.getSongName().equals(songName)).collect(Collectors.toList());
     }
 
     @Override
+    // This method is used to get the song by id.
     public Song getSongById(int songId) {
         if (songId <= 0) {
             return null;

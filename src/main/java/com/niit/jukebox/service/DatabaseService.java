@@ -32,6 +32,12 @@ public class DatabaseService {
     }
 
     // create a method for the connection
+
+    /**
+     * It connects to the database.
+     *
+     * @return A boolean value.
+     */
     public boolean connect() {
         // (optional) load the jdbc driver to memory
         try {
@@ -49,6 +55,12 @@ public class DatabaseService {
         }
     }
 
+    /**
+     * If the connection is not null, return "Connection : Active", otherwise return "Connection : InActive"
+     *
+     * @param connection The connection object that is being monitored.
+     * @return A String
+     */
     public String connectionStatus(Connection connection) {
         if (connection != null) {
             return "Connection : Active";

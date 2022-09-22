@@ -14,6 +14,13 @@ import java.util.Collections;
 import java.util.List;
 
 public class JukeboxService {
+    /**
+     * It takes a song path as a parameter, creates a File object, creates an AudioInputStream object, creates a Clip
+     * object, opens the audio input stream, starts the sound file, pauses the current thread for the time the song is
+     * being played, and catches any exceptions
+     *
+     * @param songPath the path to the song file
+     */
     public void play(String songPath) {
         // create an object of FIle class
         File songFile = new File(songPath);
@@ -36,6 +43,12 @@ public class JukeboxService {
         }
     }
 
+    /**
+     * If the songsList is null, return an empty list, otherwise shuffle the songsList and return it
+     *
+     * @param songsList The list of songs to be shuffled.
+     * @return A list of songs that have been shuffled.
+     */
     public List<Song> shuffle(List<Song> songsList) {
         if (songsList == null) {
             return Collections.emptyList();

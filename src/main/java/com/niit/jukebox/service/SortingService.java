@@ -18,6 +18,7 @@ public class SortingService extends Service {
     }
 
     @Override
+    // Sorting the songs by name.
     public void sortByName() {
         List<Song> allSongs = songRepository.displayAllSongs();
         allSongs.sort((o1, o2) -> String.CASE_INSENSITIVE_ORDER.compare(o1.getSongName(), o2.getSongName()));
@@ -26,6 +27,7 @@ public class SortingService extends Service {
     }
 
     @Override
+    // Sorting the songs by artist.
     public void sortByArtist() {
         List<Song> allSongs = songRepository.displayAllSongs();
         allSongs.sort((o1, o2) -> String.CASE_INSENSITIVE_ORDER.compare(o1.getArtist(), o2.getArtist()));
@@ -34,6 +36,7 @@ public class SortingService extends Service {
     }
 
     @Override
+    // Sorting the songs by genre.
     public void sortByGenre() {
         List<Song> allSongs = songRepository.displayAllSongs();
         allSongs.sort((o1, o2) -> String.CASE_INSENSITIVE_ORDER.compare(o1.getGenre(), o2.getGenre()));
