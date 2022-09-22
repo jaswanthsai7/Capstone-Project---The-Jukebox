@@ -5,5 +5,20 @@
  */
 package com.niit.jukebox;
 
+import com.niit.jukebox.service.JukeboxService;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+
 public class JukeboxServiceTest {
+    JukeboxService jukeboxService;
+
+    @BeforeEach
+    void setUp() {
+        jukeboxService = new JukeboxService();
+    }
+
+    @AfterEach
+    void tearDown() {
+        jukeboxService = null;
+    }
 }

@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="added PlaylistNotFoundException">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/exception/PlaylistNotCreatedException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/exception/PlaylistNotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/implementation/JukeboxImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/implementation/JukeboxImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/PlaylistRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/PlaylistRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/database_queries.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/song_queries.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/niit/jukebox/PlaylistRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/niit/jukebox/PlaylistRepositoryTest.java" afterDir="false" />
+    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="created JukeboxServiceTest">
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/niit/jukebox/JukeboxServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/niit/jukebox/JukeboxServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,20 +154,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663675502247</updated>
-    </task>
-    <task id="LOCAL-00034" summary="made a functional interface ArtistComparator extends Comparator and override compare() method">
-      <created>1663727764596</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1663727764596</updated>
-    </task>
-    <task id="LOCAL-00035" summary="created  sortByGenre() method in SongRepository">
-      <created>1663729892225</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1663729892225</updated>
     </task>
     <task id="LOCAL-00036" summary="created  sortByArtist() method in SongRepository">
       <created>1663729961678</created>
@@ -505,7 +484,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663826531890</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="completed the JukeboxImpl">
+      <created>1663836759630</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1663836759633</updated>
+    </task>
+    <task id="LOCAL-00084" summary="created JukeboxServiceTest">
+      <created>1663837016891</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1663837016892</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -520,8 +513,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="created a song_path.csv file" />
-    <MESSAGE value="added field to Song.java" />
     <MESSAGE value="added JukeboxImpl.java class" />
     <MESSAGE value="created jukeboxImpl() method in JukeboxImpl.java" />
     <MESSAGE value="added details to display all songs" />
@@ -545,7 +536,9 @@
     <MESSAGE value="added PlaylistRepositoryTest" />
     <MESSAGE value="added option 3 in JukeboxImpl" />
     <MESSAGE value="added PlaylistNotFoundException" />
-    <option name="LAST_COMMIT_MESSAGE" value="added PlaylistNotFoundException" />
+    <MESSAGE value="completed the JukeboxImpl" />
+    <MESSAGE value="created JukeboxServiceTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="created JukeboxServiceTest" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
