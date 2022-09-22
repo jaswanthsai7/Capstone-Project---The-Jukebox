@@ -35,7 +35,8 @@ public class PlaylistRepositoryTest {
         List<Song> songs = new ArrayList<>();
         songs.add(new Song(2, "faded", "dance", "alan walker", "different world", "03:31", "src/main/resources/songs/faded.wav"));
         Playlist expectedResult = new Playlist(2, "test", songs);
-        List<Playlist> playlists = playlistRepository.displayPlaylist("test");
+        List<Playlist> playlists = null;
+        playlists = playlistRepository.displayPlaylist("test");
         Assertions.assertEquals(expectedResult, playlists);
 
     }

@@ -6,6 +6,7 @@
 package com.niit.jukebox.repository;
 
 import com.niit.jukebox.exception.InvalidSongNumberException;
+import com.niit.jukebox.exception.PlaylistNotCreatedException;
 import com.niit.jukebox.model.Playlist;
 import com.niit.jukebox.model.Song;
 import com.niit.jukebox.service.DatabaseService;
@@ -24,7 +25,7 @@ public class PlaylistRepository {
         connection = databaseService.getConnection();
     }
 
-    public void createPlaylist(String playlistName, String playlistSongs) {
+    public void createPlaylist(String playlistName, String playlistSongs) throws PlaylistNotCreatedException {
         // get the database connection
         databaseService.connect();
         connection = databaseService.getConnection();
@@ -39,6 +40,7 @@ public class PlaylistRepository {
             // check if the query is successful or not
             if (execute) {
                 System.out.println("Playlist not created");
+                throw new PlaylistNotCreatedException("not created");
             } else {
                 System.out.println("Playlist created");
             }
@@ -50,8 +52,8 @@ public class PlaylistRepository {
 
     public void addSongToPlaylist(int playlistId, String playlistSongs) throws InvalidSongNumberException {
         String[] checkNumber = playlistSongs.split(",");
-        for (int i = 0; i < checkNumber.length; i++) {
-            if (Integer.parseInt(checkNumber[i]) < 20) {
+        for (String s : checkNumber) {
+            if (Integer.parseInt(s) < 20) {
                 try {
                     // get the database connection
                     databaseService.connect();
@@ -126,10 +128,9 @@ public class PlaylistRepository {
                 playlist.setPlaylistId(resultSet.getInt("playlist_id"));
                 playlist.setPlaylistName(resultSet.getString("playlist_Name"));
                 String songIds = resultSet.getString("song_id");
-                songIds = songIds.trim().replace("\\[\\]", "");
+                songIds = songIds.replaceAll("[\\[\\]]", "");
                 String[] songs = songIds.split(",");
                 for (String songName : songs) {
-                    //String[] split = songs.split(",");
                     Song songById = songRepository.getSongById(Integer.parseInt(songName.trim()));
                     songsList.add(songById);
                     playlist.setSongDetails(songsList);
@@ -137,7 +138,6 @@ public class PlaylistRepository {
                 songsInPlaylist.add(playlist);
             }
         } catch (SQLException exception) {
-            System.out.println("unable to get the playlist");
             exception.printStackTrace();
         }
         return songsInPlaylist;
@@ -145,7 +145,6 @@ public class PlaylistRepository {
 
     public List<Playlist> displayAllPlaylists() {
         // create a list object
-        List<Song> songsList = new ArrayList<>();
         List<Playlist> songsInPlaylist = new ArrayList<>();
         // get the database connection
         databaseService.connect();
@@ -156,26 +155,22 @@ public class PlaylistRepository {
         try (Statement statement = connection.createStatement()) {
             ResultSet resultSet = statement.executeQuery(displayQuery);
             // use the while loop to iterate over result set
-            Playlist playlist = new Playlist();
             while (resultSet.next()) {
-                playlist.setPlaylistId(resultSet.getInt("playlist_id"));
-                playlist.setPlaylistName(resultSet.getString("playlist_Name"));
-                String songIds = resultSet.getString("song_id");
-                songIds = songIds.trim().replace("\\[\\]", "");
-                String[] songs = songIds.split(",");
-                for (String songName : songs) {
-                    //String[] split = songs.split(",");
-                    Song songById = songRepository.getSongById(Integer.parseInt(songName.trim()));
+                List<Song> songsList = new ArrayList<>();
+                int playlistId = resultSet.getInt("playlist_id");
+                String playlistName = resultSet.getString("playlist_name");
+                String songsId = resultSet.getString("song_id");
+                String[] split = songsId.split(",");
+                for (String s : split) {
+                    Song songById = songRepository.getSongById(Integer.parseInt(s.trim()));
                     songsList.add(songById);
-                    playlist.setSongDetails(songsList);
                 }
-                songsInPlaylist.add(playlist);
+                songsInPlaylist.add(new Playlist(playlistId, playlistName, songsList));
             }
         } catch (SQLException exception) {
             System.out.println("unable to get the playlist");
             exception.printStackTrace();
         }
         return songsInPlaylist;
-
     }
 }
