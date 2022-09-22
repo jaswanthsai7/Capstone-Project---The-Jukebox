@@ -5,8 +5,6 @@
  */
 package com.niit.jukebox.repository;
 
-import com.niit.jukebox.comparator.ArtistComparator;
-import com.niit.jukebox.comparator.GenreComparator;
 import com.niit.jukebox.model.Song;
 import com.niit.jukebox.service.DatabaseService;
 
@@ -48,7 +46,6 @@ public class SongRepository implements Repository {
                 song.setDuration(resultSet.getString("duration"));
                 song.setSongPath(resultSet.getString("song_path"));
                 allSongs.add(song);
-
             }
         } catch (SQLException exception) {
             exception.printStackTrace();
@@ -58,37 +55,16 @@ public class SongRepository implements Repository {
 
     @Override
     public List<Song> searchByGenre(List<Song> songsList, String genreName) {
-        List<Song> allGenreSongs = new ArrayList<>();
-        // use the genre comparator
-        GenreComparator genreComparator = (o1, o2) -> String.CASE_INSENSITIVE_ORDER.compare(o1.getGenre(), o2.getGenre());
-        // sort the songs list according to genre
-        songsList.sort(genreComparator);
-        for (Song songsGenre : songsList) {
-            if (songsGenre.getGenre().equals(genreName)) {
-                allGenreSongs.add(songsGenre);
-            }
-        }
-        return allGenreSongs;
+        return songsList.stream().filter(songsGenre -> songsGenre.getGenre().equals(genreName)).collect(Collectors.toList());
     }
 
     @Override
     public List<Song> searchByArtist(List<Song> songsList, String artist) {
-        List<Song> allArtistSongs = new ArrayList<>();
-        // use the Artist comparator
-        ArtistComparator artistComparator = (o1, o2) -> String.CASE_INSENSITIVE_ORDER.compare(o1.getArtist(), o2.getArtist());
-        // sort the songs according to artist name
-        songsList.sort(artistComparator);
-        for (Song artistSongs : songsList) {
-            if (artistSongs.getArtist().equals(artist)) {
-                allArtistSongs.add(artistSongs);
-            }
-        }
-        return allArtistSongs;
+        return songsList.stream().filter(artistSongs -> artistSongs.getArtist().equals(artist)).collect(Collectors.toList());
     }
 
     @Override
     public List<Song> searchByName(List<Song> songsList, String songName) {
-        songsList.sort((o1, o2) -> String.CASE_INSENSITIVE_ORDER.compare(o1.getSongName(), o2.getSongName()));
         return songsList.stream().filter(songByName -> songByName.getSongName().equals(songName)).collect(Collectors.toList());
     }
 

@@ -135,7 +135,8 @@ public class JukeboxImpl {
                     break;
                 case 7: {
                     List<Song> songs = songRepository.displayAllSongs();
-                    jukeboxService.shuffle(songs);
+                    List<Song> shuffledSongs = jukeboxService.shuffle(songs);
+                    System.out.println(shuffledSongs);
                     System.out.println("Enter song Number to play the song from playlist");
                     int playlistPlayChoice = input.nextInt();
                     playSong(playlistPlayChoice);
