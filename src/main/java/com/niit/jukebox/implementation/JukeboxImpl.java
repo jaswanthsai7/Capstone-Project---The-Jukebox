@@ -12,6 +12,7 @@ import com.niit.jukebox.model.Song;
 import com.niit.jukebox.repository.PlaylistRepository;
 import com.niit.jukebox.repository.SongRepository;
 import com.niit.jukebox.service.JukeboxService;
+import com.niit.jukebox.service.SortingService;
 
 import java.util.List;
 import java.util.Scanner;
@@ -20,12 +21,15 @@ public class JukeboxImpl {
     SongRepository songRepository;
     JukeboxService jukeboxService;
     PlaylistRepository playlistRepository;
-    Scanner input = new Scanner(System.in);
+    SortingService sortingService;
+    Scanner input;
 
     public JukeboxImpl() {
         songRepository = new SongRepository();
         jukeboxService = new JukeboxService();
         playlistRepository = new PlaylistRepository();
+        sortingService = new SortingService();
+        input = new Scanner(System.in);
     }
 
     public void jukeboxImpl() {
@@ -34,7 +38,7 @@ public class JukeboxImpl {
             System.out.println("===================================================");
             System.out.println("                  Welcome to Jukebox               ");
             System.out.println("===================================================\n");
-            System.out.println("1.Display All Songs \n2.Search songs \n3.Create a playlist \n4.Delete Playlist \n5.Add songs to Playlist \n6.Display Playlist \n7.shuffle the songs \n8.exit");
+            System.out.println("1.Display All Songs \n2.Search songs \n3.Create a playlist \n4.Delete Playlist \n5.Add songs to Playlist \n6.Display Playlist \n7.shuffle the songs \n8.Sort songs \n9.exit");
             System.out.println("Enter your choice : ");
             int choice = input.nextInt();
             switch (choice) {
@@ -142,7 +146,14 @@ public class JukeboxImpl {
                     playSong(playlistPlayChoice);
                     break;
                 }
-                case 8:
+                case 8: {
+                    System.out.println("Sort songs Based on : \n");
+                    System.out.println("1.SongName  2.Artist  3.Genre ");
+                    int sortingChoice = input.nextInt();
+                    allSort(sortingChoice);
+                    break;
+                }
+                case 9:
                     System.out.println("-------------Thanks for using Jukebox-------");
                     System.out.println("---------------See you again soon-------------");
                     break;
@@ -177,6 +188,22 @@ public class JukeboxImpl {
             String playlistName = input.nextLine();
             List<Playlist> playlists = playlistRepository.displayPlaylist(playlistName);
             System.out.println(playlists.toString().replaceAll("[\\[\\]]", ""));
+        }
+    }
+
+    private void allSort(int sortingChoice) {
+        switch (sortingChoice) {
+            case 1:
+                sortingService.sortByName();
+                break;
+            case 2:
+                sortingService.sortByArtist();
+                break;
+            case 3:
+                sortingService.sortByGenre();
+                break;
+            default:
+                break;
         }
     }
 }

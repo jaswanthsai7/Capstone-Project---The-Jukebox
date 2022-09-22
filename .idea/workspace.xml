@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="replaced the logic of methods with stream() in SongRepository">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/SortingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/5/559daba5d38c41e4a196fcccc90b34945ca6276a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/comparator/ArtistComparator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/comparator/GenreComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/comparator/SongComparator.java" afterDir="false" />
+    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="created SortingService and made it extends service">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/implementation/JukeboxImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/implementation/JukeboxImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/SortingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/SortingService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,13 +153,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663675502247</updated>
-    </task>
-    <task id="LOCAL-00044" summary="completed the sortByGenre() in SongRepository">
-      <created>1663734505640</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1663734505640</updated>
     </task>
     <task id="LOCAL-00045" summary="added comments to the methods in PlaylistRepository">
       <created>1663734873946</created>
@@ -502,7 +490,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663851599689</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="created SortingService and made it extends service">
+      <created>1663853300796</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1663853300796</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -517,7 +512,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="removed sortByGenre() and added SearchByGenre() method in SongRepository" />
     <MESSAGE value="removed sortByArtist() and added SearchByArtist() method in SongRepository" />
     <MESSAGE value="completed all the methods in SongRepository" />
     <MESSAGE value="completed displayPlaylist() and addSongsToPlaylist() methods in PlaylistRepository" />
@@ -542,7 +536,8 @@
     <MESSAGE value="removed the for loop in searchByName() and added Stream() method" />
     <MESSAGE value="added all choice in JukeboxImpl" />
     <MESSAGE value="replaced the logic of methods with stream() in SongRepository" />
-    <option name="LAST_COMMIT_MESSAGE" value="replaced the logic of methods with stream() in SongRepository" />
+    <MESSAGE value="created SortingService and made it extends service" />
+    <option name="LAST_COMMIT_MESSAGE" value="created SortingService and made it extends service" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

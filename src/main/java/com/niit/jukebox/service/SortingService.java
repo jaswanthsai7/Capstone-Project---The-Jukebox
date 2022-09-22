@@ -21,7 +21,7 @@ public class SortingService extends Service {
     public void sortByName() {
         List<Song> allSongs = songRepository.displayAllSongs();
         allSongs.sort((o1, o2) -> String.CASE_INSENSITIVE_ORDER.compare(o1.getSongName(), o2.getSongName()));
-        System.out.println(allSongs);
+        System.out.println(allSongs.toString().replaceAll("[\\[\\]]", ""));
 
     }
 
@@ -29,7 +29,7 @@ public class SortingService extends Service {
     public void sortByArtist() {
         List<Song> allSongs = songRepository.displayAllSongs();
         allSongs.sort((o1, o2) -> String.CASE_INSENSITIVE_ORDER.compare(o1.getArtist(), o2.getArtist()));
-        System.out.println(allSongs);
+        System.out.println(allSongs.toString().replaceAll("[\\[\\]]", ""));
 
     }
 
@@ -37,6 +37,6 @@ public class SortingService extends Service {
     public void sortByGenre() {
         List<Song> allSongs = songRepository.displayAllSongs();
         allSongs.sort((o1, o2) -> String.CASE_INSENSITIVE_ORDER.compare(o1.getGenre(), o2.getGenre()));
-        System.out.println(allSongs);
+        System.out.println(allSongs.toString().replaceAll("[\\[\\]]", ""));
     }
 }
