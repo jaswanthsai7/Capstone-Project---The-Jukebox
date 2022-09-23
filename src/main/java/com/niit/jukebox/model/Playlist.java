@@ -67,6 +67,8 @@ public class Playlist {
     // create toString() method
     @Override
     public String toString() {
-        return String.format("|%1$-5s|           | %2$-5s|   %3$-5s", playlistId, playlistName, "\n" + songDetails);
+        return String.format("|%1$-5s|           | %2$-5s|   %3$-5s", playlistId, playlistName,
+                "\nSongId     SongName           Genre           Artist             Album             Duration\n"
+                        + "===============================================================================================\n" + songDetails);
     }
 }

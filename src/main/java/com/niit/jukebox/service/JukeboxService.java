@@ -92,11 +92,11 @@ public class JukeboxService {
      */
     public void getAllSongs() {
         List<Song> songs = songRepository.displayAllSongs();
-        System.out.println("====================================================================================");
-        System.out.println("SongId     SongName     Genre         Artist             Album          Duration");
-        System.out.println("=====================================================================================");
+        System.out.println("=============================================================================================");
+        System.out.println("SongId     SongName           Genre           Artist             Album             Duration");
+        System.out.println("=============================================================================================");
         System.out.println(songs.toString().replaceAll("[\\[\\]]", "").replace(",", ""));
-        System.out.println("=======================================================================================");
+        System.out.println("=============================================================================================");
     }
 
     /**
@@ -135,9 +135,9 @@ public class JukeboxService {
             List<Playlist> playlist = playlistRepository.displayPlaylist(playlistName);
             // print the playlist
             System.out.format("%5s %20s ", "PlaylistId", "PlaylistName\n");
-            System.out.println("=================================================================`");
+            System.out.println("===============================================================================================");
             System.out.println(playlist.toString().replaceAll("[\\[\\]]", ",").replace(",", ""));
-            System.out.println("==================================================================");
+            System.out.println("===============================================================================================");
             System.out.println("Enter the songId to play : ");
             int songId = input.nextInt();
             playSongChoice(songId);
@@ -189,11 +189,12 @@ public class JukeboxService {
         List<Song> songs = songRepository.displayAllSongs();
         // shuffle the songs
         List<Song> shuffledSongs = shuffle(songs);
-        System.out.println("====================================================================================");
-        System.out.println("SongId     SongName     Genre         Artist             Album          Duration");
-        System.out.println("=====================================================================================");
+        System.out.println("=============================================================================================");
+        System.out.println("SongId     SongName           Genre           Artist             Album             Duration");
+        System.out.println("=============================================================================================");
         System.out.println(shuffledSongs.toString().replaceAll("[\\[\\]]", "").replace(",", ""));
-        System.out.println("=====================================================================================");
+        System.out.println("=============================================================================================");
+
     }
 }
 

@@ -106,6 +106,6 @@ public class Song {
     // create toString() method
     @Override
     public String toString() {
-        return String.format("|%1$-4s   |  %2$-10s  |%3$-10s  |%4$-15s  |%5$-15s  |%6$-5s", songId, songName, genre, artist, album, duration + "\n");
+        return String.format("|%1$-4s   |  %2$-15s  |%3$-14s  |%4$-15s  |%5$-17s  |%6$-5s", songId, songName, genre, artist, album, duration + "\n");
     }
 }

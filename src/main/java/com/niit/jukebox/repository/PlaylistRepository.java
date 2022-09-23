@@ -205,9 +205,9 @@ public class PlaylistRepository {
 
         for (Playlist allPlaylists : songsInPlaylist) {
             System.out.format("%5s %20s ", "PlaylistId", "PlaylistName\n");
-            System.out.println("=================================================================`");
+            System.out.println("===============================================================================================");
             System.out.println(allPlaylists.toString().replaceAll("[\\[\\]]", ",").replace(",", ""));
-            System.out.println("==================================================================");
+            System.out.println("===============================================================================================");
         }
     }
 }
