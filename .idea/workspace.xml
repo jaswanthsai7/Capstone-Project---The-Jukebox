@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="replaced the print statement with format in all methods">
+    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="changed the switch case 8 in Main.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/JukeboxService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/JukeboxService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/song_queries.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/song_queries.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,13 +150,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663675502247</updated>
-    </task>
-    <task id="LOCAL-00053" summary="added forward() method in JukeboxService">
-      <created>1663740473725</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1663740473725</updated>
     </task>
     <task id="LOCAL-00054" summary="added songs in resource folder">
       <created>1663741470706</created>
@@ -494,7 +487,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663900181636</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="changed the switch case 8 in Main.java">
+      <created>1663902009290</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1663902009290</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -509,7 +509,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added checkSongByIdSuccess() in SongRepositoryTest" />
     <MESSAGE value="created InvalidSongNumberException.java" />
     <MESSAGE value="used invalidSongNumberException in addSongToPlaylist() method" />
     <MESSAGE value="added PlaylistRepositoryTest" />
@@ -534,7 +533,8 @@
     <MESSAGE value="changed the case 3 in Main.java" />
     <MESSAGE value="added javadoc to JukeboxService" />
     <MESSAGE value="replaced the print statement with format in all methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="replaced the print statement with format in all methods" />
+    <MESSAGE value="changed the switch case 8 in Main.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed the switch case 8 in Main.java" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

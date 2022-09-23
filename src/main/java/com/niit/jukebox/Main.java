@@ -127,9 +127,11 @@ public class Main {
                     // prompt to enter playlistId
                     System.out.println("Enter the PlaylistId ");
                     int playlistId = input.nextInt();
+                    // prompt to enter song ids
                     System.out.println("Enter the Song Ids :");
                     input.nextLine();
                     String songIds = input.nextLine();
+                    // handle the exception
                     try {
                         playlistRepository.addSongToPlaylist(playlistId, songIds);
                     } catch (InvalidSongNumberException exception) {
@@ -138,14 +140,19 @@ public class Main {
                     break;
                 }
                 case 6:
+                    // display the choice of playlist
                     System.out.println("1.Display all playlist  2.Display My Playlist");
+                    // take the input
                     int displayChoice = input.nextInt();
                     jukeboxService.displayPlaylistChoice(displayChoice);
                     break;
                 case 7: {
+                    // display the shuffle songs
                     jukeboxService.shuffleDisplay();
-                    System.out.println("Enter song Number to play the song from playlist");
+                    // prompt to enter the song number
+                    System.out.println("Enter song Number to play the song from playlist or Enter 21 to exit");
                     int playlistPlayChoice = input.nextInt();
+                    // play the song entered
                     jukeboxService.playSongChoice(playlistPlayChoice);
                     break;
                 }
