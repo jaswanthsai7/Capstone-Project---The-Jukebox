@@ -38,7 +38,7 @@ CREATE TABLE `playlist` (
 
 LOCK TABLES `playlist` WRITE;
 /*!40000 ALTER TABLE `playlist` DISABLE KEYS */;
-INSERT INTO `playlist` VALUES (1,'jaswanth','5,1,2,4'),(2,'tony','2'),(3,'win','1,2,4,5'),(14,'jin','1,2,4,5'),(15,'love','1,2,4,7');
+INSERT INTO `playlist` VALUES (1,'jaswanth','1,2,4,7'),(2,'tony','1,4,5');
 /*!40000 ALTER TABLE `playlist` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -80,4 +80,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-09-23  8:56:57
+-- Dump completed on 2022-09-23  9:11:03
