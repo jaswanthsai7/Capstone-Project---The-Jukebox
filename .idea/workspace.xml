@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="added logic to pause the song in JukeboxService">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/Main.java" afterDir="false" />
+    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="changed the default case in Main.java">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/PlaylistRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/PlaylistRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,13 +150,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663675502247</updated>
-    </task>
-    <task id="LOCAL-00061" summary="created jukeboxImpl() method in JukeboxImpl.java">
-      <created>1663757178289</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1663757178289</updated>
     </task>
     <task id="LOCAL-00062" summary="added details to display all songs">
       <created>1663761763082</created>
@@ -493,7 +487,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663932089488</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="changed the default case in Main.java">
+      <created>1663932246030</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1663932246030</updated>
+    </task>
+    <option name="localTasksCounter" value="111" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -508,7 +509,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added setup() and teatDown() in JukeboxServiceTest" />
     <MESSAGE value="completed the test cases in SongRepositoryTest" />
     <MESSAGE value="completed PlaylistRepositoryTest" />
     <MESSAGE value="completed JukeboxServiceTest" />
@@ -533,7 +533,8 @@
     <MESSAGE value="removed the implementation package and classes" />
     <MESSAGE value="added displayPlaylistNames() in PlaylistRepository" />
     <MESSAGE value="added logic to pause the song in JukeboxService" />
-    <option name="LAST_COMMIT_MESSAGE" value="added logic to pause the song in JukeboxService" />
+    <MESSAGE value="changed the default case in Main.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed the default case in Main.java" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

@@ -46,15 +46,14 @@ public class PlaylistRepository {
             boolean execute = preparedStatement.execute();
             // check if the query is successful or not
             if (execute) {
-                System.out.println("Playlist not created");
-                throw new PlaylistNotCreatedException("not created");
+                System.err.println("Playlist not created");
+                throw new PlaylistNotCreatedException("playlist not created");
             } else {
                 System.out.println("Playlist created");
             }
         } catch (SQLException exception) {
             exception.printStackTrace();
         }
-
     }
 
     /**
@@ -66,7 +65,7 @@ public class PlaylistRepository {
     public void addSongToPlaylist(int playlistId, String playlistSongs) throws InvalidSongNumberException {
         String[] checkNumber = playlistSongs.split(",");
         for (String s : checkNumber) {
-            if (Integer.parseInt(s) < 20) {
+            if (Integer.parseInt(s) < 16) {
                 try {
                     // get the database connection
                     databaseService.connect();
@@ -87,14 +86,14 @@ public class PlaylistRepository {
                         if (executeUpdate > 0) {
                             System.out.println("Successfully added the song to playlist");
                         } else {
-                            System.out.println("unable to add the song to playlist");
+                            System.err.println("unable to add the song to playlist");
                         }
                     }
-
                 } catch (SQLException exception) {
                     exception.printStackTrace();
                 }
             } else {
+                System.out.println("Invalid song Entered");
                 throw new InvalidSongNumberException("Enter a valid number");
             }
         }
@@ -119,9 +118,8 @@ public class PlaylistRepository {
             if (executeRemove > 0) {
                 System.out.println("Successfully deleted the playlist");
             } else {
-                System.out.println(" unable to delete the playlist, please check the playlist name");
+                System.err.println(" unable to delete the playlist, please check the playlist name");
             }
-
         } catch (SQLException exception) {
             exception.printStackTrace();
         }
@@ -165,6 +163,7 @@ public class PlaylistRepository {
                     songsInPlaylist.add(playlist);
                 }
             } catch (SQLException exception) {
+                System.out.println("unable to get the playlist");
                 exception.printStackTrace();
             }
             return songsInPlaylist;
@@ -202,7 +201,6 @@ public class PlaylistRepository {
             System.out.println("unable to get the playlist");
             exception.printStackTrace();
         }
-
         for (Playlist allPlaylists : songsInPlaylist) {
             System.out.format("%5s %20s ", "PlaylistId", "PlaylistName\n");
             System.out.println("===============================================================================================");
@@ -211,6 +209,9 @@ public class PlaylistRepository {
         }
     }
 
+    /**
+     * This function displays the playlist names from the database
+     */
     public void displayPlaylistNames() {
         databaseService.connect();
         connection = databaseService.getConnection();
@@ -234,6 +235,5 @@ public class PlaylistRepository {
         } catch (SQLException exception) {
             exception.printStackTrace();
         }
-
     }
 }
