@@ -30,9 +30,9 @@ class PlaylistRepositoryTest {
 
     @Test
     void checkDisplayPlaylistByNameSuccess() {
-        List<Playlist> playlists = playlistRepository.displayPlaylist("tony");
+        List<Playlist> playlists = playlistRepository.displayPlaylist("test");
         List<Song> songList = List.of(new Song(2, "faded", "dance", "alan walker", "different world", "03:31", "src/main/resources/songs/faded.wav"));
-        Playlist actualResult = new Playlist(2, "tony", songList);
+        Playlist actualResult = new Playlist(18, "test", songList);
         Assertions.assertEquals(playlists.toString().replaceAll("[\\[\\]]", ""), actualResult.toString().replaceAll("[\\[\\]]", ""));
     }
 

@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="re changed the print statement">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/5/1577ff0a3bb3c1660602532e884797f4a2ce291f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/e/7e6d80dd68ab815d4b0a06280df784c444bae4e8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/8/a829b95ba70f2f2aab947d508997b0545649bbc6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="removed the implementation package and classes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/implementation/JukeboxImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/model/Playlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/model/Playlist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/PlaylistRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/PlaylistRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/JukeboxService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/JukeboxService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/niit/jukebox/repository/PlaylistRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/niit/jukebox/repository/PlaylistRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +70,7 @@
       <recent name="com.niit.jukebox.service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.com.niit.jukebox.repository in capstone-project-jukebox">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.niit.jukebox.Main" />
       <module name="capstone-project-jukebox" />
@@ -94,7 +92,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SongRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PlaylistRepositoryTest.checkDisplayPlaylistByNameSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="capstone-project-jukebox" />
       <extension name="coverage">
         <pattern>
@@ -103,8 +101,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.niit.jukebox.repository" />
-      <option name="MAIN_CLASS_NAME" value="com.niit.jukebox.repository.SongRepositoryTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="com.niit.jukebox.repository.PlaylistRepositoryTest" />
+      <option name="METHOD_NAME" value="checkDisplayPlaylistByNameSuccess" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -139,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.com.niit.jukebox.repository in capstone-project-jukebox" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.PlaylistRepositoryTest.checkDisplayPlaylistByNameSuccess" />
+        <item itemvalue="JUnit.com.niit.jukebox.repository in capstone-project-jukebox" />
         <item itemvalue="JUnit.All in capstone-project-jukebox" />
         <item itemvalue="JUnit.com.niit.jukebox.service in capstone-project-jukebox" />
-        <item itemvalue="JUnit.SongRepositoryTest" />
       </list>
     </recent_temporary>
   </component>
@@ -155,13 +154,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663675502247</updated>
-    </task>
-    <task id="LOCAL-00058" summary="created a song_path.csv file">
-      <created>1663750056539</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1663750056539</updated>
     </task>
     <task id="LOCAL-00059" summary="added field to Song.java">
       <created>1663755746217</created>
@@ -499,7 +491,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663907640254</updated>
     </task>
-    <option name="localTasksCounter" value="107" />
+    <task id="LOCAL-00107" summary="removed the implementation package and classes">
+      <created>1663914729380</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1663914729380</updated>
+    </task>
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -514,7 +513,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added PlaylistNotFoundException" />
     <MESSAGE value="completed the JukeboxImpl" />
     <MESSAGE value="created JukeboxServiceTest" />
     <MESSAGE value="added setup() and teatDown() in JukeboxServiceTest" />
@@ -539,7 +537,8 @@
     <MESSAGE value="added insert in playlist_queries.sql" />
     <MESSAGE value="added comments for the methods in JukeboxService" />
     <MESSAGE value="re changed the print statement" />
-    <option name="LAST_COMMIT_MESSAGE" value="re changed the print statement" />
+    <MESSAGE value="removed the implementation package and classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed the implementation package and classes" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

@@ -210,4 +210,30 @@ public class PlaylistRepository {
             System.out.println("===============================================================================================");
         }
     }
+
+    public void displayPlaylistNames() {
+        databaseService.connect();
+        connection = databaseService.getConnection();
+        // create an object of playlist
+        List<Playlist> playlists = new ArrayList<>();
+        // write a query
+        String displayQuery = "SELECT `playlist_Id`,`playlist_Name` FROM `jukebox`.`playlist`";
+        try (Statement statement = connection.createStatement()) {
+            ResultSet resultSet = statement.executeQuery(displayQuery);
+            while (resultSet.next()) {
+                int playlistId = resultSet.getInt("playlist_id");
+                String playlistName = resultSet.getString("playlist_Name");
+                playlists.add(new Playlist(playlistId, playlistName));
+            }
+            for (Playlist playlistReturned : playlists) {
+                System.out.format("%5s %20s ", "PlaylistId", "PlaylistName\n");
+                System.out.println("==============================================");
+                System.out.println("  " + playlistReturned.getPlaylistId() + "               " + playlistReturned.getPlaylistName());
+                System.out.println("==============================================");
+            }
+        } catch (SQLException exception) {
+            exception.printStackTrace();
+        }
+
+    }
 }

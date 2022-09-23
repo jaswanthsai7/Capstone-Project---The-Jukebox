@@ -51,11 +51,20 @@ public class JukeboxService {
             clip.open(audioInputStream);
             // start the sound file
             clip.start();
-            System.out.println("Enter 1 to stop and 2 to exit");
+            System.out.println("Enter 0 to stop and 21 exit");
             int enteredNumber = input.nextInt();
             if (enteredNumber == 0) {
                 clip.stop();
-            } else {
+                System.out.println("Enter 1 to start song again or 21 to exit  ");
+                int choice = input.nextInt();
+                if (choice == 1) {
+                    // start the sound file
+                    clip.start();
+                } else if (choice == 21) {
+                    clip.stop();
+                    return;
+                }
+            } else if (enteredNumber == 21) {
                 System.out.println("Song Stopped");
                 clip.stop();
                 return;

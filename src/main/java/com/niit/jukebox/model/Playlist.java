@@ -25,6 +25,11 @@ public class Playlist {
         this.songDetails = songDetails;
     }
 
+    public Playlist(int playlistId, String playlistName) {
+        this.playlistId = playlistId;
+        this.playlistName = playlistName;
+    }
+
     // create getter and setter methods
     public int getPlaylistId() {
         return playlistId;

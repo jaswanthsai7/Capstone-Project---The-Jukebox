@@ -134,6 +134,8 @@ public class Main {
                 case 5: {
                     // display all the songs
                     jukeboxService.getAllSongs();
+                    System.out.println("All the Available playlists to add songs : \n");
+                    playlistRepository.displayPlaylistNames();
                     // prompt to enter playlistId
                     System.out.println("Enter the PlaylistId ");
                     int playlistId = input.nextInt();
