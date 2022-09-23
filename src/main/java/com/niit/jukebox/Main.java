@@ -187,7 +187,7 @@ public class Main {
                     return;
                 default:
                     System.out.println("Please Enter a valid Choice");
-                    return;
+                    break;
             }
         } while (true);
     }

@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="added displayPlaylistNames() in PlaylistRepository">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/6/c67a1a7b900c7a39f72ca71a77ea2c57d297237c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="added logic to pause the song in JukeboxService">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/JukeboxService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/JukeboxService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,13 +149,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663675502247</updated>
-    </task>
-    <task id="LOCAL-00060" summary="added JukeboxImpl.java class">
-      <created>1663756315814</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1663756315814</updated>
     </task>
     <task id="LOCAL-00061" summary="created jukeboxImpl() method in JukeboxImpl.java">
       <created>1663757178289</created>
@@ -497,7 +486,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663918793333</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="added logic to pause the song in JukeboxService">
+      <created>1663932089488</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1663932089488</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -512,7 +508,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="created JukeboxServiceTest" />
     <MESSAGE value="added setup() and teatDown() in JukeboxServiceTest" />
     <MESSAGE value="completed the test cases in SongRepositoryTest" />
     <MESSAGE value="completed PlaylistRepositoryTest" />
@@ -537,7 +532,8 @@
     <MESSAGE value="re changed the print statement" />
     <MESSAGE value="removed the implementation package and classes" />
     <MESSAGE value="added displayPlaylistNames() in PlaylistRepository" />
-    <option name="LAST_COMMIT_MESSAGE" value="added displayPlaylistNames() in PlaylistRepository" />
+    <MESSAGE value="added logic to pause the song in JukeboxService" />
+    <option name="LAST_COMMIT_MESSAGE" value="added logic to pause the song in JukeboxService" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
