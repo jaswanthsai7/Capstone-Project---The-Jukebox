@@ -55,21 +55,31 @@ public class JukeboxService {
             int enteredNumber = input.nextInt();
             if (enteredNumber == 0) {
                 clip.stop();
-                System.out.println("Enter 1 to start song again or 21 to exit  ");
+                System.out.println("Enter 1 to start song again  2 to pause or 21 to exit");
                 int choice = input.nextInt();
-                if (choice == 1) {
-                    // start the sound file
-                    clip.start();
-                } else if (choice == 21) {
-                    clip.stop();
-                    return;
-                }
+                do {
+                    if (choice == 1) {
+                        // start the sound file
+                        clip.start();
+                        System.out.println("Enter 2 to pause or 21 to exit");
+                        choice = input.nextInt();
+                    } else if (choice == 2) {
+                        // stop the sound
+                        clip.stop();
+                        System.out.println("Enter 1 to play 2 to pause or 21 to exit");
+                        choice = input.nextInt();
+                    } else if (choice == 21) {
+                        clip.stop();
+                        System.out.println("Song Stopped");
+                        return;
+                    }
+                } while (true);
             } else if (enteredNumber == 21) {
                 System.out.println("Song Stopped");
                 clip.stop();
                 return;
             }
-            // pause the current thread for the time the song is being played
+            // pause the current thread by play time
             long songDurationInMilliseconds = clip.getMicrosecondLength() / 1000L;
             Thread.sleep(songDurationInMilliseconds);
         } catch (UnsupportedAudioFileException | IOException | InterruptedException |

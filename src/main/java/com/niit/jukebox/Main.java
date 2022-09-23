@@ -113,7 +113,7 @@ public class Main {
                         // handle the exception
                         playlistRepository.createPlaylist(playlistName, songNumbers);
                     } catch (PlaylistNotCreatedException exception) {
-                        System.out.println("unable to create playlist");
+                        System.err.println(exception.getMessage());
                         exception.printStackTrace();
                     }
                     // ask to display playlist
@@ -134,7 +134,7 @@ public class Main {
                 case 5: {
                     // display all the songs
                     jukeboxService.getAllSongs();
-                    System.out.println("All the Available playlists to add songs : \n");
+                    System.out.println("All the playlists Available : \n");
                     playlistRepository.displayPlaylistNames();
                     // prompt to enter playlistId
                     System.out.println("Enter the PlaylistId ");
@@ -186,6 +186,7 @@ public class Main {
                     System.out.println("---------------See you again soon-------------");
                     return;
                 default:
+                    System.out.println("Please Enter a valid Choice");
                     return;
             }
         } while (true);
