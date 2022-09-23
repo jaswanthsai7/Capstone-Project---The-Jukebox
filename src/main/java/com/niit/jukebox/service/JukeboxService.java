@@ -103,7 +103,7 @@ public class JukeboxService {
      *
      * @param playChoice The song id of the song to be played.
      */
-    public void playSong(int playChoice) {
+    public void playSongChoice(int playChoice) {
         List<Song> songs = songRepository.displayAllSongs();
         for (Song songAll : songs) {
             if (songAll.getSongId() == playChoice) {
@@ -119,7 +119,7 @@ public class JukeboxService {
      *
      * @param displayChoice 1 for displaying all playlists, 2 for displaying a specific playlist
      */
-    public void displayPlaylist(int displayChoice) {
+    public void displayPlaylistChoice(int displayChoice) {
         if (displayChoice == 1) {
             playlistRepository.displayAllPlaylists();
         } else if (displayChoice == 2) {
@@ -130,6 +130,9 @@ public class JukeboxService {
             System.out.println("=================================================================`");
             System.out.println(playlist.toString().replaceAll("[\\[\\]]", ",").replace(",", ""));
             System.out.println("==================================================================");
+            System.out.println("Enter the songId to play : ");
+            int songId = input.nextInt();
+            playSongChoice(songId);
         }
     }
 
@@ -143,7 +146,7 @@ public class JukeboxService {
      *
      * @param sortingChoice 1 = sort by name, 2 = sort by artist, 3 = sort by genre
      */
-    public void allSort(int sortingChoice) {
+    public void allTypeSort(int sortingChoice) {
         switch (sortingChoice) {
             case 1:
                 sortingService.sortByName();
