@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="changed the default case in Main.java">
+    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="made changes in PlaylistRepository">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/PlaylistRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/PlaylistRepository.java" afterDir="false" />
     </list>
@@ -118,16 +118,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.niit.jukebox.service in capstone-project-jukebox" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="capstone-project-jukebox" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.niit.jukebox.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.niit.jukebox.service" />
-      <option name="TEST_OBJECT" value="package" />
+    <configuration name="Scratch" type="Java Scratch" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Scratch" />
+      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_52.java" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -135,10 +128,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Java Scratch.Scratch" />
         <item itemvalue="JUnit.PlaylistRepositoryTest.checkDisplayPlaylistByNameSuccess" />
         <item itemvalue="JUnit.com.niit.jukebox.repository in capstone-project-jukebox" />
         <item itemvalue="JUnit.All in capstone-project-jukebox" />
-        <item itemvalue="JUnit.com.niit.jukebox.service in capstone-project-jukebox" />
       </list>
     </recent_temporary>
   </component>
@@ -150,13 +143,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663675502247</updated>
-    </task>
-    <task id="LOCAL-00062" summary="added details to display all songs">
-      <created>1663761763082</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1663761763082</updated>
     </task>
     <task id="LOCAL-00063" summary="created DatabaseTest.java in test folder">
       <created>1663769355787</created>
@@ -494,7 +480,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663932246030</updated>
     </task>
-    <option name="localTasksCounter" value="111" />
+    <task id="LOCAL-00111" summary="made changes in PlaylistRepository">
+      <created>1663936978506</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1663936978506</updated>
+    </task>
+    <option name="localTasksCounter" value="112" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -509,7 +502,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="completed the test cases in SongRepositoryTest" />
     <MESSAGE value="completed PlaylistRepositoryTest" />
     <MESSAGE value="completed JukeboxServiceTest" />
     <MESSAGE value="completed DatabaseServiceTest" />
@@ -534,7 +526,8 @@
     <MESSAGE value="added displayPlaylistNames() in PlaylistRepository" />
     <MESSAGE value="added logic to pause the song in JukeboxService" />
     <MESSAGE value="changed the default case in Main.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed the default case in Main.java" />
+    <MESSAGE value="made changes in PlaylistRepository" />
+    <option name="LAST_COMMIT_MESSAGE" value="made changes in PlaylistRepository" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

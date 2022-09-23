@@ -227,9 +227,9 @@ public class PlaylistRepository {
                 playlists.add(new Playlist(playlistId, playlistName));
             }
             for (Playlist playlistReturned : playlists) {
-                System.out.format("%5s %20s ", "PlaylistId", "PlaylistName\n");
+                System.out.format("%5s %20s ", " | PlaylistId |", "| PlaylistName |\n");
                 System.out.println("==============================================");
-                System.out.println("  " + playlistReturned.getPlaylistId() + "               " + playlistReturned.getPlaylistName());
+                System.out.println(" |" + playlistReturned.getPlaylistId() + "          |     |" + playlistReturned.getPlaylistName() + "         |");
                 System.out.println("==============================================");
             }
         } catch (SQLException exception) {
