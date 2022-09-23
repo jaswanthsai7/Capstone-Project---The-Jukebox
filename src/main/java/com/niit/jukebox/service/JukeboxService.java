@@ -138,7 +138,7 @@ public class JukeboxService {
             System.out.println("===============================================================================================");
             System.out.println(playlist.toString().replaceAll("[\\[\\]]", ",").replace(",", ""));
             System.out.println("===============================================================================================");
-            System.out.println("Enter the songId to play : ");
+            System.out.println("Enter the songId to play or Enter 21 to exit ");
             int songId = input.nextInt();
             playSongChoice(songId);
         }
@@ -189,6 +189,7 @@ public class JukeboxService {
         List<Song> songs = songRepository.displayAllSongs();
         // shuffle the songs
         List<Song> shuffledSongs = shuffle(songs);
+        // print the songs
         System.out.println("=============================================================================================");
         System.out.println("SongId     SongName           Genre           Artist             Album             Duration");
         System.out.println("=============================================================================================");

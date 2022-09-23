@@ -39,19 +39,23 @@ public class Main {
                     System.out.println("Search songs based on \n1.Artist \n2.Genre \n3.Song Name");
                     // prompt to enter search type
                     System.out.println("Enter search Type : ");
-                    int sortChoice = input.nextInt();
+                    int searchChoice = input.nextInt();
                     // check the entered number and display
-                    switch (sortChoice) {
+                    switch (searchChoice) {
                         case 1: {
                             List<Song> songs = songRepository.displayAllSongs();
                             // prompt to enter artist name
                             System.out.println("Enter Artist Name : \n");
                             input.nextLine();
                             String artistName = input.nextLine();
-                            List<Song> songList = songRepository.searchByArtist(songs, artistName);
+                            List<Song> artistSongs = songRepository.searchByArtist(songs, artistName);
                             // display all the songs of the artist
-                            System.out.println(songList.toString().replaceAll("[\\[\\]]", ""));
-                            System.out.println("Enter the Song number to play the song :");
+                            System.out.println("=============================================================================================");
+                            System.out.println("SongId     SongName           Genre           Artist             Album             Duration");
+                            System.out.println("=============================================================================================");
+                            System.out.println(artistSongs.toString().replaceAll("[\\[\\]]", "").replace(",", ""));
+                            System.out.println("=============================================================================================");
+                            System.out.println("Enter song Id to play or Enter 21 to exit");
                             int playArtistChoice = input.nextInt();
                             // call the play song method to play
                             jukeboxService.playSongChoice(playArtistChoice);
@@ -62,22 +66,30 @@ public class Main {
                             System.out.println("Enter Genre Name : \n");
                             input.nextLine();
                             String genreName = input.nextLine();
-                            List<Song> songs1 = songRepository.searchByGenre(songs, genreName);
-                            System.out.println(songs1.toString().replaceAll("[\\[\\]]", ""));
-                            System.out.println("Enter the Song number to play the song :");
+                            List<Song> genreSongs = songRepository.searchByGenre(songs, genreName);
+                            System.out.println("=============================================================================================");
+                            System.out.println("SongId     SongName           Genre           Artist             Album             Duration");
+                            System.out.println("=============================================================================================");
+                            System.out.println(genreSongs.toString().replaceAll("[\\[\\]]", "").replace(",", ""));
+                            System.out.println("=============================================================================================");
+                            System.out.println("Enter song Id to play or Enter 21 to exit");
                             int playGenreChoice = input.nextInt();
                             // call the play song method to play
                             jukeboxService.playSongChoice(playGenreChoice);
                             break;
                         }
                         case 3: {
-                            List<Song> songs = songRepository.displayAllSongs();
+                            List<Song> songList = songRepository.displayAllSongs();
                             System.out.println("Enter Song Name : \n");
                             input.nextLine();
                             String songName = input.nextLine();
-                            List<Song> songs1 = songRepository.searchByGenre(songs, songName);
-                            System.out.println(songs1.toString().replaceAll("[\\[\\]]", ""));
-                            System.out.println("Enter the Song number to play the song :");
+                            List<Song> songNames = songRepository.searchByName(songList, songName);
+                            System.out.println("=============================================================================================");
+                            System.out.println("SongId     SongName           Genre           Artist             Album             Duration");
+                            System.out.println("=============================================================================================");
+                            System.out.println(songNames.toString().replaceAll("[\\[\\]]", "").replace(",", ""));
+                            System.out.println("=============================================================================================");
+                            System.out.println("Enter song Id to play or Enter 21 to exit");
                             int playGenreChoice = input.nextInt();
                             // call the play song method to play
                             jukeboxService.playSongChoice(playGenreChoice);
@@ -89,9 +101,7 @@ public class Main {
                     break;
                 case 3: {
                     System.out.println("All the available songs : \n");
-                    List<Song> songs = songRepository.displayAllSongs();
-                    // display all the available songs
-                    System.out.println(songs.toString().replaceAll("[\\[\\]]", "").replace(",", ""));
+                    jukeboxService.getAllSongs();
                     // prompt to enter name of the play list
                     System.out.println("Enter the Name of the playlist :\n");
                     input.nextLine();
@@ -177,6 +187,5 @@ public class Main {
                     return;
             }
         } while (true);
-
     }
 }
