@@ -192,8 +192,8 @@ public class PlaylistRepository {
                 String playlistName = resultSet.getString("playlist_name");
                 String songsId = resultSet.getString("song_id");
                 String[] split = songsId.split(",");
-                for (String s : split) {
-                    Song songById = songRepository.getSongById(Integer.parseInt(s.trim()));
+                for (String eachSong : split) {
+                    Song songById = songRepository.getSongById(Integer.parseInt(eachSong));
                     songsList.add(songById);
                 }
                 songsInPlaylist.add(new Playlist(playlistId, playlistName, songsList));
@@ -202,6 +202,12 @@ public class PlaylistRepository {
             System.out.println("unable to get the playlist");
             exception.printStackTrace();
         }
-        System.out.println(songsInPlaylist.toString().replaceAll("[\\[\\]]", ""));
+
+        for (Playlist allPlaylists : songsInPlaylist) {
+            System.out.format("%5s %20s ", "PlaylistId", "PlaylistName\n");
+            System.out.println("=================================================================`");
+            System.out.println(allPlaylists.toString().replaceAll("[\\[\\]]", ",").replace(",", ""));
+            System.out.println("==================================================================");
+        }
     }
 }

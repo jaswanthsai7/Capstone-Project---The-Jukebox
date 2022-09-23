@@ -91,8 +91,11 @@ public class JukeboxService {
      */
     public void getAllSongs() {
         List<Song> songs = songRepository.displayAllSongs();
-        System.out.println(songs.toString().replaceAll("[\\[\\]]", ""));
-
+        System.out.println("====================================================================================");
+        System.out.println("SongId     SongName     Genre         Artist             Album          Duration");
+        System.out.println("=====================================================================================");
+        System.out.println(songs.toString().replaceAll("[\\[\\]]", "").replace(",", ""));
+        System.out.println("=======================================================================================");
     }
 
     /**
@@ -122,8 +125,11 @@ public class JukeboxService {
         } else if (displayChoice == 2) {
             System.out.println("Enter name of the Playlist : ");
             String playlistName = input.nextLine();
-            List<Playlist> playlists = playlistRepository.displayPlaylist(playlistName);
-            System.out.println(playlists.toString().replaceAll("[\\[\\]]", ""));
+            List<Playlist> playlist = playlistRepository.displayPlaylist(playlistName);
+            System.out.format("%5s %20s ", "PlaylistId", "PlaylistName\n");
+            System.out.println("=================================================================`");
+            System.out.println(playlist.toString().replaceAll("[\\[\\]]", ",").replace(",", ""));
+            System.out.println("==================================================================");
         }
     }
 
@@ -163,6 +169,15 @@ public class JukeboxService {
         System.out.println("1.Display All Songs \n2.Search songs \n3.Create a playlist \n4.Delete Playlist \n5.Add songs to Playlist \n6.Display Playlist \n7.shuffle the songs \n8.Sort songs \n9.exit");
     }
 
+    public void shuffleDisplay() {
+        List<Song> songs = songRepository.displayAllSongs();
+        List<Song> shuffledSongs = shuffle(songs);
+        System.out.println("====================================================================================");
+        System.out.println("SongId     SongName     Genre         Artist             Album          Duration");
+        System.out.println("=====================================================================================");
+        System.out.println(shuffledSongs.toString().replaceAll("[\\[\\]]", "").replace(",", ""));
+        System.out.println("=====================================================================================");
+    }
 }
 
 
