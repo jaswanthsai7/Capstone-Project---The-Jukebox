@@ -158,9 +158,12 @@ public class Main {
                 }
                 case 8: {
                     System.out.println("Sort songs Based on : \n");
+                    // prompt to enter the sorting type
                     System.out.println("1.SongName  2.Artist  3.Genre ");
                     int sortingChoice = input.nextInt();
+                    // call the method to display the sorted songs
                     jukeboxService.allTypeSort(sortingChoice);
+                    // prompt to enter the song or exit
                     System.out.println("Enter song Number to play the song from playlist or enter 21 to exit ");
                     int playlistPlayChoice = input.nextInt();
                     jukeboxService.playSongChoice(playlistPlayChoice);

@@ -78,6 +78,7 @@ public class JukeboxService {
      */
     public List<Song> shuffle(List<Song> songsList) {
         if (songsList == null) {
+            // return empty list
             return Collections.emptyList();
         } else {
             // to shuffle the songs
@@ -104,11 +105,13 @@ public class JukeboxService {
      * @param playChoice The song id of the song to be played.
      */
     public void playSongChoice(int playChoice) {
+        // get the list of songs
         List<Song> songs = songRepository.displayAllSongs();
         for (Song songAll : songs) {
             if (songAll.getSongId() == playChoice) {
                 System.out.println("Current Playing song " + songAll.getSongName() + " Song Duration :" + songAll.getDuration());
                 String songPath = songAll.getSongPath();
+                // pass the song path to play method
                 play(songPath);
             }
         }
@@ -120,12 +123,17 @@ public class JukeboxService {
      * @param displayChoice 1 for displaying all playlists, 2 for displaying a specific playlist
      */
     public void displayPlaylistChoice(int displayChoice) {
+        // check the choice
         if (displayChoice == 1) {
+            // display all playlist
             playlistRepository.displayAllPlaylists();
         } else if (displayChoice == 2) {
+            // prompt to enter the name
             System.out.println("Enter name of the Playlist : ");
             String playlistName = input.nextLine();
+            // call the displayPlaylist method
             List<Playlist> playlist = playlistRepository.displayPlaylist(playlistName);
+            // print the playlist
             System.out.format("%5s %20s ", "PlaylistId", "PlaylistName\n");
             System.out.println("=================================================================`");
             System.out.println(playlist.toString().replaceAll("[\\[\\]]", ",").replace(",", ""));
@@ -147,14 +155,18 @@ public class JukeboxService {
      * @param sortingChoice 1 = sort by name, 2 = sort by artist, 3 = sort by genre
      */
     public void allTypeSort(int sortingChoice) {
+        // check the entered choice
         switch (sortingChoice) {
             case 1:
+                // call the sortByName()
                 sortingService.sortByName();
                 break;
             case 2:
+                // call SortByArtist()
                 sortingService.sortByArtist();
                 break;
             case 3:
+                // call SortByGenre()
                 sortingService.sortByGenre();
                 break;
             default:
@@ -173,7 +185,9 @@ public class JukeboxService {
     }
 
     public void shuffleDisplay() {
+        // get the songs list
         List<Song> songs = songRepository.displayAllSongs();
+        // shuffle the songs
         List<Song> shuffledSongs = shuffle(songs);
         System.out.println("====================================================================================");
         System.out.println("SongId     SongName     Genre         Artist             Album          Duration");

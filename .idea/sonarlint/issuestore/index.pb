@@ -21,12 +21,6 @@ C
 hs_err_pid14260.log,1\5\15561a97565abc3be37a5453b7f5d18b44d903cb
 C
 hs_err_pid22276.log,1\0\101855eb3c04da5d4fb33cf6ea4a3d1968d1ad03
-o
-?src/test/java/com/niit/jukebox/service/DatabaseServiceTest.java,e\9\e9fb6040aa7b50669c0b68ecd5d7d6423c1200eb
-n
->src/test/java/com/niit/jukebox/service/JukeboxServiceTest.java,8\6\86a95dd22213fcb02f768f1c2698bc2969dc464d
-u
-Esrc/test/java/com/niit/jukebox/repository/PlaylistRepositoryTest.java,1\1\116acecd5f7c9127a4891b87510c0139d449a68f
 q
 Asrc/test/java/com/niit/jukebox/repository/SongRepositoryTest.java,1\5\1577ff0a3bb3c1660602532e884797f4a2ce291f
 n
