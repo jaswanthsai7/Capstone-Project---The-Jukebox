@@ -31,3 +31,9 @@
  INSERT INTO `jukebox`.`song` (`song_id`, `song_name`, `genre`, `artist`, `album`, `duration`, `song_path`) VALUES ('13', 'unstoppable', 'pop', 'sia', 'this is acting', '03:37', 'src/main/resources/songs/unstoppable.wav');
  INSERT INTO `jukebox`.`song` (`song_id`, `song_name`, `genre`, `artist`, `album`, `duration`, `song_path`) VALUES ('14', 'we dont talk anymore', 'pop', 'charlie puth', 'nine track mind', '03:37', 'src/main/resources/songs/wedonttalkanymore.wav');
  INSERT INTO `jukebox`.`song` (`song_id`, `song_name`, `genre`, `artist`, `album`, `duration`, `song_path`) VALUES ('15', 'wake me up', 'house music', 'avicii', 'true', '04:09', 'src/main/resources/songs/wakemeup.wav');
+
+-- display the songs by id
+   SELECT * FROM `jukebox`.`song` WHERE `song_id`=`7`;
+
+-- display all the songs
+   SELECT * FROM `jukebox`.`song`;

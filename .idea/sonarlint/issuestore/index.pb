@@ -7,8 +7,6 @@ C
 hs_err_pid14260.log,1\5\15561a97565abc3be37a5453b7f5d18b44d903cb
 C
 hs_err_pid22276.log,1\0\101855eb3c04da5d4fb33cf6ea4a3d1968d1ad03
-k
-;src/main/java/com/niit/jukebox/service/DatabaseService.java,f\9\f9f8ba9379917029b00c2747fad11af96116d64e
 w
 G.idea/sonarlint/issuestore/4/c/4c2fdc946dd85459490e81f7a03e98ca2823e1b2,1\2\12b286a50ed1d5f282d2e3283fca83d4bd645533
 w
