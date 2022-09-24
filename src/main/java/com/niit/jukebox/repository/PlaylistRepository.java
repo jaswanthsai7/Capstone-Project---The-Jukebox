@@ -166,7 +166,7 @@ public class PlaylistRepository {
                     songsInPlaylist.add(playlist);
                 }
             } catch (SQLException exception) {
-                System.out.println("unable to get the playlist");
+                System.err.println("unable to get the playlist");
                 exception.printStackTrace();
             }
             return songsInPlaylist;
@@ -201,7 +201,7 @@ public class PlaylistRepository {
                 songsInPlaylist.add(new Playlist(playlistId, playlistName, songsList));
             }
         } catch (SQLException exception) {
-            System.out.println("unable to get the playlist");
+            System.err.println("unable to get the playlist");
             exception.printStackTrace();
         }
         for (Playlist allPlaylists : songsInPlaylist) {

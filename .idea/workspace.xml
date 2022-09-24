@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="added pause for play() method in JukeboxService.java">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/exception/PlaylistNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/1/116acecd5f7c9127a4891b87510c0139d449a68f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/e/7e6d80dd68ab815d4b0a06280df784c444bae4e8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="created PlaylistNotFoundException.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/PlaylistRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/repository/PlaylistRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/JukeboxService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/JukeboxService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,13 +145,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663675502247</updated>
-    </task>
-    <task id="LOCAL-00066" summary="added setup() and tearDown() in SongRepositoryTest">
-      <created>1663770409097</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1663770409097</updated>
     </task>
     <task id="LOCAL-00067" summary="completed displayPlaylist() in PlaylistRepository">
       <created>1663773498603</created>
@@ -492,7 +482,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664007211563</updated>
     </task>
-    <option name="localTasksCounter" value="115" />
+    <task id="LOCAL-00115" summary="created PlaylistNotFoundException.java">
+      <created>1664025186322</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1664025186323</updated>
+    </task>
+    <option name="localTasksCounter" value="116" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -507,7 +504,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="removed the for loop in searchByName() and added Stream() method" />
     <MESSAGE value="added all choice in JukeboxImpl" />
     <MESSAGE value="replaced the logic of methods with stream() in SongRepository" />
     <MESSAGE value="created SortingService and made it extends service" />
@@ -532,7 +528,8 @@
     <MESSAGE value="changed the displayPlaylistNames() method logic" />
     <MESSAGE value="added addSongsDisplay() method in JukeboxService" />
     <MESSAGE value="added pause for play() method in JukeboxService.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="added pause for play() method in JukeboxService.java" />
+    <MESSAGE value="created PlaylistNotFoundException.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="created PlaylistNotFoundException.java" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

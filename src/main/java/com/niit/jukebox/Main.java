@@ -36,7 +36,7 @@ public class Main {
                     break;
                 case 2:
                     // search songs based on artist genre and song name
-                    System.out.println("Search songs based on \n1.Artist \n2.Genre \n3.Song Name ");
+                    System.out.println("\u001B[32m Search songs based on \u001B[0m \n1.Artist \n2.Genre \n3.Song Name ");
                     // prompt to enter search type
                     System.out.println("\u001B[32m Enter search Type : \u001B[0m");
                     int searchChoice = input.nextInt();

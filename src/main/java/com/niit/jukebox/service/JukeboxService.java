@@ -52,31 +52,31 @@ public class JukeboxService {
             clip.open(audioInputStream);
             // start the sound file
             clip.start();
-            System.out.println("Enter 0 to pause or Enter 21 to stop and exit");
+            System.out.println("\u001B[32m Enter 0 to pause or Enter 21 to stop and exit \u001B[0m");
             int enteredNumber = input.nextInt();
             if (enteredNumber == 0) {
                 clip.stop();
-                System.out.println("Enter 1 to play or Enter 21 to stop and exit");
+                System.out.println("\u001B[32m Enter 1 to play or Enter 21 to stop and exit \u001B[0m");
                 int choice = input.nextInt();
                 do {
                     if (choice == 1) {
                         // start the sound file
                         clip.start();
-                        System.out.println("Enter 0 to pause or Enter 21 to stop and exit");
+                        System.out.println("\u001B[32m Enter 0 to pause or Enter 21 to stop and exit \u001B[0m");
                         choice = input.nextInt();
                     } else if (choice == 0) {
                         // stop the sound
                         clip.stop();
-                        System.out.println("Enter 1 to play or Enter 21 to stop and exit");
+                        System.out.println("\u001B[32m Enter 1 to play or Enter 21 to stop and exit \u001B[0m");
                         choice = input.nextInt();
                     } else if (choice == 21) {
                         clip.stop();
-                        System.out.println("Song Stopped");
+                        System.err.println("Song Stopped");
                         return;
                     }
                 } while (true);
             } else if (enteredNumber == 21) {
-                System.out.println("Song Stopped");
+                System.err.println("Song Stopped");
                 clip.stop();
                 return;
             }
@@ -149,7 +149,7 @@ public class JukeboxService {
             playlistRepository.displayAllPlaylists();
         } else if (displayChoice == 2) {
             // prompt to enter the name
-            System.out.println("Enter name of the Playlist : ");
+            System.out.println("\u001B[32m Enter name of the Playlist : \u001B[0m");
             String playlistName = input.nextLine();
             // call the displayPlaylist method
             List<Playlist> playlist = playlistRepository.displayPlaylist(playlistName);
@@ -158,7 +158,7 @@ public class JukeboxService {
             System.out.println("===============================================================================================");
             System.out.println(playlist.toString().replaceAll("[\\[\\]]", ",").replace(",", ""));
             System.out.println("===============================================================================================");
-            System.out.println("Enter the songId to play or Enter 21 to exit ");
+            System.out.println("\u001B[32m Enter the songId to play or Enter 21 to exit \u001B[0m");
             int songId = input.nextInt();
             playSongChoice(songId);
         }
@@ -198,9 +198,9 @@ public class JukeboxService {
      * This function displays the menu of the application
      */
     public void displayDetails() {
-        System.out.println("===================================================");
-        System.out.println("                  Welcome to Jukebox               ");
-        System.out.println("===================================================\n");
+        System.out.println("\u001B[32m==================================================== \u001B[0m");
+        System.out.println("\u001B[32m                  Welcome to Jukebox                \u001B[0m");
+        System.out.println("\u001B[32m==================================================== \u001B[0m\n");
         System.out.println("1.Display All Songs \n2.Search songs \n3.Create a playlist \n4.Delete Playlist \n5.Add songs to Playlist \n6.Display Playlist \n7.shuffle the songs \n8.Sort songs \n9.exit");
     }
 
@@ -227,14 +227,14 @@ public class JukeboxService {
     public void addSongsDisplay() {
         int addSongChoice;
         do {
-            System.out.println("All the playlists Available : \n");
+            System.out.println("\u001B[32m All the playlists Available : \u001B[0m\n");
             getAllSongs();
             playlistRepository.displayPlaylistNames();
             // prompt to enter playlistId
-            System.out.println("Enter the PlaylistId ");
+            System.out.println("\u001B[32m Enter the PlaylistId : \u001B[0m");
             int playlistId = input.nextInt();
             // prompt to enter song ids
-            System.out.println("Enter the Song Ids :");
+            System.out.println("\u001B[32m Enter the Song Ids : \u001B[0m");
             input.nextLine();
             String songIds = input.nextLine();
             // handle the exception
@@ -244,7 +244,7 @@ public class JukeboxService {
                 System.out.println(exception.getMessage());
                 exception.printStackTrace();
             }
-            System.out.println("Enter 21 to exit or 1 to add songs again ");
+            System.out.println("\u001B[32m Enter 21 to exit or 1 to add songs again \u001B[0m");
             addSongChoice = input.nextInt();
         } while (addSongChoice != 21);
     }
