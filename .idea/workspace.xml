@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="changed the displayPlaylistNames() method logic">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/0/20979e55a5f59a65638f6e1e9c520657e8951e26" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/a/4a7dc6c336e4150ac582d76f7cab237c6612a4bf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/f/bfd934caf282e3f6fd4bcc3394ca6e8899f2c7d0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/9/c9c75c9673d7d6065f22e63dec6073710a2942cb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/9/e98b12189c30231908285eedc746c89c5b0a1bb4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="added addSongsDisplay() method in JukeboxService">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/JukeboxService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/JukeboxService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/SortingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/SortingService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,13 +144,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663675502247</updated>
-    </task>
-    <task id="LOCAL-00064" summary="created setup() and tearDown() methods in DatabaseServiceTest">
-      <created>1663769545393</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1663769545393</updated>
     </task>
     <task id="LOCAL-00065" summary="created SongRepositoryTest.java">
       <created>1663770311063</created>
@@ -495,7 +481,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663939771610</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="added addSongsDisplay() method in JukeboxService">
+      <created>1664003270147</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1664003270147</updated>
+    </task>
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -510,7 +503,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="completed JukeboxServiceTest" />
     <MESSAGE value="completed DatabaseServiceTest" />
     <MESSAGE value="removed the for loop in searchByName() and added Stream() method" />
     <MESSAGE value="added all choice in JukeboxImpl" />
@@ -535,7 +527,8 @@
     <MESSAGE value="changed the default case in Main.java" />
     <MESSAGE value="made changes in PlaylistRepository" />
     <MESSAGE value="changed the displayPlaylistNames() method logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed the displayPlaylistNames() method logic" />
+    <MESSAGE value="added addSongsDisplay() method in JukeboxService" />
+    <option name="LAST_COMMIT_MESSAGE" value="added addSongsDisplay() method in JukeboxService" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

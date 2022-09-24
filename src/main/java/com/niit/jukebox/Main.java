@@ -123,6 +123,7 @@ public class Main {
                     break;
                 }
                 case 4:
+                    playlistRepository.displayPlaylistNames();
                     // prompt to enter name of the playlist
                     System.out.println("Enter the Name of the Playlist to delete");
                     input.nextLine();
@@ -147,7 +148,7 @@ public class Main {
                     // display the shuffle songs
                     jukeboxService.shuffleDisplay();
                     // prompt to enter the song number
-                    System.out.println("Enter song Number to play the song from playlist or Enter 21 to exit");
+                    System.out.println("Enter songId to play the song from playlist or Enter 21 to exit");
                     int playlistPlayChoice = input.nextInt();
                     // play the song entered
                     jukeboxService.playSongChoice(playlistPlayChoice);

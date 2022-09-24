@@ -52,22 +52,22 @@ public class JukeboxService {
             clip.open(audioInputStream);
             // start the sound file
             clip.start();
-            System.out.println("Enter 0 to stop and 21 exit");
+            System.out.println("Enter 0 to pause or Enter 21 to stop and exit");
             int enteredNumber = input.nextInt();
             if (enteredNumber == 0) {
                 clip.stop();
-                System.out.println("Enter 1 to start song again  2 to pause or 21 to exit");
+                System.out.println("Enter 1 to play or Enter 21 to stop and exit");
                 int choice = input.nextInt();
                 do {
                     if (choice == 1) {
                         // start the sound file
                         clip.start();
-                        System.out.println("Enter 2 to pause or 21 to exit");
+                        System.out.println("Enter 0 to pause or Enter 21 to stop and exit");
                         choice = input.nextInt();
-                    } else if (choice == 2) {
+                    } else if (choice == 0) {
                         // stop the sound
                         clip.stop();
-                        System.out.println("Enter 1 to play 2 to pause or 21 to exit");
+                        System.out.println("Enter 1 to play or Enter 21 to stop and exit");
                         choice = input.nextInt();
                     } else if (choice == 21) {
                         clip.stop();
@@ -204,6 +204,9 @@ public class JukeboxService {
         System.out.println("1.Display All Songs \n2.Search songs \n3.Create a playlist \n4.Delete Playlist \n5.Add songs to Playlist \n6.Display Playlist \n7.shuffle the songs \n8.Sort songs \n9.exit");
     }
 
+    /**
+     * It gets all the songs from the repository, shuffles them, and prints them
+     */
     public void shuffleDisplay() {
         // get the songs list
         List<Song> songs = songRepository.displayAllSongs();
@@ -218,6 +221,9 @@ public class JukeboxService {
 
     }
 
+    /**
+     * It takes the playlistId and songIds as input and adds the songs to the playlist
+     */
     public void addSongsDisplay() {
         int addSongChoice;
         do {
