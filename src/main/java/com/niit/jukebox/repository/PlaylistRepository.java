@@ -7,6 +7,7 @@ package com.niit.jukebox.repository;
 
 import com.niit.jukebox.exception.InvalidSongNumberException;
 import com.niit.jukebox.exception.PlaylistNotCreatedException;
+import com.niit.jukebox.exception.PlaylistNotFoundException;
 import com.niit.jukebox.model.Playlist;
 import com.niit.jukebox.model.Song;
 import com.niit.jukebox.service.DatabaseService;
@@ -19,11 +20,12 @@ import java.util.List;
 public class PlaylistRepository {
     DatabaseService databaseService;
     Connection connection;
-    SongRepository songRepository = new SongRepository();
+    SongRepository songRepository;
 
     public PlaylistRepository() {
         databaseService = new DatabaseService();
         connection = databaseService.getConnection();
+        songRepository = new SongRepository();
     }
 
     /**
@@ -64,8 +66,8 @@ public class PlaylistRepository {
      */
     public void addSongToPlaylist(int playlistId, String playlistSongs) throws InvalidSongNumberException {
         String[] checkNumber = playlistSongs.split(",");
-        for (String s : checkNumber) {
-            if (Integer.parseInt(s) < 16) {
+        for (String songId : checkNumber) {
+            if (Integer.parseInt(songId) < 16) {
                 try {
                     // get the database connection
                     databaseService.connect();
@@ -93,8 +95,8 @@ public class PlaylistRepository {
                     exception.printStackTrace();
                 }
             } else {
-                System.out.println("Invalid song Entered");
-                throw new InvalidSongNumberException("Enter a valid number");
+                System.err.println("Invalid songId Entered");
+                throw new InvalidSongNumberException("Invalid songId Entered, Enter a valid number");
             }
         }
     }
@@ -104,7 +106,7 @@ public class PlaylistRepository {
      *
      * @param playlistName The name of the playlist to be deleted.
      */
-    public void removePlaylist(String playlistName) {
+    public void removePlaylist(String playlistName) throws PlaylistNotFoundException {
         // get the database connection
         databaseService.connect();
         connection = databaseService.getConnection();
@@ -118,7 +120,8 @@ public class PlaylistRepository {
             if (executeRemove > 0) {
                 System.out.println("Successfully deleted the playlist");
             } else {
-                System.err.println(" unable to delete the playlist, please check the playlist name");
+                System.err.println("please check the playlist name");
+                throw new PlaylistNotFoundException("unable to find playlist ");
             }
         } catch (SQLException exception) {
             exception.printStackTrace();
