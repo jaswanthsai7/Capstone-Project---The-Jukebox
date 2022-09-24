@@ -1,6 +1,5 @@
 package com.niit.jukebox;
 
-import com.niit.jukebox.exception.InvalidSongNumberException;
 import com.niit.jukebox.exception.PlaylistNotCreatedException;
 import com.niit.jukebox.model.Song;
 import com.niit.jukebox.repository.PlaylistRepository;
@@ -134,21 +133,7 @@ public class Main {
                 case 5: {
                     // display all the songs
                     jukeboxService.getAllSongs();
-                    System.out.println("All the playlists Available : \n");
-                    playlistRepository.displayPlaylistNames();
-                    // prompt to enter playlistId
-                    System.out.println("Enter the PlaylistId ");
-                    int playlistId = input.nextInt();
-                    // prompt to enter song ids
-                    System.out.println("Enter the Song Ids :");
-                    input.nextLine();
-                    String songIds = input.nextLine();
-                    // handle the exception
-                    try {
-                        playlistRepository.addSongToPlaylist(playlistId, songIds);
-                    } catch (InvalidSongNumberException exception) {
-                        exception.printStackTrace();
-                    }
+                    jukeboxService.addSongsDisplay();
                     break;
                 }
                 case 6:
@@ -176,8 +161,9 @@ public class Main {
                     // call the method to display the sorted songs
                     jukeboxService.allTypeSort(sortingChoice);
                     // prompt to enter the song or exit
-                    System.out.println("Enter song Number to play the song from playlist or enter 21 to exit ");
+                    System.out.println("Enter songId to play the song from playlist or enter 21 to exit ");
                     int playlistPlayChoice = input.nextInt();
+                    // call the method to play song based on choice
                     jukeboxService.playSongChoice(playlistPlayChoice);
                     break;
                 }

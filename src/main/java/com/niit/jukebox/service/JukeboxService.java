@@ -5,6 +5,7 @@
  */
 package com.niit.jukebox.service;
 
+import com.niit.jukebox.exception.InvalidSongNumberException;
 import com.niit.jukebox.model.Playlist;
 import com.niit.jukebox.model.Song;
 import com.niit.jukebox.repository.PlaylistRepository;
@@ -215,6 +216,31 @@ public class JukeboxService {
         System.out.println(shuffledSongs.toString().replaceAll("[\\[\\]]", "").replace(",", ""));
         System.out.println("=============================================================================================");
 
+    }
+
+    public void addSongsDisplay() {
+        int addSongChoice;
+        do {
+            System.out.println("All the playlists Available : \n");
+            getAllSongs();
+            playlistRepository.displayPlaylistNames();
+            // prompt to enter playlistId
+            System.out.println("Enter the PlaylistId ");
+            int playlistId = input.nextInt();
+            // prompt to enter song ids
+            System.out.println("Enter the Song Ids :");
+            input.nextLine();
+            String songIds = input.nextLine();
+            // handle the exception
+            try {
+                playlistRepository.addSongToPlaylist(playlistId, songIds);
+            } catch (InvalidSongNumberException exception) {
+                System.out.println(exception.getMessage());
+                exception.printStackTrace();
+            }
+            System.out.println("Enter 21 to exit or 1 to add songs again ");
+            addSongChoice = input.nextInt();
+        } while (addSongChoice != 21);
     }
 }
 
