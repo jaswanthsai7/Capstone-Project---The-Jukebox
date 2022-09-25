@@ -48,6 +48,7 @@ public class Main {
                             System.out.println("\u001B[32m Enter Artist Name : \u001B[0m\n");
                             input.nextLine();
                             String artistName = input.nextLine();
+                            // get all the songs of artist
                             List<Song> artistSongs = songRepository.searchByArtist(songs, artistName);
                             // display all the songs of the artist
                             System.out.println("=============================================================================================");
@@ -66,6 +67,7 @@ public class Main {
                             System.out.println("\u001B[32mEnter Genre Name : \u001B[0m\n");
                             input.nextLine();
                             String genreName = input.nextLine();
+                            // get all the songs of genre
                             List<Song> genreSongs = songRepository.searchByGenre(songs, genreName);
                             System.out.println("=============================================================================================");
                             System.out.println("SongId     SongName           Genre           Artist             Album             Duration");
@@ -83,6 +85,7 @@ public class Main {
                             System.out.println("\u001B[32m Enter Song Name : \u001B[0m\n");
                             input.nextLine();
                             String songName = input.nextLine();
+                            // get the song of that name
                             List<Song> songNames = songRepository.searchByName(songList, songName);
                             System.out.println("=============================================================================================");
                             System.out.println("SongId     SongName           Genre           Artist             Album             Duration");
@@ -111,8 +114,9 @@ public class Main {
                     System.out.println("\u001B[32m Enter song Numbers to Create a playlist : \u001B[0m \n");
                     String songNumbers = input.nextLine();
                     try {
-                        // handle the exception
+                        // call the method to create playlist
                         playlistRepository.createPlaylist(playlistName, songNumbers);
+                        // handle the exception
                     } catch (PlaylistNotCreatedException exception) {
                         System.err.println(exception.getMessage());
                         exception.printStackTrace();
@@ -131,8 +135,8 @@ public class Main {
                     System.err.println("Enter the Name of the Playlist to delete ");
                     input.nextLine();
                     String deletePlaylist = input.nextLine();
-                    // call the remove playlist mto delete the playlist
                     try {
+                        // call the remove playlist to delete the playlist
                         playlistRepository.removePlaylist(deletePlaylist);
                     } catch (PlaylistNotFoundException exception) {
                         System.err.println(exception.getMessage());
@@ -141,6 +145,7 @@ public class Main {
                 case 5: {
                     // display all the songs
                     jukeboxService.getAllSongs();
+                    // call the method to add songs
                     jukeboxService.addSongsDisplay();
                     break;
                 }
@@ -151,6 +156,7 @@ public class Main {
                     System.out.println("\u001B[32m Enter 1.Display all playlist  2.Display My Playlist \u001B[0m");
                     // take the input
                     int displayChoice = input.nextInt();
+                    // call the method to display playlist
                     jukeboxService.displayPlaylistChoice(displayChoice);
                     break;
                 case 7: {
