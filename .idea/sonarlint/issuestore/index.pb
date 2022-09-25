@@ -9,14 +9,6 @@ w
 G.idea/sonarlint/issuestore/1/5/15561a97565abc3be37a5453b7f5d18b44d903cb,0\0\003197aec1cb760ada6805e9562ed96514ec7245
 w
 G.idea/sonarlint/issuestore/1/0/101855eb3c04da5d4fb33cf6ea4a3d1968d1ad03,d\6\d639599ff8d9b9b04a0a608d27683a6269bf089b
-c
-3src/main/java/com/niit/jukebox/service/Service.java,2\f\2f6f77819e922bde9f63be69364ce5968dad8796
-o
-?src/test/java/com/niit/jukebox/service/DatabaseServiceTest.java,e\9\e9fb6040aa7b50669c0b68ecd5d7d6423c1200eb
-n
->src/test/java/com/niit/jukebox/service/JukeboxServiceTest.java,8\6\86a95dd22213fcb02f768f1c2698bc2969dc464d
-q
-Asrc/test/java/com/niit/jukebox/repository/SongRepositoryTest.java,1\5\1577ff0a3bb3c1660602532e884797f4a2ce291f
 b
 2src/main/java/com/niit/jukebox/model/Playlist.java,b\0\b0b19772b683f4a99038876b01be269fb8c52103
 w
@@ -41,12 +33,6 @@ w
 G.idea/sonarlint/issuestore/e/9/e9fb6040aa7b50669c0b68ecd5d7d6423c1200eb,f\3\f30275e6599542ab21f9e0df51f680dfaa537f2f
 w
 G.idea/sonarlint/issuestore/0/0/003197aec1cb760ada6805e9562ed96514ec7245,d\8\d8d2196bed8966acf8dad7c1f1d4119699d49c67
-u
-Esrc/test/java/com/niit/jukebox/repository/PlaylistRepositoryTest.java,1\1\116acecd5f7c9127a4891b87510c0139d449a68f
-y
-Isrc/main/java/com/niit/jukebox/exception/PlaylistNotCreatedException.java,7\e\7e6d80dd68ab815d4b0a06280df784c444bae4e8
-x
-Hsrc/main/java/com/niit/jukebox/exception/InvalidSongNumberException.java,a\8\a829b95ba70f2f2aab947d508997b0545649bbc6
 w
 G.idea/sonarlint/issuestore/8/1/81b8f2f6df8d7d296891ef455368a4a390a23594,1\1\11d6f1061e88557f1f5ef030d600315ba82cfe98
 w
@@ -73,9 +59,3 @@ w
 G.idea/sonarlint/issuestore/c/a/ca5c81e93144c6f662b6c7994fde29366801c862,1\0\10ee0e98d8e9743e5d73d18287703bec717d3947
 w
 G.idea/sonarlint/issuestore/6/b/6becf869d6aff355ec4a9348abf2bec3f3f35553,f\0\f0456eae6e19c4162d1e61a24c360e695269049e
-w
-Gsrc/main/java/com/niit/jukebox/exception/PlaylistNotFoundException.java,0\f\0ff1fab4c87d04c5f83ec015656c8746459c4826
-i
-9src/main/java/com/niit/jukebox/repository/Repository.java,c\6\c67a1a7b900c7a39f72ca71a77ea2c57d297237c
-k
-;src/main/java/com/niit/jukebox/service/DatabaseService.java,f\9\f9f8ba9379917029b00c2747fad11af96116d64e

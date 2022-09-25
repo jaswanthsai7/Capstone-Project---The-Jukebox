@@ -25,6 +25,7 @@ public class SongRepository implements Repository {
     @Override
     // This method is used to display all the songs in the database.
     public List<Song> displayAllSongs() {
+        // create a list of Song type
         List<Song> allSongs = new ArrayList<>();
         // get the connection
         databaseService.connect();
@@ -33,8 +34,8 @@ public class SongRepository implements Repository {
         String displayQuery = "SELECT * FROM `jukebox`.`song`;";
         // create a statement object
         try (Statement statement = connection.createStatement()) {
+            // create a resultSet object
             ResultSet resultSet = statement.executeQuery(displayQuery);
-            // create a song object
             // use the while loop to iterate over result set
             while (resultSet.next()) {
                 Song song = new Song();
@@ -48,9 +49,11 @@ public class SongRepository implements Repository {
                 song.setSongPath(resultSet.getString("song_path"));
                 allSongs.add(song);
             }
+            // handle the exception
         } catch (SQLException exception) {
             exception.printStackTrace();
         }
+        // return the list
         return allSongs;
     }
 
@@ -78,13 +81,18 @@ public class SongRepository implements Repository {
         if (songId <= 0) {
             return null;
         } else {
+            // get the connection
             databaseService.connect();
             Connection connection = databaseService.getConnection();
+            // create an object of song type
             Song song = new Song();
+            // write the query
             String getQuery = "SELECT * FROM `jukebox`.`song` WHERE `song_id`=?;";
+            // create a prepared statement object
             try (PreparedStatement preparedStatement = connection.prepareStatement(getQuery)) {
                 preparedStatement.setInt(1, songId);
                 ResultSet resultSet = preparedStatement.executeQuery();
+                // use the while loop to iterate over result set
                 while (resultSet.next()) {
                     song.setSongId(resultSet.getInt("song_id"));
                     song.setSongName(resultSet.getString("song_name"));
@@ -94,9 +102,11 @@ public class SongRepository implements Repository {
                     song.setDuration(resultSet.getString("duration"));
                     song.setSongPath(resultSet.getString("song_path"));
                 }
+                // handle the exception
             } catch (SQLException exception) {
                 exception.printStackTrace();
             }
+            // return the song
             return song;
         }
     }

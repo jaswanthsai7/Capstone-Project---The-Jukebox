@@ -38,14 +38,14 @@ class SongRepositoryTest {
     }
 
     @Test
-    void checkSongBYIdSuccess2() {
+    void checkSongBYIdSuccessDifferent() {
         Song actualResult = songRepository.getSongById(4);
         Song song = new Song(4, "happier", "pop", "marshmellow", "fortnite set", "03:38", "src/main/resources/songs/happier.wav");
         Assertions.assertEquals(song, actualResult);
     }
 
     @Test
-    void checkSongByIdFailure2() {
+    void checkSongByIdFailureWithNegative() {
         Song actualResult = songRepository.getSongById(-6);
         Assertions.assertNull(actualResult);
     }

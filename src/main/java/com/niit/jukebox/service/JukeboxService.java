@@ -54,6 +54,7 @@ public class JukeboxService {
             clip.start();
             System.out.println("\u001B[32m Enter 0 to pause or Enter 21 to stop and exit \u001B[0m");
             int enteredNumber = input.nextInt();
+            // play and pause
             if (enteredNumber == 0) {
                 clip.stop();
                 System.out.println("\u001B[32m Enter 1 to play or Enter 21 to stop and exit \u001B[0m");
@@ -83,6 +84,7 @@ public class JukeboxService {
             // pause the current thread by play time
             long songDurationInMilliseconds = clip.getMicrosecondLength() / 1000L;
             Thread.sleep(songDurationInMilliseconds);
+            // handle the exception
         } catch (UnsupportedAudioFileException | IOException | InterruptedException |
                  LineUnavailableException exception) {
             Thread.currentThread().interrupt();
@@ -103,6 +105,7 @@ public class JukeboxService {
         } else {
             // to shuffle the songs
             Collections.shuffle(songsList);
+            // return the shuffled list
             return songsList;
         }
     }
@@ -111,6 +114,7 @@ public class JukeboxService {
      * This function will get all the songs from the database and print them out
      */
     public void getAllSongs() {
+        // get the songs list
         List<Song> songs = songRepository.displayAllSongs();
         System.out.println("=============================================================================================");
         System.out.println("SongId     SongName           Genre           Artist             Album             Duration");
@@ -160,6 +164,7 @@ public class JukeboxService {
             System.out.println("===============================================================================================");
             System.out.println("\u001B[32m Enter the songId to play or Enter 21 to exit \u001B[0m");
             int songId = input.nextInt();
+            // call the playSong method
             playSongChoice(songId);
         }
     }
@@ -190,6 +195,7 @@ public class JukeboxService {
                 sortingService.sortByGenre();
                 break;
             default:
+                System.err.println("Enter a valid choice");
                 break;
         }
     }

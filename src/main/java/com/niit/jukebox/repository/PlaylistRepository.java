@@ -53,6 +53,7 @@ public class PlaylistRepository {
             } else {
                 System.out.println("Playlist created");
             }
+            // handle the exception
         } catch (SQLException exception) {
             exception.printStackTrace();
         }
@@ -75,7 +76,7 @@ public class PlaylistRepository {
                     // write the query
                     String getQuery = "SELECT `song_id` FROM `jukebox`.`playlist` WHERE `playlist_id`='" + playlistId + "';";
                     String addQuery = "UPDATE `jukebox`.`playlist` SET `song_id` = ? WHERE (`playlist_id` = ?);";
-                    // create an object of prepared statement
+                    // create an object of Statement and prepared statement
                     try (Statement statement = connection.createStatement(); PreparedStatement preparedStatement1 = connection.prepareStatement(addQuery)) {
                         ResultSet resultSet = statement.executeQuery(getQuery);
                         while (resultSet.next()) {
@@ -91,6 +92,7 @@ public class PlaylistRepository {
                             System.err.println("unable to add the song to playlist");
                         }
                     }
+                    // handle the exception
                 } catch (SQLException exception) {
                     exception.printStackTrace();
                 }
@@ -123,6 +125,7 @@ public class PlaylistRepository {
                 System.err.println("please check the playlist name");
                 throw new PlaylistNotFoundException("unable to find playlist ");
             }
+            // handle the exception
         } catch (SQLException exception) {
             exception.printStackTrace();
         }
@@ -163,12 +166,15 @@ public class PlaylistRepository {
                         songsList.add(songById);
                         playlist.setSongDetails(songsList);
                     }
+                    // add the playlist to list
                     songsInPlaylist.add(playlist);
                 }
+                // handle the exception
             } catch (SQLException exception) {
                 System.err.println("unable to get the playlist");
                 exception.printStackTrace();
             }
+            // return the playlist
             return songsInPlaylist;
         }
     }
@@ -200,10 +206,12 @@ public class PlaylistRepository {
                 }
                 songsInPlaylist.add(new Playlist(playlistId, playlistName, songsList));
             }
+            // handle the exception
         } catch (SQLException exception) {
             System.err.println("unable to get the playlist");
             exception.printStackTrace();
         }
+        // loop for display the playlist
         for (Playlist allPlaylists : songsInPlaylist) {
             System.out.format("%5s %20s ", "PlaylistId", "PlaylistName\n");
             System.out.println("===============================================================================================");
@@ -216,6 +224,7 @@ public class PlaylistRepository {
      * This function displays the playlist names from the database
      */
     public void displayPlaylist() {
+        // get the connection
         databaseService.connect();
         connection = databaseService.getConnection();
         // create an object of playlist
@@ -224,17 +233,20 @@ public class PlaylistRepository {
         String displayQuery = "SELECT `playlist_Id`,`playlist_Name` FROM `jukebox`.`playlist`";
         try (Statement statement = connection.createStatement()) {
             ResultSet resultSet = statement.executeQuery(displayQuery);
+            // use the while loop
             while (resultSet.next()) {
                 int playlistId = resultSet.getInt("playlist_id");
                 String playlistName = resultSet.getString("playlist_Name");
                 playlists.add(new Playlist(playlistId, playlistName));
             }
+            // use the loop to print the playlist
             for (Playlist playlistReturned : playlists) {
                 System.out.format("%5s %20s ", " | PlaylistId |", "| PlaylistName |\n");
                 System.out.println("==============================================");
                 System.out.println(" |" + playlistReturned.getPlaylistId() + "          |     |" + playlistReturned.getPlaylistName() + "         |");
                 System.out.println("==============================================");
             }
+            // handle the exception
         } catch (SQLException exception) {
             exception.printStackTrace();
         }

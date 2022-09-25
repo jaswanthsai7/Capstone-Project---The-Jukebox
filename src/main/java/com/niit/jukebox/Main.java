@@ -55,7 +55,7 @@ public class Main {
                             System.out.println("=============================================================================================");
                             System.out.println(artistSongs.toString().replaceAll("[\\[\\]]", "").replace(",", ""));
                             System.out.println("=============================================================================================");
-                            System.out.println("Enter song Id to play or Enter 21 to exit");
+                            System.out.println("\u001B[32mEnter song Id to play or Enter 21 to exit\u001B[0m");
                             int playArtistChoice = input.nextInt();
                             // call the play song method to play
                             jukeboxService.playSongChoice(playArtistChoice);
@@ -96,7 +96,8 @@ public class Main {
                             break;
                         }
                         default:
-                            return;
+                            System.err.println("Please enter a valid choice");
+                            break;
                     }
                     break;
                 case 3: {

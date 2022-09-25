@@ -45,6 +45,7 @@ public class DatabaseService {
             // create an object for DriverManager
             this.connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
             return true;
+            // handle the exception
         } catch (ClassNotFoundException | SQLException exception) {
             exception.printStackTrace();
             return false;
@@ -58,6 +59,7 @@ public class DatabaseService {
      * @return A String
      */
     public String connectionStatus(Connection connection) {
+        // check the connection
         if (connection != null) {
             return "Connection : Active";
         } else {
