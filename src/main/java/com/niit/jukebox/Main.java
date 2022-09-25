@@ -125,7 +125,7 @@ public class Main {
                 }
                 case 4:
                     System.out.println("Choose from the below available playlists to delete");
-                    playlistRepository.displayPlaylistNames();
+                    playlistRepository.displayPlaylist();
                     // prompt to enter name of the playlist
                     System.err.println("Enter the Name of the Playlist to delete ");
                     input.nextLine();
@@ -145,7 +145,7 @@ public class Main {
                 }
                 case 6:
                     System.out.println("\u001B[32m ===========Choose the Playlist to display============ \u001B[0m");
-                    playlistRepository.displayPlaylistNames();
+                    playlistRepository.displayPlaylist();
                     // display the choice of playlist
                     System.out.println("\u001B[32m Enter 1.Display all playlist  2.Display My Playlist \u001B[0m");
                     // take the input

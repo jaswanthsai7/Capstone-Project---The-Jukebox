@@ -229,7 +229,7 @@ public class JukeboxService {
         do {
             System.out.println("\u001B[32m All the playlists Available : \u001B[0m\n");
             getAllSongs();
-            playlistRepository.displayPlaylistNames();
+            playlistRepository.displayPlaylist();
             // prompt to enter playlistId
             System.out.println("\u001B[32m Enter the PlaylistId : \u001B[0m");
             int playlistId = input.nextInt();

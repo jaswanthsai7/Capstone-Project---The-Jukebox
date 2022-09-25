@@ -215,7 +215,7 @@ public class PlaylistRepository {
     /**
      * This function displays the playlist names from the database
      */
-    public void displayPlaylistNames() {
+    public void displayPlaylist() {
         databaseService.connect();
         connection = databaseService.getConnection();
         // create an object of playlist
