@@ -4,8 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="changed the method names of test cases in SongRepositoryTest.java">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/Main.java" afterDir="false" />
+    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="added comments to the methods">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/1/116acecd5f7c9127a4891b87510c0139d449a68f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/2/12b286a50ed1d5f282d2e3283fca83d4bd645533" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/5/1577ff0a3bb3c1660602532e884797f4a2ce291f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/4/241fbbf1f787c249f385da449a9ab3fa00889bc2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/9/39e3d7d4837bffdcd1180c6fc51a7369c6140234" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/4/746181d1c51f8131e3772fe3d80e8e3f9e5cc97e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/7/77f476a7b5c0e68afb8333865381cf2d0a1ecb87" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/6/86a95dd22213fcb02f768f1c2698bc2969dc464d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/3/c3a33a8b3f67f1fc82933b0a89ad202c7c212143" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/4/c493c9b321833d50aad83913d2a4da4d95d60078" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/c/ccee66ae6e62a69ebcab80a4b0fa9b663c9e004c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/9/e9fb6040aa7b50669c0b68ecd5d7d6423c1200eb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/JukeboxService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niit/jukebox/service/JukeboxService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +79,7 @@
       <recent name="com.niit.jukebox.service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in capstone-project-jukebox">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.niit.jukebox.Main" />
       <module name="capstone-project-jukebox" />
@@ -126,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in capstone-project-jukebox" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.All in capstone-project-jukebox" />
+        <item itemvalue="JUnit.com.niit.jukebox.repository in capstone-project-jukebox" />
         <item itemvalue="Java Scratch.Scratch" />
         <item itemvalue="JUnit.PlaylistRepositoryTest.checkDisplayPlaylistByNameSuccess" />
-        <item itemvalue="JUnit.com.niit.jukebox.repository in capstone-project-jukebox" />
       </list>
     </recent_temporary>
   </component>
@@ -142,13 +156,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663675502247</updated>
-    </task>
-    <task id="LOCAL-00071" summary="completed displayPlaylist() and addSongsToPlaylist() methods in PlaylistRepository">
-      <created>1663782494100</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1663782494100</updated>
     </task>
     <task id="LOCAL-00072" summary="added searchByName() in SongRepository">
       <created>1663809230013</created>
@@ -486,7 +493,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664109504412</updated>
     </task>
-    <option name="localTasksCounter" value="120" />
+    <task id="LOCAL-00120" summary="added comments to the methods">
+      <created>1664110164366</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1664110164366</updated>
+    </task>
+    <option name="localTasksCounter" value="121" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -501,7 +515,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added Javadoc for the methods" />
     <MESSAGE value="changed the JukeboxImpl" />
     <MESSAGE value="added all implementation in main method" />
     <MESSAGE value="added all the cases in Main.java" />
@@ -526,7 +539,8 @@
     <MESSAGE value="added displayById and displayAll in song_queries.sql" />
     <MESSAGE value="changed the method name to displayPlaylist() in PlaylistRepository.java" />
     <MESSAGE value="changed the method names of test cases in SongRepositoryTest.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed the method names of test cases in SongRepositoryTest.java" />
+    <MESSAGE value="added comments to the methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="added comments to the methods" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

@@ -85,7 +85,7 @@ public class JukeboxService {
             long songDurationInMilliseconds = clip.getMicrosecondLength() / 1000L;
             Thread.sleep(songDurationInMilliseconds);
             // handle the exception
-        } catch (UnsupportedAudioFileException | IOException | InterruptedException |
+        } catch (UnsupportedAudioFileException | IOException | InterruptedException | NullPointerException |
                  LineUnavailableException exception) {
             Thread.currentThread().interrupt();
             exception.printStackTrace();
