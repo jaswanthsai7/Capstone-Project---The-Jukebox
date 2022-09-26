@@ -51,7 +51,7 @@ public class PlaylistRepository {
                 System.err.println("Playlist not created");
                 throw new PlaylistNotCreatedException("playlist not created");
             } else {
-                System.out.println("Playlist created");
+                System.out.println("\u001B[32mPlaylist created\u001B[0m");
             }
             // handle the exception
         } catch (SQLException exception) {
@@ -87,7 +87,7 @@ public class PlaylistRepository {
                         // execute the query
                         int executeUpdate = preparedStatement1.executeUpdate();
                         if (executeUpdate > 0) {
-                            System.out.println("Successfully added the song to playlist");
+                            System.out.println("\u001B[32mSuccessfully added the song to playlist\u001B[0m");
                         } else {
                             System.err.println("unable to add the song to playlist");
                         }
@@ -120,7 +120,7 @@ public class PlaylistRepository {
             // execute the query
             int executeRemove = preparedStatement.executeUpdate();
             if (executeRemove > 0) {
-                System.out.println("Successfully deleted the playlist");
+                System.out.println("\u001B[32mSuccessfully deleted the playlist\u001B[0m");
             } else {
                 System.err.println("please check the playlist name");
                 throw new PlaylistNotFoundException("unable to find playlist ");
