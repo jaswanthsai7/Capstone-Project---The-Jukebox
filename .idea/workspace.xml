@@ -4,8 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="added exception in play() method in JukeboxService.java">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/5/35bb50c58d8ad608a8ca0fa24b43728ca6aba38a" beforeDir="false" />
+    <list default="true" id="3d417fb5-7f59-495d-bc73-596c4ec39e29" name="Changes" comment="completed jukebox">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/3/0313db23147064f5e138fc0dead45c503c98d79d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/1/11d6f1061e88557f1f5ef030d600315ba82cfe98" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/8/389b811014a5abd914289a3fafb4423a8fdb8589" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/3/43a63d42e58e248c998e828d27b025de5d47b7df" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/3/43ab1800bfb9245dc89ae7bbcc32a7fef875980e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/6/66ab2b5f60b1be2b95438c2a53132642d6ae9eaf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/8/6853e4ea5ebdd13a4df0f878c04228b41a95fab5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/b/6becf869d6aff355ec4a9348abf2bec3f3f35553" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/1/81b8f2f6df8d7d296891ef455368a4a390a23594" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/7/875a9492561e4aa225e2391e39e31fa89a483c1e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/9/8905649ff5b7b8e5952f83255c7017ffef5ebbe6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/8/a829b95ba70f2f2aab947d508997b0545649bbc6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/9/a92a4a6202099a44051b77b7f923e621e78da572" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/e/ae0513b9c1078bdd2bc4c3d3b1e163c81535dba9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/a/ba5f87737f681539aea4ffbad5885662e411cbaa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/6/c67a1a7b900c7a39f72ca71a77ea2c57d297237c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/7/d79d4d5ac2f4ce5c3ab3592814e6dd6bd57e10c9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/9/d99567e6d7f85135eeb281f43d80bf8f63214798" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/f/ef0680e8477f52f30995f0a92baee58c09192b2b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/0/f0456eae6e19c4162d1e61a24c360e695269049e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/3/f30275e6599542ab21f9e0df51f680dfaa537f2f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/7/f732e6560131e512c8d7ba0047316d54212c3fb6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/8/f8e8d8dcf24f7088cce67e86c3f9117dadbb42e5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +64,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/jasva/IdeaProjects/capstone-project-jukebox/src/main/resources/sql&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jasva/IdeaProjects/capstone-project-jukebox&quot;,
     &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
@@ -142,13 +166,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663675502247</updated>
-    </task>
-    <task id="LOCAL-00073" summary="replaced the collection sort with list sort in searchByName()">
-      <created>1663809326599</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1663809326599</updated>
     </task>
     <task id="LOCAL-00074" summary="changed the toString() method in Song.java">
       <created>1663809840277</created>
@@ -486,7 +503,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664158752138</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="changed the print statement for the methods">
+      <created>1664159314127</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1664159314127</updated>
+    </task>
+    <option name="localTasksCounter" value="123" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -501,8 +525,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added all implementation in main method" />
-    <MESSAGE value="added all the cases in Main.java" />
     <MESSAGE value="changed the case 3 in Main.java" />
     <MESSAGE value="added javadoc to JukeboxService" />
     <MESSAGE value="replaced the print statement with format in all methods" />
@@ -526,7 +548,9 @@
     <MESSAGE value="changed the method names of test cases in SongRepositoryTest.java" />
     <MESSAGE value="added comments to the methods" />
     <MESSAGE value="added exception in play() method in JukeboxService.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="added exception in play() method in JukeboxService.java" />
+    <MESSAGE value="changed the print statement for the methods" />
+    <MESSAGE value="completed jukebox" />
+    <option name="LAST_COMMIT_MESSAGE" value="completed jukebox" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
